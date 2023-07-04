@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_table</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Les tableaux</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui demande à l'utilisateur de saisir 5 nombres entiers et les stocke dans un tableau. Ensuite, affichez ces nombres dans l'ordre inverse.
+
+                       </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                        int main() {<br>
+                            <div class="if">int tableau[5];</div>
+                            <div class="if">int i;</div>
+                        
+                            <div class="if">printf("Veuillez saisir 5 nombres entiers :\n");</div>
+                        
+                            <div class="if">// Saisie des nombres et stockage dans le tableau</div>
+                            <div class="if">for (i = 0; i < 5; i++) {
+                                <div class="if">printf("Nombre %d : ", i + 1);</div>
+                                <div class="if">scanf("%d", &tableau[i]);</div>
+                                <div class="if">}</div></div>
+                        
+                                <div class="if">printf("Les nombres dans l'ordre inverse sont :\n");</div>
+                        
+                                <div class="if"> // Affichage des nombres dans l'ordre inverse</div>
+                                <div class="if"> for (i = 4; i >= 0; i--) {
+                                    <div class="if">printf("%d ", tableau[i]);</div>
+                                    <div class="if">}</div></div>
+                        
+                                    <div class="if">  return 0;</div>
+                        }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> dans ce programme, nous utilisons un tableau de taille 5 pour stocker les nombres entiers saisis par l'utilisateur. Nous utilisons une boucle for pour demander à l'utilisateur de saisir les nombres et les stocker dans le tableau. Ensuite, nous utilisons une autre boucle for pour parcourir le tableau en ordre inverse et afficher les nombres.
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui lit un tableau de 10 entiers et calcule la somme de tous les éléments du tableau.
+
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int tableau[10];</div>
+                                <div class="if">int i;</div>
+                                <div class="if">int somme = 0;</div>
+                            
+                                <div class="if"> printf("Veuillez saisir 10 nombres entiers :\n");</div>
+                            
+                                <div class="if">// Saisie des nombres et calcul de la somme</div>
+                                <div class="if"> for (i = 0; i < 10; i++) {
+                                    <div class="if">printf("Nombre %d : ", i + 1);</div>
+                                        <div class="if"> scanf("%d", &tableau[i]);</div>
+                                            <div class="if"> somme += tableau[i];</div>
+                                                <div class="if">}</div></div>
+                            
+                                                <div class="if">  printf("La somme des éléments du tableau est : %d\n", somme);</div>
+                            
+                                                    <div class="if">   return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons un tableau de taille 10 pour stocker les nombres entiers saisis par l'utilisateur. Nous utilisons une boucle for pour demander à l'utilisateur de saisir les nombres, les stocker dans le tableau et calculer la somme en ajoutant chaque élément au fur et à mesure. Enfin, nous affichons la somme calculée à l'utilisateur.
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir 10 nombres entiers et les stocke dans un tableau. Ensuite, trouvez et affichez le plus grand nombre dans le tableau.
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if"> int tableau[10];</div>
+                                    <div class="if">  int i;</div>
+                                        <div class="if">  int plusGrand;</div>
+                            
+                                        <div class="if">  printf("Veuillez saisir 10 nombres entiers :\n");</div>
+                            
+                                        <div class="if">  // Saisie des nombres</div>
+                                        <div class="if"> for (i = 0; i < 10; i++) {
+                                            <div class="if"> printf("Nombre %d : ", i + 1);</div>
+                                                <div class="if">  scanf("%d", &tableau[i]);</div>
+                                                <div class="if">  }</div></div>
+                            
+                                                <div class="if">  // Recherche du plus grand nombre</div>
+                                                    <div class="if">  plusGrand = tableau[0];</div>
+                                                        <div class="if">for (i = 1; i < 10; i++) {
+                                                            <div class="if"> if (tableau[i] > plusGrand) {
+                                      <div class="if">  plusGrand = tableau[i];</div>
+                                        <div class="if">}</div></div>
+                                        <div class="if">}</div></div>
+                            
+                            <div class="if"> printf("Le plus grand nombre dans le tableau est : %d\n", plusGrand);</div>
+                            
+                            <div class="if"> return 0;</div>
+                            }                    </div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons un tableau de taille 10 pour stocker les nombres entiers saisis par l'utilisateur. Nous utilisons une boucle for pour demander à l'utilisateur de saisir les nombres et les stocker dans le tableau. Ensuite, nous utilisons une autre boucle for pour trouver le plus grand nombre dans le tableau en comparant chaque élément avec le plus grand nombre précédemment trouvé. Enfin, nous affichons le plus grand nombre à l'utilisateur.
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir 10 nombres réels et les stocke dans un tableau. Ensuite, trouvez et affichez la moyenne des nombres du tableau.
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int i;</div>
+                                <div class="if"> float tableau[10];</div>
+                                <div class="if"> float somme = 0, moyenne;</div>
+                            
+                                <div class="if">  printf("Saisissez 10 nombres réels :\n");</div>
+                            
+                                    <div class="if">  // Saisie des nombres et calcul de la somme</div>
+                                    <div class="if"> for (i = 0; i < 10; i++) {
+                                        <div class="if">printf("Nombre %d : ", i+1);</div>
+                                            <div class="if">scanf("%f", &tableau[i]);</div>
+                                                <div class="if"> somme += tableau[i];</div>
+                                                    <div class="if">}</div>
+                                    </div>
+                                    <div class="if"> // Calcul de la moyenne</div>
+                                    <div class="if"> moyenne = somme / 10;</div>
+                            
+                                        <div class="if"> printf("La moyenne des nombres saisis est : %.2f\n", moyenne);</div>
+                            
+                                            <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons une boucle for pour demander à l'utilisateur de saisir 10 nombres réels et les stocker dans le tableau tableau[]. En même temps, nous calculons la somme de ces nombres. Ensuite, nous divisons la somme par 10 pour obtenir la moyenne et l'affichons à l'utilisateur. La fonction %.2f est utilisée pour formater l'affichage de la moyenne avec deux décimales.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir 10 caractères et les stocke dans un tableau. Ensuite, affichez ces caractères dans l'ordre inverse.
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            #define TAILLE_TABLEAU 10<br>
+                            
+                            int main() {
+                                <div class="if"> 
+                                    char tableau[TAILLE_TABLEAU];</div>
+                            
+                                    <div class="if">printf("Saisissez 10 caractères :\n");</div>
+                            
+                                    <div class="if"> // Saisie des caractères</div>
+                                    <div class="if">for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                        <div class="if">printf("Caractère %d : ", i+1);</div>
+                                            <div class="if">scanf(" %c", &tableau[i]);</div>
+                                            <div class="if">}</div>
+                                    </div>
+                                    <div class="if"> printf("Les caractères dans l'ordre inverse sont : ");</div>
+                            
+                                    <div class="if"> // Affichage des caractères dans l'ordre inverse</div>
+                                    <div class="if"> for (int i = TAILLE_TABLEAU - 1; i >= 0; i--) {
+                                        <div class="if">printf("%c ", tableau[i]);</div>
+                                            <div class="if"> }</div>
+                                    </div>
+                                    <div class="if">printf("\n");</div>
+                            
+                                    <div class="if"> return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons une boucle for pour demander à l'utilisateur de saisir 10 caractères et les stocker dans le tableau tableau[]. Ensuite, nous utilisons une autre boucle for pour parcourir le tableau en commençant par la fin, puis affichons les caractères dans l'ordre inverse.
+
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrire un programme en C qui demande à l'utilisateur de saisir un tableau de 5 chaînes de caractères. Ensuite, trouvez et affichez la chaîne de caractères la plus longue dans le tableau.
+
+                    </div>
+                         <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include &ltstring.h&gt<br>
+                            
+                            #define TAILLE_TABLEAU 5<br>
+                            #define TAILLE_MAX_CHAINE 100<br>
+                            
+                            int main() {
+                                <div class="if">char tableau[TAILLE_TABLEAU][TAILLE_MAX_CHAINE];</div>
+                                    <div class="if">char plusLongueChaine[TAILLE_MAX_CHAINE];</div>
+                                        <div class="if">int longueurMax = 0;</div>
+                            
+                                            <div class="if">printf("Saisissez 5 chaînes de caractères :\n");</div>
+                            
+                                                <div class="if">  // Saisie des chaînes de caractères</div>
+                                                <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                                    <div class="if">printf("Chaîne %d : ", i+1);</div>
+                            
+                                                        <div class="if">// Lecture caractère par caractère jusqu'au saut de ligne</div>
+                                                            <div class="if">int index = 0;</div>
+                                                                <div class="if">char caractere;</div>
+                                                                <div class="if">while ((caractere = getchar()) != '\n') {
+                                                                    <div class="if">tableau[i][index++] = caractere;</div>
+                                                                    <div class="if">}</div></div>
+                            
+                                                                    <div class="if">tableau[i][index] = '\0'; // Ajoute le caractère de fin de chaîne
+                                                                    </div>    <div class="if">    }</div></div>
+                                                            
+            
+                                                                    <div class="if">   // Recherche de la chaîne la plus longue</div>
+                                                                    <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                                                        <div class="if">int longueur = strlen(tableau[i]);</div>
+                                                                        <div class="if">if (longueur > longueurMax) {
+                                                                            <div class="if">longueurMax = longueur;</div>
+                                                                            <div class="if">strcpy(plusLongueChaine, tableau[i]);</div>
+                                                                            <div class="if">}</div></div>
+                                                                            <div class="if">}</div>
+                            </div>
+                            <div class="if">printf("La chaîne la plus longue est : %s\n", plusLongueChaine);</div>
+                            
+                            <div class="if"> return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cette version, nous utilisons la fonction getchar pour lire chaque caractère de la saisie jusqu'à ce que nous atteignions un saut de ligne ('\n'), indiquant la fin de la saisie de la chaîne. Nous stockons les caractères dans le tableau correspondant.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  nous recherchons et affichons la chaîne la plus longue de la même manière que dans la version précédente.    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> N'hésitez pas à exécuter le programme et à saisir différentes chaînes de caractères pour voir le résultat.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tableau de 10 nombres entiers. Ensuite, triez les nombres du tableau dans l'ordre croissant et affichez-les.
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            #define TAILLE_TABLEAU 10<br>
+                            
+                            int main() {
+                                <div class="if">int tableau[TAILLE_TABLEAU];</div>
+                            
+                                <div class="if"> printf("Saisissez %d nombres entiers :\n", TAILLE_TABLEAU);</div>
+                            
+                                <div class="if"> // Saisie des nombres entiers</div>
+                                <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                    <div class="if">printf("Nombre %d : ", i+1);</div>
+                                    <div class="if"> scanf("%d", &tableau[i]);</div>
+                                    <div class="if">}</div></div>
+                            
+                                    <div class="if">  // Tri des nombres dans l'ordre croissant</div>
+                                    <div class="if">  for (int i = 0; i < TAILLE_TABLEAU - 1; i++) {
+                                        <div class="if">for (int j = i + 1; j < TAILLE_TABLEAU; j++) {
+                                            <div class="if">if (tableau[i] > tableau[j]) {
+                                                <div class="if">int temp = tableau[i];</div>
+                                                <div class="if"> tableau[i] = tableau[j];</div>
+                                                <div class="if">  tableau[j] = temp;</div>
+                                                <div class="if">    }</div></div>
+                                                <div class="if"> }</div></div>
+                                                <div class="if">  }</div></div>
+                            
+                                                <div class="if">  printf("Les nombres triés dans l'ordre croissant :\n");</div>
+                                                <div class="if">for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                                    <div class="if"> printf("%d ", tableau[i]);</div>
+                                                    <div class="if"> }</div></div>
+           
+                                                    <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>
+                    Dans ce programme, nous utilisons la fonction scanf pour demander à l'utilisateur de saisir chaque nombre entier du tableau. Ensuite, nous utilisons une méthode de tri à bulles pour trier les nombres dans l'ordre croissant. Enfin, nous affichons les nombres triés à l'écran.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux tableaux de même taille. Ensuite, additionnez les éléments correspondants des deux tableaux et stockez les résultats dans un troisième tableau. Affichez ensuite le contenu du troisième tableau.
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            #define TAILLE_TABLEAU 5<br>
+                            
+                            int main() {
+                                <div class="if">int tableau1[TAILLE_TABLEAU];</div>
+                                <div class="if">int tableau2[TAILLE_TABLEAU];</div>
+                                <div class="if"> int tableauSomme[TAILLE_TABLEAU];</div>
+                            
+                                <div class="if"> printf("Saisissez %d entiers pour le premier tableau :\n", TAILLE_TABLEAU);</div>
+                                <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                    <div class="if">printf("Élément %d : ", i+1);</div>
+                                    <div class="if">scanf("%d", &tableau1[i]);</div>
+                                    <div class="if"> }</div></div>
+                            
+                                    <div class="if"> printf("Saisissez %d entiers pour le deuxième tableau :\n", TAILLE_TABLEAU);</div>
+                                    <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                        <div class="if">printf("Élément %d : ", i+1);</div>
+                                        <div class="if">  scanf("%d", &tableau2[i]);</div>
+                                        <div class="if"> }</div></div>
+                            
+                                        <div class="if"> // Addition des éléments correspondants et stockage dans le troisième tableau</div>
+                                        <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                            <div class="if"> tableauSomme[i] = tableau1[i] + tableau2[i];</div>
+                                            <div class="if">    }</div></div>
+                            
+                                            <div class="if">printf("Résultat de l'addition des tableaux :\n");</div>
+                                            <div class="if">  for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                                <div class="if"> printf("%d ", tableauSomme[i]);</div>
+                                                <div class="if"> }</div></div>
+                                                <div class="if"> printf("\n");</div>
+                            
+                                                <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf pour demander à l'utilisateur de saisir les éléments des deux tableaux. Ensuite, nous additionnons les éléments correspondants des deux tableaux et stockons les résultats dans un troisième tableau tableauSomme. Enfin, nous affichons le contenu du troisième tableau à l'écran.
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tableau de 10 nombres entiers. Ensuite, trouvez et affichez le nombre d'occurrences de chaque élément du tableau.
+
+
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            #define TAILLE_TABLEAU 10<br>
+                            
+                            int main() {
+                               <div class="if"> int tableau[TAILLE_TABLEAU];</div>
+                            
+                               <div class="if">printf("Saisissez %d entiers pour le tableau :\n", TAILLE_TABLEAU);</div>
+                               <div class="if">  for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                <div class="if">printf("Élément %d : ", i + 1);</div>
+                                <div class="if">scanf("%d", &tableau[i]);</div>
+                                <div class="if">  }</div></div>
+                            
+                                <div class="if"> int occurrences[TAILLE_TABLEAU] = {0};</div>
+                            
+                                <div class="if">// Trouver le nombre d'occurrences de chaque élément</div>
+                                <div class="if">   for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                    <div class="if">int element = tableau[i];</div>
+                                    <div class="if">occurrences[element]++;</div>
+                                    <div class="if">}</div></div>
+                            
+                                    <div class="if"> // Afficher le nombre d'occurrences de chaque élément</div>
+                                    <div class="if">   printf("Occurrences des éléments :\n");</div>
+                                    <div class="if">   for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                        <div class="if"> if (occurrences[i] > 0) {
+                                            <div class="if">printf("%d : %d\n", i, occurrences[i]);</div>
+                                            <div class="if">}</div></div>
+                                            <div class="if"> }</div></div>
+                            
+                                            <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf pour demander à l'utilisateur de saisir les éléments du tableau. Ensuite, nous créons un tableau occurrences pour stocker le nombre d'occurrences de chaque élément. En parcourant le tableau initial, nous augmentons le compteur correspondant à chaque élément dans le tableau occurrences. Enfin, nous affichons le nombre d'occurrences de chaque élément à l'écran.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrivez un programme python pour saisir le côté d'un triangle équilatéral et trouvez la surface du triangle donné.
+                    <div class="images"><img src="sur.PNG" alt=""></div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            #define TAILLE_TABLEAU 10<br>
+                            
+                            int main() {
+                                <div class="if">char tableau[TAILLE_TABLEAU];</div>
+                                <div class="if">int nombreVoyelles = 0;</div>
+                            
+                                <div class="if"> printf("Saisissez %d caractères pour le tableau :\n", TAILLE_TABLEAU);</div>
+                                <div class="if"> for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                    <div class="if">printf("Caractère %d : ", i + 1);</div>
+                                        <div class="if"> scanf(" %c", &tableau[i]);</div>
+                                        <div class="if"> }</div></div>
+                            
+                                        <div class="if">for (int i = 0; i < TAILLE_TABLEAU; i++) {
+                                            <div class="if">char caractere = tableau[i];</div>
+                                            <div class="if"> if (caractere == 'a' || caractere == 'e' || caractere == 'i' || caractere == 'o' || caractere == 'u' ||
+                                        caractere == 'A' || caractere == 'E' || caractere == 'I' || caractere == 'O' || caractere == 'U') {
+                                            <div class="if">nombreVoyelles++;</div>
+                                            <div class="if">}</div></div>
+                                            <div class="if"> }</div></div>
+                            
+                                            <div class="if"> printf("Nombre de voyelles dans le tableau : %d\n", nombreVoyelles);</div>
+                            
+                                            <div class="if">  return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf pour demander à l'utilisateur de saisir les caractères du tableau. En parcourant le tableau, nous vérifions si chaque caractère est une voyelle en comparant avec les voyelles minuscules et majuscules. Si un caractère correspond à une voyelle, nous augmentons le compteur nombreVoyelles. Enfin, nous affichons le nombre de voyelles dans le tableau à l'écran.
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Nobody can go back and start a new beginning, but anyone can start today and make a new ending.” – Maria Robinson</div>
+    </div>
+</body>

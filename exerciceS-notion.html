@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_les notion de base</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Notion de base</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire un programme en Python qui demande à l'utilisateur de saisir deux nombres, puis calcule et affiche leur somme.</div>
+                </div>
+                <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                <div class="exemple">Saisissez le premier nombre : 3.5<br>
+                    Saisissez le deuxième nombre : 2.1<br>
+                    La somme de 3.5 et 2.1 est : 5.6</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        nombre1 = float(input("Entrez le premier nombre : "))<br>
+                        nombre2 = float(input("Entrez le deuxième nombre : "))<br>
+                        somme = nombre1 + nombre2<br>
+                        print("La somme de", nombre1, "et", nombre2, "est égale à", somme)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> le programme utilise la fonction input() pour demander à l'utilisateur de saisir deux nombres. La fonction input() permet de recevoir une saisie de l'utilisateur sous forme de chaîne de caractères.
+
+                        Les nombres saisis par l'utilisateur sont stockés dans les variables nombre1 et nombre2. Notez que nous utilisons float(input(...)) pour convertir la saisie en nombres décimaux (flottants) afin de permettre des calculs plus précis.<br>
+                        <div class="spider"></div>
+                        <div class="er">Ensuite,</div> le programme effectue la somme des deux nombres en utilisant l'opérateur d'addition +. Le résultat est stocké dans la variable somme.<br>
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> le programme utilise la fonction print() pour afficher le résultat de la somme à l'écran. La phrase affichée indique la somme des deux nombres saisis par l'utilisateur.</div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Ecrire un programme en Python qui permet à l'utilisateur de saisir deux nombres réels, puis affiche leur produit .</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                <div class="exemple">Entrez le premier nombre réel : 2.5<br>
+                    Entrez le deuxième nombre réel : 3.2<br>
+                    Le produit de 2.5 et 3.2 est égal à 8.0</div>
+                <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        nombre1 = float(input("Entrez le premier nombre réel : "))<br>
+                        nombre2 = float(input("Entrez le deuxième nombre réel : "))<br>
+                        produit = nombre1 * nombre2<br>
+                        print("Le produit de", nombre1, "et", nombre2, "est égal à", produit)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise la fonction input() pour demander à l'utilisateur de saisir deux nombres réels. La fonction input() renvoie une chaîne de caractères représentant la saisie de l'utilisateur.
+                         Les nombres saisis par l'utilisateur sont ensuite convertis en nombres réels (flottants) en utilisant la fonction float(). Cela permet d'assurer que les nombres peuvent avoir des parties décimales.               
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div> le programme effectue le calcul du produit des deux nombres en utilisant l'opérateur de multiplication *. Le résultat est stocké dans la variable produit.
+
+                        .<br>
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Enfin, le programme utilise la fonction print() pour afficher le résultat du produit des deux nombres à l'écran. La phrase affichée indique le produit des deux nombres saisis par l'utilisateur.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Ecrire un programme Python qui demande à l'utilisateur de saisir son nom et prénom, puis affiche le message "Welcome, prénom nom"</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez votre prénom : John<br>
+                    Entrez votre nom : Doe<br>
+                    Welcome, John Doe</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        prenom = input("Entrez votre prénom : ")<br>
+                        nom = input("Entrez votre nom : ")<br>
+
+                        message = "Welcome, " + prenom + " " + nom<br>
+                        print(message)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme utilise la fonction input() pour demander à l'utilisateur de saisir son prénom et nom. Les saisies sont ensuite stockées dans les variables prenom et nom.               
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme construit le message de bienvenue en concaténant les différentes parties avec l'opérateur +. Le prénom, le nom et les espaces sont combinés pour former la chaîne de caractères "Welcome, prénom nom".<br>
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le message est affiché à l'écran en utilisant la fonction print().
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Ecrire un programme Python qui demande a l’utilisateur les deux côtés d’un rectangle , puis calcule le périmètre de ce rectangle puis les affiche.
+                        <br>perimetre = 2 * (longueur + largeur)</div>
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Entrez la longueur du rectangle : 5.2<br>
+                        Entrez la largeur du rectangle : 3.8<br>
+                        Le périmètre du rectangle est : 18.0</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        longueur = float(input("Entrez la longueur du rectangle : "))<br>
+                        largeur = float(input("Entrez la largeur du rectangle : "))<br>
+
+                        perimetre = 2 * (longueur + largeur)<br>
+                        print("Le périmètre du rectangle est :", perimetre)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme demande à l'utilisateur de saisir la longueur et la largeur du rectangle en utilisant la fonction input(). Les valeurs saisies sont ensuite converties en nombres réels (flottants) à l'aide de float().
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme utilise la fonction print() pour afficher le périmètre du rectangle à l'écran.               
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise la fonction print() pour afficher le périmètre du rectangle à l'écran.               
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrivez un programme python pour saisir le nombre de jours de l'utilisateur et convertissez-le en années, semaines et jours.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Entrez le nombre de jours : 456<br>
+                        Le nombre de jours correspond à : 1 années, 15 semaines et 6 jours.</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        jours = int(input("Entrez le nombre de jours : "))<br>
+
+                        annees = jours // 365<br>
+                        jours_restants = jours % 365<br>
+                        semaines = jours_restants // 7<br>
+                        jours_final = jours_restants % 7<br>
+                        
+                        print("Le nombre de jours correspond à :", annees, "années,", semaines, "semaines et", jours_final, "jours.")<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme utilise la fonction input() pour demander à l'utilisateur de saisir un nombre de jours. La valeur saisie est ensuite convertie en nombre entier à l'aide de int().
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   le programme effectue les calculs pour convertir les jours en années, semaines et jours.<ul><li>La division entière jours // 365 donne le nombre d'années complètes dans le nombre total de jours.</li><li>Le reste de la division jours % 365 donne le nombre de jours restants après avoir compté les années complètes.</li><li>La division entière jours_restants // 7 donne le nombre de semaines complètes dans les jours restants.
+                        </li><li>Le reste de la division jours_restants % 7 donne le nombre de jours restants après avoir compté les semaines complètes.
+                        </li></ul>               
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise la fonction print() pour afficher le résultat en indiquant le nombre d'années, de semaines et de jours correspondant.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Ecrire un programme Python qui lit trois entiers, calcule puis affiche leur moyenne. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Entrez le premier entier : 10<br>
+                        Entrez le deuxième entier : 15<br>
+                        Entrez le troisième entier : 20<br>
+                        La moyenne des trois entiers est : 15.0</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        nombre1 = int(input("Entrez le premier entier : "))<br>
+                        nombre2 = int(input("Entrez le deuxième entier : "))<br>
+                        nombre3 = int(input("Entrez le troisième entier : "))<br>
+                        moyenne = (nombre1 + nombre2 + nombre3) / 3<br>
+                        print("La moyenne des trois entiers est :", moyenne)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise la fonction input() pour demander à l'utilisateur de saisir trois entiers. Chaque entier est saisi séparément à l'aide de trois appels à la fonction input(). Les valeurs saisies sont ensuite converties en nombres entiers à l'aide de int() pour permettre des opérations mathématiques.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme calcule la moyenne des trois entiers en les additionnant et en divisant le total par 3. La formule (nombre1 + nombre2 + nombre3) / 3 réalise cette opération. Le résultat est stocké dans la variable moyenne.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise la fonction print() pour afficher la moyenne des trois entiers à l'écran. Le message "La moyenne des trois entiers est :" est affiché suivi de la valeur de la variable moyenne.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrire un programme Python qui lit deux nombres en entrée à partir de l'utilisateur, puis calcule et affiche leur puissance <div class=""></div>
+                </div>
+                <div class="solution">EXEMPLE D'EXECUTION :</div>
+                <div class="exemple">base = float(input("Entrez la base : "))<br>
+                    exposant = float(input("Entrez l'exposant : "))<br>
+                    puissance = base ** exposant<br>
+                    print("La puissance est :", puissance)</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        base = float(input("Entrez la base : "))<br>
+                        exposant = float(input("Entrez l'exposant : "))<br>
+                        puissance = base ** exposant<br>
+                        print("La puissance est :", puissance)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise la fonction input() pour demander à l'utilisateur de saisir deux nombres : la base et l'exposant. Les valeurs saisies sont ensuite converties en nombres réels (flottants) à l'aide de float(). Cette conversion permet de s'assurer que les nombres peuvent contenir des valeurs décimales.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme calcule la puissance en utilisant l'opérateur **. L'expression base ** exposant élève la base à la puissance de l'exposant. Par exemple, si la base est 2 et l'exposant est 3, le résultat sera 2^3, soit 8. La valeur calculée est ensuite stockée dans la variable puissance.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise la fonction print() pour afficher la puissance calculée à l'écran. Le message "La puissance est :" est affiché suivi de la valeur de la variable puissance.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrivez un programme pour saisir un nombre et calculer sa racine carrée.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">
+                        Entrez un nombre : 16<br>
+La racine carrée de 16.0 est : 4.0
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        import math<br>
+                        nombre = float(input("Entrez un nombre : "))<br>
+                         racine_carree = math.sqrt(nombre)<br>
+                        print("La racine carrée de", nombre, "est :", racine_carree)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise l'instruction import math pour importer le module mathématique math. Ce module fournit des fonctions mathématiques avancées, y compris la fonction sqrt() qui permet de calculer la racine carrée d'un nombre.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme utilise la fonction input() pour demander à l'utilisateur de saisir un nombre. L'entrée de l'utilisateur est stockée dans la variable nombre. Pour permettre les calculs avec des valeurs décimales, la valeur saisie est convertie en nombre réel (flottant) à l'aide de float().
+
+                        Le programme utilise la fonction math.sqrt() pour calculer la racine carrée du nombre saisi. La fonction sqrt() prend le nombre en argument et renvoie sa racine carrée. Le résultat est stocké dans la variable racine_carree.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>le programme utilise la fonction print() pour afficher le résultat à l'écran. Le message "La racine carrée de <nombre> est :" est affiché, suivi de la valeur de la racine carrée calculée. La fonction print() concatène les valeurs en les séparant par des virgules.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrivez un programme pour saisir deux angles de l'utilisateur et trouver le troisième angle du triangle.<br>a+b+c=180
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier angle : 45<br>
+                        Entrez le deuxième angle : 60<br>
+                        Le troisième angle est : 75.0</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        angle1 = float(input("Entrez le premier angle : "))<br>
+                        angle2 = float(input("Entrez le deuxième angle : "))<br>
+                        angle3 = 180 - (angle1 + angle2)<br>
+                        print("Le troisième angle est :", angle3)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise la fonction input() pour demander à l'utilisateur de saisir deux angles du triangle : angle1 et angle2. Les valeurs saisies sont ensuite converties en nombres réels (flottants) à l'aide de float(). Cette conversion permet de s'assurer que les angles peuvent contenir des valeurs décimales.
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   le programme calcule le troisième angle en soustrayant la somme des deux angles donnés à 180 degrés. Comme la somme des angles d'un triangle est toujours égale à 180 degrés, le troisième angle peut être obtenu en soustrayant la somme des deux angles donnés à 180. L'expression 180 - (angle1 + angle2) effectue cette opération et le résultat est stocké dans la variable angle3.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> le programme utilise la fonction print() pour afficher le résultat à l'écran. Le message "Le troisième angle est :" est affiché, suivi de la valeur de la variable angle3.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrivez un programme python pour saisir le côté d'un triangle équilatéral et trouvez la surface du triangle donné.
+                    <div class="images"><img src="sur.PNG" alt=""></div>
+                </div>
+                <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                <div class="exemple">Entrez la longueur du côté du triangle équilatéral : 5<br>
+                    La surface du triangle équilatéral est : 10.825317547305483</div>
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        cote = float(input("Entrez la longueur du côté du triangle équilatéral : "))<br>
+                        surface = (3**0.5 / 4) * cote**2<br>
+                        print("La surface du triangle équilatéral est :", surface)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>cote = float(input("Entrez la longueur du côté du triangle équilatéral : ")) : Cette ligne de code demande à l'utilisateur d'entrer la longueur du côté du triangle équilatéral en affichant le message "Entrez la longueur du côté du triangle équilatéral : ". L'entrée de l'utilisateur est capturée à l'aide de la fonction input(), et puis elle est convertie en nombre à virgule flottante (nombre décimal) à l'aide de float() pour être stockée dans la variable cote.
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  surface = (3**0.5 / 4) * cote**2 : Cette ligne de code calcule la surface du triangle équilatéral. Dans un triangle équilatéral, la formule pour calculer la surface est : surface = (racine carrée de 3 / 4) * côté^2. Ainsi, on élève 3 à la puissance 0.5 pour obtenir la racine carrée de 3 (3**0.5). On divise ensuite le résultat par 4, et multiplie le tout par le carré de la longueur du côté cote**2. Le résultat est stocké dans la variable surface.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> print("La surface du triangle équilatéral est :", surface) : Cette ligne affiche le résultat, c'est-à-dire la surface du triangle équilatéral. Le message "La surface du triangle équilatéral est :" est affiché suivi du résultat du calcul de la surface (stocké dans la variable surface) grâce à la fonction print().
+
+
+                        </div>
+                </div>
+            </div>
+            
+        
+
+        <div class="spiderr"></div>
+        <div class="motivations">
+               <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+               <div class="quotess">“A person who never made a mistake never tried anything new." —Albert Einstein.</div>
+         </div>
+    </div>
+</body>

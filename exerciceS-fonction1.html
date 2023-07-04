@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Les Fonctions</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrire une fonction qui prend deux entiers en entrée et retourne leur somme.
+                              <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int somme(int a, int b) {
+                                <div class="if">return a + b;</div>
+                            }
+                            
+                            int main() {
+                                <div class="if">int x, y;</div>
+                                <div class="if"> printf("Saisissez deux entiers : ");</div>
+                                    <div class="if"> scanf("%d %d", &x, &y);</div>
+                                        <div class="if"> int resultat = somme(x, y);</div>
+                                            <div class="if">  printf("La somme est : %d\n", resultat);</div>
+                                                <div class="if">  return 0;</div>
+                            }  
+                                                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>  La fonction somme prend deux entiers a et b en entrée, les additionne et retourne le résultat.</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce"> Écrire une fonction qui prend un entier en entrée et affiche s'il est pair ou impair.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            void verifierPairImpair(int nombre) {
+                               <div class="if"> if (nombre % 2 == 0) {
+                                <div class="if">printf("%d est un nombre pair.\n", nombre);</div>
+                                <div class="if">}</div></div> 
+                                <div class="if">else {
+                                    <div class="if">printf("%d est un nombre impair.\n", nombre);</div>
+                                    <div class="if">}</div>
+                            }
+                            
+                            int main() {
+                                <div class="if">int n;</div>
+                                <div class="if">printf("Saisissez un entier : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                                <div class="if">verifierPairImpair(n);</div>
+                                <div class="if">return 0;</div>
+                            }
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> La fonction verifierPairImpair prend un entier nombre en entrée et vérifie s'il est pair ou impair en utilisant l'opérateur modulo (%).       </div>
+            </div></div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire une fonction qui prend trois nombres réels en entrée et retourne leur moyenne.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                        
+                            float calculerMoyenne(float a, float b, float c) {
+                                <div class="if">return (a + b + c) / 3;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">float x, y, z;</div>
+                                <div class="if"> printf("Saisissez trois nombres réels : ");</div>
+                                <div class="if">scanf("%f %f %f", &x, &y, &z);</div>
+                                <div class="if"> float resultat = calculerMoyenne(x, y, z);</div>
+                                <div class="if"> printf("La moyenne est : %.2f\n", resultat);</div>
+                                <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> La fonction calculerMoyenne prend trois nombres réels a, b et c en entrée, les additionne et divise le résultat par 3 pour obtenir la moyenne. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce"> Écrire une fonction qui prend une année en entrée et vérifie si elle est bissextile.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                    #include &ltstdio.h&gt<br>
+
+                        int estBissextile(int annee) {
+                            <div class="if">if ((annee % 4 == 0 && annee % 100 != 0) || annee % 400 == 0) {
+                                <div class="if">return 1;</div>
+                                <div class="if">}</div></div>
+                                <div class="if">else {<div class="if">
+                                return 0;</div>
+                                <div class="if">}</div>
+                        }<br>
+                        
+                        int main() {
+                            <div class="if">int an;</div>
+                            <div class="if">printf("Saisissez une année : ");</div>
+                            <div class="if"> scanf("%d", &an);</div>
+                            <div class="if">if (estBissextile(an)) {
+                                <div class="if"> printf("%d est une année bissextile.\n", an);</div>
+                                <div class="if">}</div></div>
+                                <div class="if">else {<div class="if">
+                                printf("%d n'est pas une année bissextile.\n", an);</div>
+                                <div class="if">}</div></div>
+                                <div class="if"> return 0;</div>
+                        }</div>
+
+                    <div class="solution1"> 
+                        
+                      
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction estBissextile prend une année annee en entrée et vérifie si elle est bissextile en appliquant les règles du calendrier grégorien.
+                        </div>
+                </div>
+            </div></div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrire une fonction qui prend un entier en entrée et affiche s'il est positif, négatif ou nul.<div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            void verifierPositifNegatifNul(int nombre) {
+                                <div class="if">if (nombre > 0) {
+                                    <div class="if">printf("%d est un nombre positif.\n", nombre);</div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (nombre < 0) { <div class="if">
+                                    printf("%d est un nombre négatif.\n", nombre);</div>
+                                    <div class="if">}</div></div> 
+                                    <div class="if">else {
+                                        <div class="if">printf("%d est nul.\n", nombre);</div>
+                                        <div class="if">}</div></div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int n;</div>
+                                <div class="if">printf("Saisissez un entier : ");</div>
+                                    <div class="if">scanf("%d", &n);</div>
+                                        <div class="if">verifierPositifNegatifNul(n);</div>
+                                            <div class="if">return 0;</div>
+                            }
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction verifierPositifNegatifNul prend un entier nombre en entrée et vérifie s'il est positif, négatif ou nul en utilisant des instructions conditionnelles. </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> Écrire une fonction qui prend un entier en entrée et retourne sa factorielle.
+                    <div class="solution">SOLUTION :</div>
+                    
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int calculerFactorielle(int n) {
+                                <div class="if">int resultat = 1;</div>
+                                <div class="if">for (int i = 1; i <= n; i++) {
+                                    <div class="if">resultat *= i;</div>
+                                    <div class="if">}</div></div>
+                                    <div class="if">return resultat;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int x;</div>
+                                <div class="if">printf("Saisissez un entier : ");</div>
+                                <div class="if">scanf("%d", &x);</div>
+                                <div class="if">int resultat = calculerFactorielle(x);</div>
+                                <div class="if">printf("La factorielle de %d est : %d\n", x, resultat);</div>
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>
+                    La fonction calculerFactorielle prend un entier n en entrée et calcule sa factorielle en utilisant une boucle for pour multiplier tous les entiers de 1 à n.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire une fonction qui prend un entier en entrée et retourne le nombre de chiffres qu'il contient.</div> 
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int compterChiffres(int nombre) {<div class="if">
+                                int count = 0;</div>
+                                <div class="if">while (nombre != 0) {
+                                    <div class="if">nombre /= 10;</div>
+                                    <div class="if">count++;</div>
+                                    <div class="if">}</div></div>
+                                    <div class="if">return count;</div>
+                                    <div class="if">}</div>
+                            
+                            int main() {
+                                <div class="if">int n;</div>
+                                <div class="if">printf("Saisissez un entier : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                                <div class="if">int chiffres = compterChiffres(n);</div>
+                                <div class="if"> printf("Le nombre de chiffres est : %d\n", chiffres);</div>
+                                <div class="if">return 0;</div>
+                            }
+                            
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>la fonction compterChiffres prend un entier nombre en entrée et divise répétitivement le nombre par 10 jusqu'à ce qu'il devienne 0, en incrémentant un compteur à chaque division.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrire une fonction qui prend deux nombres en entrée et retourne le maximum entre les deux.
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int trouverMaximum(int a, int b) {
+                                <div class="if">if (a > b) {
+                                    <div class="if">return a;</div>
+                                    <div class="if">}</div></div>
+                                    <div class="if">else {</div>
+                                        <div class="if"> return b;</div>
+                                        <div class="if">}</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int x, y;</div>
+                                <div class="if">printf("Saisissez deux nombres : ");</div>
+                                <div class="if">scanf("%d %d", &x, &y);</div>
+                                <div class="if"> int maximum = trouverMaximum(x, y);</div>
+                                    <div class="if"> printf("Le maximum est : %d\n", maximum);</div>
+                                        <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction trouverMaximum prend deux nombres a et b en entrée, puis compare les deux et retourne le plus grand.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui convertit une température donnée en degrés Celsius en degrés Fahrenheit. Le programme demande à l'utilisateur d'entrer une température en Celsius, puis utilise une fonction celsiusVersFahrenheit pour effectuer la conversion et renvoyer la valeur en Fahrenheit. Enfin, le résultat est affiché à l'utilisateur.  <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            float celsiusVersFahrenheit(float celsius) {
+                                <div class="if">return (celsius * 9 / 5) + 32;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">float celsius;</div>
+                                    <div class="if">printf("Entrez la température en degrés Celsius : ");</div>
+                                        <div class="if">scanf("%f", &celsius);</div>
+                                            <div class="if">float fahrenheit = celsiusVersFahrenheit(celsius);</div>
+                                                <div class="if"> printf("La température en degrés Fahrenheit est : %.2f\n", fahrenheit);</div>
+                                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction celsiusVersFahrenheit prend en paramètre un nombre réel celsius représentant la température en degrés Celsius. Elle effectue la conversion en utilisant la formule : Fahrenheit = (Celsius * 9 / 5) + 32. La fonction retourne le résultat de la conversion en Fahrenheit.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">écrire un programme en C qui calcule le carré d'un nombre entier saisi par l'utilisateur. <br><br>Le programme demande à l'utilisateur d'entrer un nombre, puis utilise une fonction carre pour calculer le carré de ce nombre.<br><br> Enfin, le résultat est affiché à l'utilisateur.
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int carre(int nombre) {
+                                <div class="if">return nombre * nombre;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int nombre;</div>
+                                <div class="if">printf("Entrez un nombre : ");</div>
+                                <div class="if">scanf("%d", &nombre);</div>
+                                <div class="if">int resultat = carre(nombre);</div>
+                                <div class="if">printf("Le carré de %d est : %d\n", nombre, resultat);</div>
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> La fonction carre prend en paramètre un nombre entier nombre et retourne le carré de ce nombre en multipliant le nombre par lui-même.   </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.” – Theodore N. Vail
+        </div>
+    </div>
+</body>

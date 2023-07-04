@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+           
+                
+
+            </div>
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Pointeurs</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire  un programme en langage C qui utilise des pointeurs pour lire deux entiers saisis par l'utilisateur et calculer leur somme.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int entier1, entier2;</div>
+                                
+                                <div class="if">printf("Entrez le premier entier : ");</div>
+                                <div class="if">scanf("%d", &entier1);</div>
+                                
+                                <div class="if"> printf("Entrez le deuxième entier : ");</div>
+                                    <div class="if"> scanf("%d", &entier2);</div>
+                                
+                                        <div class="if"> int somme = entier1 + entier2;</div>
+                                
+                                            <div class="if">  printf("La somme des deux entiers est : %d\n", somme);</div>
+                                
+                                                <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> dans ce programme, nous utilisons des pointeurs ptr1 et ptr2 pour stocker les adresses des variables entier1 et entier2. Ensuite, nous utilisons scanf avec les pointeurs pour lire les valeurs saisies par l'utilisateur et les stocker dans les variables correspondantes. Enfin, nous utilisons les opérateurs de déréférencement * pour accéder aux valeurs pointées par les pointeurs et calculer leur somme. Le résultat est ensuite affiché à l'écran.
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour échanger les valeurs de deux variables entières saisies par l'utilisateur.
+
+                        .</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            void echanger(int *a, int *b) {
+                                <div class="if">int temp = *a;</div>
+                                <div class="if">*a = *b;</div>
+                                <div class="if">*b = temp;</div>
+                            }
+                            
+                            int main() {
+                                <div class="if">int nombre1, nombre2;</div>
+                                
+                                <div class="if">printf("Entrez le premier nombre : ");</div>
+                                <div class="if">scanf("%d", &nombre1);</div>
+                                
+                                <div class="if">printf("Entrez le deuxième nombre : ");</div>
+                                <div class="if"> scanf("%d", &nombre2);</div>
+                                
+                                    <div class="if"> printf("Avant l'échange : nombre1 = %d, nombre2 = %d\n", nombre1, nombre2);</div>
+                                
+                                        <div class="if"> // Appel de la fonction pour échanger les valeurs</div>
+                                            <div class="if"> echanger(&nombre1, &nombre2);</div>
+                                
+                                                <div class="if"> printf("Après l'échange : nombre1 = %d, nombre2 = %d\n", nombre1, nombre2);</div>
+                                
+                                                    <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction echanger prend deux pointeurs d'entiers en paramètres et échange les valeurs auxquelles les pointeurs font référence en utilisant une variable temporaire.
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>Dans la fonction main, nous déclarons les variables nombre1 et nombre2 pour stocker les nombres saisis par l'utilisateur.<br><br>Les nombres sont saisis à l'aide de scanf.
+                        <br><br>Avant d'appeler la fonction echanger, nous affichons les valeurs des variables nombre1 et nombre2 pour montrer l'état initial.Nous passons les adresses des variables nombre1 et nombre2 à la fonction echanger en utilisant l'opérateur &..
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Après l'appel de la fonction, nous affichons à nouveau les valeurs des variables nombre1 et nombre2 pour montrer qu'elles ont été échangées.
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise un pointeur pour calculer la longueur d'une chaîne de caractères saisie par l'utilisateur.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int longueurChaine(char *chaine) {
+                                <div class="if">int longueur = 0;</div>
+                                
+                                <div class="if">// Parcourir la chaîne jusqu'au caractère nul ('\0')</div>
+                                <div class="if">while (*chaine != '\0') {
+                                    <div class="if">longueur++;</div>
+                                    <div class="if">chaine++;</div>
+                                }</div>
+                                
+                                <div class="if">return longueur;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                
+                                <div class="if">printf("Entrez une chaine de caracteres : ");</div>
+                                <div class="if">scanf("%s", chaine);</div>
+                                
+                                <div class="if">int longueur = longueurChaine(chaine);</div>
+                                
+                                <div class="if">printf("La longueur de la chaine est : %d\n", longueur);</div>
+                                
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction longueurChaine prend un pointeur vers une chaîne de caractères en paramètre et parcourt la chaîne en incrémentant un compteur de longueur jusqu'à ce qu'elle atteigne le caractère nul ('\0').
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Dans la fonction main, nous déclarons un tableau de caractères chaine pour stocker la chaîne saisie par l'utilisateur.<br><br>La chaîne est saisie à l'aide de scanf.
+                        <br><br>Nous appelons la fonction longueurChaine en passant le pointeur vers le tableau chaine.
+                             <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> La longueur retournée par la fonction est affichée.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour inverser une chaîne de caractères saisie par l'utilisateur.
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            void inverserChaine(char *chaine) {
+                                <div class="if">char *debut = chaine;</div>
+                                <div class="if">char *fin = chaine;</div>
+                                <div class="if">char temp;</div>
+                                
+                                <div class="if">// Trouver la fin de la chaîne</div>
+                                <div class="if">while (*fin != '\0') {
+                                    <div class="if">fin++;</div>
+                                }</div>
+                                <div class="if">fin--; // Exclure le caractère nul</div>
+                                
+                                <div class="if">// Inverser la chaîne en échangeant les caractères</div>
+                                <div class="if">while (debut < fin) {
+                                    <div class="if">temp = *debut;</div>
+                                    <div class="if">*debut = *fin;</div>
+                                    <div class="if">*fin = temp;</div>
+                                    
+                                    <div class="if">debut++;</div>
+                                    <div class="if">fin--;</div>
+                                }</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                
+                                <div class="if">printf("Entrez une chaine de caracteres : ");</div>
+                                <div class="if">scanf("%s", chaine);</div>
+                                
+                                <div class="if">inverserChaine(chaine);</div>
+                                
+                                <div class="if"> printf("La chaine inversée est : %s\n", chaine);</div>
+                                
+                                    <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction inverserChaine prend un pointeur vers une chaîne de caractères en paramètre.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Nous utilisons deux pointeurs debut et fin pour indiquer respectivement le début et la fin de la chaîne.<br><br>Nous trouvons la fin de la chaîne en parcourant la chaîne jusqu'au caractère nul (\0).
+                        <br><br>Ensuite, nous utilisons une boucle pour inverser la chaîne en échangeant les caractères à l'aide de pointeurs.Dans la fonction main, nous déclarons un tableau de caractères chaine pour stocker la chaîne saisie par l'utilisateur. <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Nous appelons la fonction inverserChaine en passant le pointeur vers le tableau chaine.
+                        La chaîne inversée est affichée.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour calculer la somme des éléments d'un tableau d'entiers saisi par l'utilisateur.   <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt
+
+                            int sommeTableau(int *tableau, int taille) {
+                                <div class="if">int somme = 0;</div>
+                                    <div class="if">int *ptr = tableau;</div>
+                                
+                                        <div class="if">for (int i = 0; i < taille; i++) {
+                                            <div class="if">somme += *ptr;</div>
+                                            <div class="if">ptr++;</div>
+                                }</div>
+                                
+                                <div class="if">return somme;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int taille;</div>
+                                
+                                <div class="if">printf("Entrez la taille du tableau : ");</div>
+                                <div class="if">scanf("%d", &taille);</div>
+                                
+                                <div class="if">int tableau[taille];</div>
+                                
+                                <div class="if">printf("Entrez les elements du tableau :\n");</div>
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if">printf("Element %d : ", i + 1);</div>
+                                    <div class="if"> scanf("%d", &tableau[i]);</div>
+                                }</div>
+                                
+                                <div class="if">int somme = sommeTableau(tableau, taille);</div>
+                                
+                                    <div class="if">printf("La somme des elements du tableau est : %d\n", somme);</div>
+                                
+                                        <div class="if">return 0;</div>
+                            }
+                            
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction sommeTableau prend un pointeur vers un tableau d'entiers (int *tableau) et la taille du tableau (int taille) en paramètres.
+                    <div class="spider"></div>Nous déclarons une variable somme pour stocker la somme des éléments et un pointeur ptr pour parcourir le tableau.
+                    <br><br>À l'aide d'une boucle for, nous parcourons le tableau en utilisant le pointeur et ajoutons chaque élément à la somme.La fonction retourne la somme calculée.
+                    <br>Nous demandons à l'utilisateur de saisir les éléments du tableau à l'aide d'une boucle for.
+                    Nous demandons à l'utilisateur de saisir les éléments du tableau à l'aide d'une boucle for.
+                    
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous affichons la somme des éléments du tableau. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour copier les éléments d'un tableau source dans un tableau destination.
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            void copierTableau(int *source, int *destination, int taille) {
+                                <div class="if">int *ptrSource = source;</div>
+                                <div class="if">int *ptrDestination = destination;</div>
+                            
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if">*ptrDestination = *ptrSource;</div>
+                                    <div class="if">ptrSource++;</div>
+                                    <div class="if">ptrDestination++;</div>
+                                }</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int taille;</div>
+                            
+                                <div class="if">printf("Entrez la taille du tableau : ");</div>
+                                <div class="if">scanf("%d", &taille);</div>
+                            
+                                <div class="if">int tableauSource[taille];</div>
+                                <div class="if">int tableauDestination[taille];</div>
+                            
+                                <div class="if">printf("Entrez les elements du tableau source :\n");</div>
+                                <div class="if"> for (int i = 0; i < taille; i++) {
+                                    <div class="if">printf("Element %d : ", i + 1);</div>
+                                    <div class="if">scanf("%d", &tableauSource[i]);</div>
+                                }
+                            
+                                <div class="if">copierTableau(tableauSource, tableauDestination, taille);</div>
+                            
+                                <div class="if">printf("Elements du tableau destination :\n");</div>
+                                for (int i = 0; i < taille; i++) {
+                                    <div class="if">printf("%d ", tableauDestination[i]);</div>
+                                }
+                                <div class="if">printf("\n");</div>
+                            
+                                <div class="if"> return 0;</div>
+                            }
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La fonction copierTableau prend deux pointeurs vers des tableaux d'entiers (int *source et int *destination) ainsi que la taille du tableau (int taille) en paramètres.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Nous déclarons deux pointeurs ptrSource et ptrDestination pour parcourir respectivement le tableau source et le tableau destination.
+
+                        À l'aide d'une boucle for, nous copions chaque élément du tableau source dans le tableau destination en utilisant les pointeurs.
+                        <br>Dans la fonction main, nous demandons à l'utilisateur de saisir la taille du tableau.
+                        Nous déclarons deux tableaux tableauSource et tableauDestination de la taille saisie par l'utilisateur.
+                        Nous appelons la fonction copierTableau en passant les pointeurs vers le tableau source et le tableau destination, ainsi que la taille du tableau.
+                                                <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous affichons les éléments du tableau destination pour vérifier qu'ils ont bien été copiés.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour rechercher la présence d'un élément donné dans un tableau d'entiers saisi par l'utilisateur.
+
+                         <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int rechercherElement(int *tableau, int taille, int element) {
+                                <div class="if">int *ptr = tableau;</div>
+                            
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if">if (*ptr == element) {
+                                        <div class="if">
+                                    return 1; // L'élément est trouvé</div>
+                                    }</div>
+                                    <div class="if">ptr++;</div>
+                                }</div>
+                            
+                                <div class="if">return 0; // L'élément n'est pas trouvé</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int taille, element;</div>
+                            
+                                <div class="if">printf("Entrez la taille du tableau : ");</div>
+                                <div class="if">scanf("%d", &taille);</div>
+                            
+                                <div class="if">int tableau[taille];</div>
+                            
+                                <div class="if">printf("Entrez les elements du tableau :\n");</div>
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if">printf("Element %d : ", i + 1);</div>
+                                        <div class="if">scanf("%d", &tableau[i]);</div>
+                                }</div>
+                            
+                                <div class="if">printf("Entrez l'element a rechercher : ");</div>
+                                <div class="if">scanf("%d", &element);</div>
+                            
+                                <div class="if">if (rechercherElement(tableau, taille, element)) {
+                                    <div class="if">printf("L'element %d est present dans le tableau.\n", element);</div>
+                                }</div> 
+                                <div class="if">else {
+                                    <div class="if">printf("L'element %d n'est pas present dans le tableau.\n", element);</div>
+                                }</div>
+                            
+                                <div class="if">return 0;</div>
+                            }</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>La fonction rechercherElement prend un pointeur vers un tableau d'entiers (int *tableau), la taille du tableau (int taille) et l'élément à rechercher (int element) en paramètres.
+                    </li><li>Nous déclarons un pointeur ptr pour parcourir le tableau.
+                    </li><li>À l'aide d'une boucle for, nous comparons chaque élément du tableau avec l'élément recherché en utilisant le pointeur.
+                    </li><li>Si l'élément est trouvé, nous renvoyons 1 pour indiquer sa présence.
+                    </li><li>Si la boucle se termine sans trouver l'élément, nous renvoyons 0 pour indiquer son absence.
+                    </li><li>Dans la fonction main, nous demandons à l'utilisateur de saisir la taille du tableau.
+                    </li><li>Nous déclarons un tableau tableau de la taille saisie par l'utilisateur.
+                    </li><li>Nous demandons à l'utilisateur de saisir les éléments du tableau à l'aide d'une boucle for.
+                    </li><li>Nous demandons également à l'utilisateur de saisir l'élément à rechercher.
+                    </li><li>Nous appelons la fonction rechercherElement en passant le pointeur vers le tableau, la taille du tableau et l'élément à rechercher.
+                    </li><li>Nous appelons la fonction rechercherElement en passant le pointeur vers le tableau, la taille du tableau et l'élément à rechercher.
+                    </li><li>En fonction du résultat retourné par la fonction, nous affichons un message indiquant si l'élément est présent ou non dans le tableau.
+                    </li></ul>
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour trier un tableau d'entiers saisi par l'utilisateur dans l'ordre croissant.
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            void trierTableau(int *tableau, int taille) {
+                                <div class="if">int *ptr1, *ptr2;</div>
+                                    <div class="if">int temp;</div>
+                            
+                                        <div class="if">for (int i = 0; i < taille - 1; i++) {
+                                            <div class="if">  ptr1 = tableau;</div>
+                            
+                                                <div class="if"> for (int j = i + 1; j < taille; j++) {
+                                                    <div class="if">    ptr2 = tableau + j;</div>
+                            
+                                                        <div class="if">    if (*ptr1 > *ptr2) {
+                                                            <div class="if"> temp = *ptr1;</div>
+                                                                <div class="if"> *ptr1 = *ptr2;</div>
+                                                                    <div class="if">*ptr2 = temp;</div>
+                                                                    }</div>
+                                                                    <div class="if"> ptr1++;</div>
+                                    }</div>
+                                }</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int taille;</div>
+                            
+                                <div class="if">printf("Entrez la taille du tableau : ");</div>
+                                <div class="if"> scanf("%d", &taille);</div>
+                            
+                                    <div class="if">int tableau[taille];</div>
+                            
+                                        <div class="if">printf("Entrez les elements du tableau :\n");</div>
+                                            <div class="if">for (int i = 0; i < taille; i++) {
+                                                <div class="if">printf("Element %d : ", i + 1);</div>
+                                                    <div class="if"> scanf("%d", &tableau[i]);</div>
+                                }</div>
+                            
+                                <div class="if">trierTableau(tableau, taille);</div>
+                            
+                                <div class="if"> printf("Tableau trie dans l'ordre croissant :\n");</div>
+                                    <div class="if"> for (int i = 0; i < taille; i++) {
+                                        <div class="if"> printf("%d ", tableau[i]);</div>
+                                }</div>
+                                <div class="if">printf("\n");</div>
+                            
+                                <div class="if"> return 0;</div>
+                            }</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>La fonction trierTableau prend un pointeur vers un tableau d'entiers (int *tableau) et la taille du tableau (int taille) en paramètres.
+                    </li><li>Nous déclarons deux pointeurs ptr1 et ptr2 pour parcourir le tableau et effectuer les comparaisons.
+                    </li><li>À l'aide de deux boucles for, nous comparons chaque élément du tableau avec tous les éléments qui le suivent.
+                    </li><li>Si un élément est trouvé plus grand que celui qui suit, nous échangeons leur position en utilisant les pointeurs.
+                    </li><li>Nous utilisons l'opérateur de déréférencement (*) pour accéder aux valeurs pointées par les pointeurs.
+                    </li><li>Dans la fonction main, nous demandons à l'utilisateur de saisir la taille du tableau.
+                    </li><li>Nous déclarons un tableau tableau de la taille saisie par l'utilisateur.
+                    </li><li>Nous demandons à l'utilisateur de saisir les éléments du tableau à l'aide d'une boucle for.
+                    </li><li>Nous appelons la fonction trierTableau en passant le pointeur vers le tableau et la taille du tableau. Nous affichons le tableau trié dans l'ordre croissant en parcourant les éléments du tableau à l'aide d'une autre boucle for. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme en C qui utilise des pointeurs pour allouer dynamiquement de la mémoire pour un tableau d'entiers saisi par l'utilisateur.
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include &ltstdlib.h&gt<br>
+                            
+                            int main() {
+                                <div class="if">int taille;</div>
+                            
+                                <div class="if">printf("Entrez la taille du tableau : ");</div>
+                                <div class="if">scanf("%d", &taille);</div>
+                            
+                                <div class="if">int *tableau = (int*) malloc(taille * sizeof(int));</div>
+                            
+                                <div class="if">if (tableau == NULL) {
+                                    <div class="if">printf("Erreur d'allocation de mémoire.\n");</div>
+                                    <div class="if">return 1;</div>
+                                }</div>
+                            
+                                <div class="if">printf("Entrez les éléments du tableau :\n");</div>
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if"> printf("Élément %d : ", i + 1);</div>
+                                        <div class="if">scanf("%d", &tableau[i]);</div>
+                                }</div>
+                            
+                                <div class="if">printf("Tableau saisi :\n");</div>
+                                <div class="if">for (int i = 0; i < taille; i++) {
+                                    <div class="if">printf("%d ", tableau[i]);</div>
+                                }</div>
+                                <div class="if">printf("\n");</div>
+                            
+                                <div class="if">free(tableau);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+
+
+
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>Nous demandons à l'utilisateur de saisir la taille du tableau.
+                    </li><li>Nous utilisons la fonction malloc pour allouer dynamiquement de la mémoire pour le tableau en utilisant la taille saisie multipliée par la taille d'un entier (sizeof(int)).
+                    </li><li>Nous vérifions si l'allocation de mémoire a réussi en vérifiant si le pointeur tableau est égal à NULL. Si c'est le cas, une erreur d'allocation de mémoire s'est produite et nous affichons un message d'erreur.
+                    </li><li>Sinon, nous demandons à l'utilisateur de saisir les éléments du tableau en utilisant une boucle for.
+                    </li><li>Ensuite, nous affichons les éléments saisis du tableau.
+                    </li><li>Enfin, nous utilisons la fonction free pour libérer la mémoire allouée dynamiquement pour le tableau.
+                    </li></ul>
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrire un programme C qui utilise des pointeurs pour trouver l'élément maximum dans un tableau d'entiers saisi par l'utilisateur.
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int findMax(int *array, int size) {
+                                <div class="if">int max = *array;  // Initialize max with the first element of the array</div>
+                                
+                                <div class="if">for (int i = 1; i < size; i++) {
+                                    <div class="if"> if (*(array + i) > max) { 
+                                        <div class="if">max = *(array + i);   // Update max if a larger element is found</div>
+                                    }</div>
+                                }</div>
+                                
+                                <div class="if">return max;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">int size;</div>
+                                
+                                <div class="if">printf("Enter the size of the array: ");</div>
+                                <div class="if">scanf("%d", &size);</div>
+                                
+                                <div class="if">int array[size];</div>
+                                
+                                <div class="if">printf("Enter the elements of the array:\n");</div>
+                                <div class="if">for (int i = 0; i < size; i++) {
+                                    <div class="if">scanf("%d", &array[i]);</div>
+                                }</div>
+                                
+                                <div class="if">int max = findMax(array, size);</div>
+
+                                
+                                <div class="if">printf("The maximum element in the array is: %d\n", max);</div>
+                                
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>Le programme demande à l'utilisateur d'entrer la taille du tableau.
+                    </li><li>Un tableau d'entiers, tableau, est déclaré avec la taille donnée par l'utilisateur.
+                    </li><li>L'utilisateur est invité à entrer les éléments du tableau.
+                    </li><li>La fonction trouverMaximum est définie pour trouver l'élément maximum dans le tableau en utilisant des pointeurs.
+                    </li><li>Un pointeur tableau est passé à la fonction, ainsi que la taille du tableau.
+                    </li><li>Une variable maximum est initialisée avec la valeur du premier élément du tableau.
+                    </li><li>Une boucle est utilisée pour parcourir le reste du tableau en utilisant des pointeurs.
+                    </li><li>Si l'élément pointé est plus grand que le maximum actuel, la valeur maximale est mise à jour.
+                    </li><li>Une fois le parcours terminé, la fonction renvoie le maximum trouvé.
+                    </li><li>Dans la fonction main, la fonction trouverMaximum est appelée en passant le tableau et sa taille, et le résultat est stocké dans la variable maximum.
+                    </li><li>
+                    Le maximum est ensuite affiché à l'écran.
+                    </li></ul>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“By perseverance, the snail reached the ark.” – Charles Spurgeon
+        </div>
+    </div>
+</body>

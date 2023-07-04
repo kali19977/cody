@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Boucles</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour afficher tous les nombres naturels de 1 à n en utilisant la boucle for .
+                    </div><div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 7<br>
+                        Les nombres naturels de 1 à 7 sont :<br>
+                        1 2 3 4 5 6 7</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int n;</div>
+                            
+                                <div class="if"> printf("Entrez un nombre entier positif : ");</div>
+                                    <div class="if"> scanf("%d", &n);</div>
+                            
+                                        <div class="if"> printf("Les nombres naturels de 1 à %d sont :\n", n);</div>
+                            
+                                        <div class="if">// Boucle for pour afficher les nombres de 1 à n</div>
+                                        <div class="if">for (int i = 1; i <= n; i++) {
+                                            <div class="if"> printf("%d ", i);</div></div>
+                                            <div class="if">}</div>
+                            
+                                            <div class="if">printf("\n");</div>
+                            
+                                            <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier positif n. Ensuite, nous utilisons une boucle for qui s'exécute de 1 à n. À chaque itération de la boucle, nous affichons la valeur de la variable i, qui correspond au nombre naturel en cours. Enfin, nous utilisons l'instruction printf() pour afficher une nouvelle ligne à la fin de l'affichage des nombres.   </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C pour afficher tous les nombres pairs de 1 à n en utilisant les boucles.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 10<br>
+                        Les nombres pairs de 1 à 10 sont :<br>
+                        2 4 6 8 10</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int n;</div>
+                            
+                                <div class="if">printf("Entrez un nombre entier positif : ");</div>
+                             <div class="if">scanf("%d", &n);</div>
+                            
+                             <div class="if">  printf("Les nombres pairs de 1 à %d sont :\n", n);</div>
+                            
+                                  <div class="if">  // Boucle for pour afficher les nombres pairs de 1 à n</div>
+                                  <div class="if">for (int i = 2; i <= n; i += 2) {
+                                    <div class="if">printf("%d ", i);</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">printf("\n");</div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+                        
+                               </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier positif n. Ensuite, nous utilisons une boucle for qui s'exécute de 2 à n avec un pas de 2, ce qui nous permet de n'afficher que les nombres pairs. À chaque itération de la boucle, nous affichons la valeur de la variable i, qui correspond au nombre pair en cours. Enfin, nous utilisons l'instruction printf() pour afficher une nouvelle ligne à la fin de l'affichage des nombres.  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C pour afficher tous les nombres impairs de 1 à n en utilisant les boucles .
+
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 10<br>
+                        Les nombres impairs de 1 à 10 sont :<br>
+                        1 3 5 7 9</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int n;</div>
+                            
+                                <div class="if">printf("Entrez un nombre entier positif : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                            
+                                <div class="if"> printf("Les nombres impairs de 1 à %d sont :\n", n);</div>
+                            
+                                    <div class="if"> // Boucle for pour afficher les nombres impairs de 1 à n</div>
+                                    <div class="if">for (int i = 1; i <= n; i += 2) {
+                                        <div class="if">printf("%d ", i);</div></div>
+                                        <div class="if">}</div>
+                            
+                                        <div class="if">printf("\n");</div>
+                            
+                                        <div class="if">return 0;</div>
+                            }
+                          
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier positif n. Ensuite, nous utilisons une boucle for qui s'exécute de 1 à n avec un pas de 2, ce qui nous permet de n'afficher que les nombres impairs. À chaque itération de la boucle, nous affichons la valeur de la variable i, qui correspond au nombre impair en cours. Enfin, nous utilisons l'instruction printf() pour afficher une nouvelle ligne à la fin de l'affichage des nombres.  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour determiner la somme de tous les nombres naturels entre 0 et n en utilisant les boucles.
+                    </div>
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez un nombre entier positif : 5<br>
+                            La somme des nombres naturels de 0 à 5 est : 15</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int n;</div>
+                                <div class="if">int somme = 0;</div>
+                            
+                                <div class="if">printf("Entrez un nombre entier positif : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                            
+                                <div class="if">// Boucle for pour calculer la somme des nombres naturels</div>
+                                <div class="if">for (int i = 0; i <= n; i++) {<div class="if">
+                                    somme += i;</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">printf("La somme des nombres naturels de 0 à %d est : %d\n", n, somme);
+                            
+                                    </div><div class="if"> return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier positif n. Ensuite, nous déclarons une variable somme initialisée à 0 pour stocker la somme des nombres. Nous utilisons une boucle for qui s'exécute de 0 à n. À chaque itération de la boucle, nous ajoutons la valeur de i à la variable somme. À la fin de la boucle, la variable somme contient la somme des nombres naturels de 0 à n. Enfin, nous utilisons l'instruction printf() pour afficher le résultat.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui lit un entier puis détermine s’il est premier ou non.<br>
+                        On rappelle qu’un entier est dit premier s’il a exactement deux diviseurs différents :  1 et lui-même.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez un nombre entier : 17<br>
+                            17 est un nombre premier.</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            int main() {
+                                <div class="if">int nombre;</div>
+                                <div class="if">int estPremier = 1; // Variable pour indiquer si le nombre est premier ou non
+                                </div>
+                                <div class="if">printf("Entrez un nombre entier : ");</div>
+                                <div class="if">scanf("%d", &nombre);</div>
+                            
+                                <div class="if"> // Vérification si le nombre est premier</div>
+                                <div class="if">for (int i = 2; i <= nombre / 2; i++) {
+                                    <div class="if">if (nombre % i == 0) {
+                                        <div class="if">estPremier = 0; // Le nombre n'est pas premier</div>
+                                        <div class="if">break;</div></div>
+                                </div>
+                                <div class="if"> }</div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">// Affichage du résultat</div>
+                                    <div class="if">if (estPremier == 1) {
+                                        <div class="if">printf("%d est un nombre premier.\n", nombre);</div></div>
+                                        <div class="if">}</div> 
+                                        <div class="if">else {
+                                            <div class="if">printf("%d n'est pas un nombre premier.\n", nombre);</div></div>
+                                            <div class="if">}</div>
+                            
+                                            <div class="if"> return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier. Ensuite, nous initialisons une variable estPremier à 1 pour indiquer que le nombre est initialement considéré comme premier. Nous utilisons une boucle for pour vérifier si le nombre est divisible par d'autres nombres que 1 et lui-même. Si c'est le cas, cela signifie que le nombre n'est pas premier et nous mettons la variable estPremier à 0. Si aucun diviseur n'est trouvé, le nombre est considéré comme premier. Enfin, nous utilisons l'instruction printf() pour afficher le résultat.
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> Ecrire un programme en C qui lit un entier puis affiche tous les nombres premiers qui lui sont inférieurs. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 20<br>
+                        Les nombres premiers inférieurs à 20 sont : 2 3 5 7 11 13 17 19</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if"> int entier, i, j, estPremier;</div>
+                            
+                                    <div class="if"> printf("Entrez un entier : ");</div>
+                                        <div class="if"> scanf("%d", &entier);</div>
+                            
+                                            <div class="if">  printf("Les nombres premiers inférieurs à %d sont : ", entier);
+                                            </div>
+                                            <div class="if">for (i = 2; i < entier; i++) {<div class="if">
+                                    estPremier = 1; // Supposons que le nombre est premier</div>
+                            
+                                    <div class="if">for (j = 2; j < i; j++) {<div class="if">
+                                        if (i % j == 0) {
+                                            <div class="if">estPremier = 0; // Le nombre n'est pas premier</div>
+                                            <div class="if">break;</div>
+                                        }</div>
+                                    }</div>
+                            
+                                    <div class="if">if (estPremier) {
+                                        <div class="if"> printf("%d ", i);</div>
+                                            <div class="if">}</div></div>
+                                }</div>
+                            
+                                <div class="if">printf("\n");</div>
+                            
+                                <div class="if">return 0;</div>
+                            }     
+                    </div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons une boucle for pour parcourir tous les nombres de 2 à entier-1. Pour chaque nombre, nous utilisons une autre boucle for pour vérifier s'il est premier. Nous divisons le nombre par tous les nombres de 2 à nombre-1 et si une division exacte est trouvée, cela signifie que le nombre n'est pas premier et nous sortons de la boucle. Si aucune division exacte n'est trouvée, le nombre est premier et nous l'affichons à l'aide de l'instruction printf().
+
+<br><br>Ainsi, le programme affiche tous les nombres premiers inférieurs à l'entier saisi par l'utilisateur.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui lit un entier n, puis il affiche tous les entiers de n jusqu’à 0 sur une seule ligne et séparés par des espaces. <br>par exmple,supposons que n=3 alors le programme  va afficher: 3 2 1 0 .
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 10<br>
+                        Les entiers de 10 à 0 sont : 10 9 8 7 6 5 4 3 2 1 0</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h>&gt<br>
+
+                            int main() {
+                                <div class="if">int n, i;</div>
+                            
+                                <div class="if">printf("Entrez un entier : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                            
+                                <div class="if">printf("Les entiers de %d à 0 sont : ", n);</div>
+                            
+                                <div class="if">for (i = n; i >= 0; i--) {
+                                    <div class="if">printf("%d ", i);</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">printf("\n");</div>
+                            
+                                        <div class="if">return 0;</div>
+                            } </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons une boucle for pour afficher les entiers de n jusqu'à 0. La variable i est initialisée avec la valeur de n, puis à chaque itération de la boucle, nous décrémentons i d'une unité jusqu'à ce qu'il atteigne 0. À chaque itération, nous affichons la valeur de i suivie d'un espace à l'aide de l'instruction printf(). Finalement, nous affichons une nouvelle ligne pour séparer les résultats.
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour saisir un nombre de l'utilisateur et recherchez le premier et le dernier chiffre d'un nombre en utilisant une boucle.<br>par exemple: Si n=1254 alors:<div clas="if">le premier chiffre = 1
+                    </div>le dernier chiffre = 4</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre : 123456789<br>
+                        Le premier chiffre est : 1<br>
+                        Le dernier chiffre est : 9</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int nombre, premierChiffre, dernierChiffre;</div>
+                            
+                                <div class="if">printf("Entrez un nombre : ");</div>
+                                <div class="if">scanf("%d", &nombre);</div>
+                            
+                                <div class="if"> premierChiffre = dernierChiffre = nombre;</div>
+                            
+                                    <div class="if"> // Trouver le premier chiffre</div>
+                            
+                                    <div class="if">while (premierChiffre >= 10) {
+                                        <div class="if">premierChiffre /= 10;</div></div>
+                                        <div class="if"> }</div>
+                            
+                                        <div class="if">// Trouver le dernier chiffre</div>
+                                            <div class="if">dernierChiffre %= 10;</div>
+                            
+                                                <div class="if">printf("Le premier chiffre est : %d\n", premierChiffre);</div>
+                                                    <div class="if">printf("Le dernier chiffre est : %d\n", dernierChiffre);</div>
+                                <div class="if">
+                                return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons une boucle while pour trouver le premier chiffre en divisant le nombre par 10 jusqu'à ce qu'il devienne inférieur à 10. À chaque itération, nous mettons à jour la valeur de premierChiffre. Ensuite, nous utilisons l'opérateur modulo % pour obtenir le dernier chiffre en le divisant par 10 et en récupérant le reste. Finalement, nous affichons les valeurs du premier et du dernier chiffre à l'aide de l'instruction printf().
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui saisit un nombre et calculer la somme de ses chiffres en utilisant la boucle for.<br>Exemple:si n=1254 alors la somme vaut: 12=1+2+5+4
+                        
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int n, somme = 0;</div>
+                            
+                                <div class="if">printf("Saisir un nombre : ");</div>
+                                <div class="if">scanf("%d", &n);</div>
+                            
+                                <div class="if">while (n != 0) {
+                                    <div class="if">somme += n % 10;</div>
+                                    <div class="if">n = n / 10;</div>
+                                    <div class="if">}</div></div>
+                            
+                                    <div class="if">printf("La somme des chiffres = %d\n", somme);</div>
+                            
+                                        <div class="if">return 0;</div>
+                            }
+
+                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre entier. Ensuite, à l'aide d'une boucle while, nous itérons tant que n est différent de zéro. À chaque itération, nous ajoutons le chiffre le plus à droite de n à la variable somme en utilisant l'opérateur de modulo %, puis nous mettons à jour n en le divisant par 10 pour éliminer ce chiffre. Enfin, nous affichons la somme des chiffres à l'aide de printf().  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour saisir un entier et vérifiez si il est parfait ou non.<br><div class="if1">Un nombre parfait est un entier positif qui est égal à la somme de tous ses diviseurs positifs, à l'exception de lui-même. En d'autres termes, la somme de tous les diviseurs propres d'un nombre parfait est égale à ce nombre.<br>Par exemple, le nombre 6 est considéré comme un nombre parfait car la somme de ses diviseurs propres (1, 2 et 3) est égale à 6.<br>
+                        Un nombre parfait est donc un nombre pour lequel la somme de ses diviseurs propres est égale à lui-même.</div>
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 28<br>
+                        28 est un nombre parfait</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                               <div class="if"> int n, somme = 0;</div>
+                            
+                                <div class="if"> printf("Entrez un entier : ");</div>
+                                    <div class="if"> scanf("%d", &n);</div>
+                            
+                                    <div class="if">for (int i = 1; i < n; i++) {
+                                        <div class="if">if (n % i == 0) {<div class="if">
+                                        somme += i;</div>
+                                    }</div>
+                                }</div>
+                            
+                                <div class="if">if (somme == n) {
+                                    <div class="if">printf("%d est un nombre parfait\n", n);</div>
+                                } </div>
+                                <div class="if">else {
+                                    <div class="if">printf("%d n'est pas un nombre parfait\n", n);</div>
+                                }</div>
+                            
+                                <div class="if">return 0;</div>
+                            }     
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer un entier. Ensuite, à l'aide d'une boucle for, nous itérons de 1 à n - 1 et vérifions si n est divisible par i en utilisant l'opérateur de modulo %. Si oui, nous ajoutons i à la variable somme. Enfin, nous comparons somme avec n pour déterminer si n est un nombre parfait et affichons le résultat à l'aide de printf().
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Success isn’t overnight. It’s when every day you get a little better than the day before. It all adds up.” – Dwayne Johnson        </div>
+    </div>
+</body>

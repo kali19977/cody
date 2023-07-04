@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_ensemble</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+        
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Ensemble</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux ensembles d'entiers, puis effectue les opérations suivantes :<ul><li>Affiche l'ensemble union des deux ensembles.
+                    </li><li>Affiche l'ensemble intersection des deux ensembles.
+                    </li><li>Affiche l'ensemble différence entre le premier et le deuxième ensemble.
+                    </li><li>Affiche l'ensemble différence symétrique entre les deux ensembles.
+                    </li></ul>  </div> 
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez le premier ensemble d'entiers (séparés par des espaces) : 1 2 3 4
+                        <br> Saisissez le deuxième ensemble d'entiers (séparés par des espaces) : 3 4 5 6
+                        <br> Union des deux ensembles : {1, 2, 3, 4, 5, 6}
+                        <br> Intersection des deux ensembles : {3, 4}
+                        <br> Différence entre le premier et le deuxième ensemble : {1, 2}
+                         Différence symétrique entre les deux ensembles : {1, 2, 5, 6}</div>                       <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir deux ensembles d'entiers<br>
+                        set1_str = input("Saisissez le premier ensemble d'entiers (séparés par des espaces) : ")<br>
+                        set2_str = input("Saisissez le deuxième ensemble d'entiers (séparés par des espaces) : ")<br>
+                        set1_list = [int(x) for x in set1_str.split()]<br>
+                        set2_list = [int(x) for x in set2_str.split()]<br>
+
+                        # Convertit les listes en ensembles<br>
+                        set1 = set(set1_list)<br>
+                        set2 = set(set2_list)<br>
+
+                        # Affiche l'ensemble union<br>
+                        union = set1.union(set2)<br>
+                        print("Union des deux ensembles :", union)<br>
+
+                        # Affiche l'ensemble intersection<br>
+                        intersection = set1.intersection(set2)<br>
+                        print("Intersection des deux ensembles :", intersection)<br>
+
+                        # Affiche l'ensemble différence (premier ensemble - deuxième ensemble)<br>
+                        difference = set1.difference(set2)<br>
+                        print("Différence entre le premier et le deuxième ensemble :", difference)<br>
+
+                        # Affiche l'ensemble différence symétrique<br>
+                        symmetric_difference = set1.symmetric_difference(set2)<br>
+                        print("Différence symétrique entre les deux ensembles :", symmetric_difference)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> on demande à l'utilisateur de saisir les ensembles d'entiers sous forme de chaînes de caractères. Les chaînes de caractères sont ensuite divisées en listes d'entiers en utilisant la méthode split() et une compréhension de liste. Ensuite, les listes d'entiers sont converties en ensembles à l'aide de la fonction set(). Les opérations sur les ensembles et l'affichage des résultats restent les mêmes que dans la version précédente.
+            </div>
+                    </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir un ensemble d'entiers, puis affiche la somme de tous les éléments de l'ensemble.</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez un ensemble d'entiers (séparés par des espaces) : 1 2 3 4 5
+                 <br>       La somme des éléments de l'ensemble : 15</div>
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir un ensemble d'entiers<br>
+set_str = input("Saisissez un ensemble d'entiers (séparés par des espaces) : ")<br>
+
+# Convertit la chaîne de caractères en liste d'entiers<br>
+set_list = [int(x) for x in set_str.split()]<br>
+
+# Calcule la somme des éléments de l'ensemble<br>
+sum_set = sum(set_list)<br>
+
+# Affiche la somme<br>
+print("La somme des éléments de l'ensemble :", sum_set)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On commence par demander à l'utilisateur de saisir un ensemble d'entiers. L'ensemble est saisi sous la forme d'une chaîne de caractères contenant les entiers séparés par des espaces.  
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Ensuite, on utilise la méthode split() pour diviser la chaîne de caractères en une liste de sous-chaînes, où chaque sous-chaîne correspond à un entier saisi.<br>On utilise une compréhension de liste pour convertir chaque sous-chaîne en un entier.<br>La liste d'entiers obtenue est utilisée pour créer un ensemble en utilisant la fonction set().
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> on calcule la somme des éléments de l'ensemble à l'aide de la fonction sum() et on l'affiche à l'écran.
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux ensembles d'entiers, puis affiche une nouvelle liste contenant les éléments communs aux deux ensembles.
+
+                    </div>  
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez le premier ensemble d'entiers (séparés par des espaces) : 1 2 3 4 5
+                       <br> Saisissez le deuxième ensemble d'entiers (séparés par des espaces) : 3 4 5 6 7
+                       <br> Éléments communs aux deux ensembles : [3, 4, 5]</div>
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir deux ensembles d'entiers<br>
+set1_str = input("Saisissez le premier ensemble d'entiers (séparés par des espaces) : ")<br>
+set2_str = input("Saisissez le deuxième ensemble d'entiers (séparés par des espaces) : ")<br>
+
+# Convertit les chaînes de caractères en listes d'entiers<br>
+set1_list = [int(x) for x in set1_str.split()]<br>
+set2_list = [int(x) for x in set2_str.split()]<br>
+
+# Convertit les listes en ensembles<br>
+set1 = set(set1_list)<br>
+set2 = set(set2_list)<br>
+
+# Crée une nouvelle liste contenant les éléments communs aux deux ensembles<br>
+common_elements = list(set1.intersection(set2))<br>
+
+# Affiche la nouvelle liste<br>
+print("Éléments communs aux deux ensembles :", common_elements)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir les deux ensembles d'entiers. Chaque ensemble est saisi sous la forme d'une chaîne de caractères contenant les entiers séparés par des espaces.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  On utilise la méthode split() pour diviser chaque chaîne de caractères en une liste de sous-chaînes, où chaque sous-chaîne correspond à un entier saisi.<br>On utilise une compréhension de liste pour convertir chaque sous-chaîne en un entier.<br>Les deux listes d'entiers obtenues sont converties en ensembles à l'aide de la fonction set().
+                        <br>On utilise la méthode intersection() pour trouver les éléments communs aux deux ensembles.
+                        <br>Les éléments communs sont convertis en une liste à l'aide de la fonction list().
+                            <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> La nouvelle liste contenant les éléments communs est affichée à l'écran.</div>
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir un ensemble de mots, puis affiche le mot le plus long de l'ensemble.</div>
+                </div>
+                <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                <div class="exemple">Saisissez un ensemble de mots (séparés par des espaces) : chat chien oiseau éléphant
+                 <br>   Le mot le plus long de l'ensemble : éléphant</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir un ensemble de mots<br>
+set_str = input("Saisissez un ensemble de mots (séparés par des espaces) : ")<br>
+
+# Convertit la chaîne de caractères en liste de mots<br>
+set_list = set_str.split()<br>
+
+# Trouve le mot le plus long de l'ensemble<br>
+longest_word = max(set_list, key=len)<br>
+
+# Affiche le mot le plus long<br>
+print("Le mot le plus long de l'ensemble :", longest_word)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir un ensemble de mots. Les mots sont saisis sous la forme d'une chaîne de caractères contenant les mots séparés par des espaces.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> On utilise la méthode split() pour diviser la chaîne de caractères en une liste de mots.
+                        <br>
+                        On utilise la fonction max() avec le paramètre key=len pour trouver le mot le plus long dans la liste de mots. La fonction max() compare les mots en se basant sur leur longueur.    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Le mot le plus long est affiché à l'écran.
+             
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Saisir deux ensembles de mots, puis à afficher une nouvelle liste contenant les mots présents dans le premier ensemble mais pas dans le deuxième.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Saisir les mots de l'ensemble 1 (séparés par des espaces) : chat chien oiseau
+                           <br> Saisir les mots de l'ensemble 2 (séparés par des espaces) : chien oiseau lion
+                          <br>  Mots présents dans l'ensemble 1 mais pas dans l'ensemble 2 :
+                            ['chat']</div>
+                            <div class="solution">SOLUTION :</div>
+
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir les deux ensembles de mots<br>
+ensemble1 = input("Saisir les mots de l'ensemble 1 (séparés par des espaces) : ")<br>
+ensemble2 = input("Saisir les mots de l'ensemble 2 (séparés par des espaces) : ")<br>
+
+# Conversion des chaînes de caractères en listes de mots<br>
+mots_ensemble1 = ensemble1.split()<br>
+mots_ensemble2 = ensemble2.split()<br>
+
+# Conversion des listes de mots en ensembles<br>
+ensemble_mots1 = set(mots_ensemble1)<br>
+ensemble_mots2 = set(mots_ensemble2)<br>
+
+# Recherche des mots présents dans le premier ensemble mais pas dans le deuxième<br>
+difference = ensemble_mots1 - ensemble_mots2<br>
+
+# Conversion de l'ensemble de différence en une liste<br>
+liste_difference = list(difference)<br>
+
+# Affichage de la liste de différence<br>
+print("Mots présents dans l'ensemble 1 mais pas dans l'ensemble 2 :")<br>
+print(liste_difference)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir les deux ensembles de mots en utilisant la fonction input(). Les mots sont saisis sous la forme d'une chaîne de caractères, où les mots sont séparés par des espaces.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   On utilise la méthode split() pour diviser chaque chaîne de caractères en une liste de mots.
+                        <br>Les listes de mots obtenues sont converties en ensembles à l'aide de la fonction set().
+                        <br>On utilise l'opérateur de différence - pour trouver les mots présents dans le premier ensemble mais pas dans le deuxième.
+                        <br>L'ensemble de différence est converti en une liste à l'aide de la fonction list().
+                        
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> La liste de différence est affichée à l'écran à l'aide de la fonction print().
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un ensemble de mots, puis affiche une nouvelle liste contenant les mots en majuscules. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Saisir les mots de l'ensemble (séparés par des espaces) : chien chat oiseau
+                          <br>  Mots en majuscules :
+                            ['CHIEN', 'CHAT', 'OISEAU']</div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir un ensemble de mots<br>
+ensemble = set(input("Saisir les mots de l'ensemble (séparés par des espaces) : ").split())<br>
+
+# Convertit tous les mots en majuscules<br>
+mots_majuscules = [mot.upper() for mot in ensemble]<br>
+
+# Affiche la liste des mots en majuscules<br>
+print("Mots en majuscules :")<br>
+print(mots_majuscules)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">en effet,</div>utilisateur est invité à saisir un ensemble de mots.
+                        <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Les mots saisis sont convertis en ensemble Python à l'aide de la fonction set() et de la méthode split() pour séparer les mots.
+                        <br>Une compréhension de liste est utilisée pour créer une nouvelle liste contenant les mots en majuscules à l'aide de la méthode upper().
+                        
+                         <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> La liste des mots en majuscules est affichée à l'aide de la fonction print().
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un ensemble de mots, puis affiche une nouvelle liste contenant la longueur de chaque mot.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Saisissez un ensemble de nombres (séparés par des espaces) : 5.3 2.1 7.8 1.9
+                           <br> Liste des nombres triés : [1.9, 2.1, 5.3, 7.8]</div>
+                           <div class="solution">SOLUTION :</div>
+
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir un ensemble de nombres<br>
+ensemble = input("Saisissez un ensemble de nombres (séparés par des espaces) : ")<br>
+
+# Convertit les nombres en une liste de nombres flottants<br>
+nombres = [float(x) for x in ensemble.split()]<br>
+
+# Trie la liste de nombres par ordre croissant<br>
+nombres_tries = sorted(nombres)<br>
+
+# Affiche la liste des nombres triés<br>
+print("Liste des nombres triés :", nombres_tries)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir un ensemble de nombres.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Les nombres saisis sont convertis en une liste de nombres flottants à l'aide de la fonction float() et de la méthode split().<br>
+                        La fonction sorted() est utilisée pour trier la liste de nombres dans l'ordre croissant.     <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  La liste de nombres triés est affichée à l'aide de la fonction print().
+                    </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux ensembles de nombres, puis affiche une nouvelle liste contenant les nombres communs aux deux ensembles.
+                    </div>  
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez les nombres de l'ensemble 1 (séparés par des espaces) : 1 2 3 4 5
+                            <br>Saisissez les nombres de l'ensemble 2 (séparés par des espaces) : 3 4 5 6 7
+                            <br>Nombres communs aux deux ensembles : ['3', '4', '5']</div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir les deux ensembles de nombres<br>
+                        ensemble1 = input("Saisissez les nombres de l'ensemble 1 (séparés par des espaces) : ")<br>
+                        ensemble2 = input("Saisissez les nombres de l'ensemble 2 (séparés par des espaces) : ")<br>
+                        
+                        # Convertit les chaînes de caractères en ensembles de nombres<br>
+                        nombres1 = set(ensemble1.split())<br>
+                        nombres2 = set(ensemble2.split())<br>
+                        
+                        # Trouve les nombres communs aux deux ensembles<br>
+                        nombres_communs = list(nombres1 & nombres2)<br>
+                        
+                        # Affiche la liste des nombres communs<br>
+                        print("Nombres communs aux deux ensembles :", nombres_communs)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir deux ensembles de nombres.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>Les ensembles sont convertis en ensembles Python à l'aide de la fonction set() et de la méthode split() pour séparer les nombres.
+                        <br>En utilisant l'opérateur &, les nombres communs aux deux ensembles sont trouvés.
+                           <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> La liste des mots inversés est affichée à l'aide de la fonction print().
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un ensemble de mots, puis affiche une nouvelle liste contenant les mots inversés.
+                    </div> 
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez un ensemble de mots (séparés par des espaces) : bonjour monde python
+                          <br>  Liste des mots inversés : ['ruojnob', 'ednom', 'nohtyp']</div>
+
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Demande à l'utilisateur de saisir un ensemble de mots<br>
+                        ensemble = input("Saisissez un ensemble de mots (séparés par des espaces) : ")<br>
+                        
+                        # Convertit les mots en une liste<br>
+                        mots = ensemble.split()<br>
+                        
+                        # Crée une nouvelle liste contenant les mots inversés<br>
+                        mots_inverses = [mot[::-1] for mot in mots]<br>
+                        
+                        # Affiche la liste des mots inversés<br>
+                        print("Liste des mots inversés :", mots_inverses)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir un ensemble de mots.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   Les mots saisis sont convertis en une liste à l'aide de la méthode split().
+                        <br>Une compréhension de liste est utilisée pour créer une nouvelle liste contenant les mots inversés à l'aide de la méthode [::-1].
+                               <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  La liste des mots inversés est affichée à l'aide de la fonction print().
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un ensemble de nombres, puis affiche une nouvelle liste contenant les nombres qui sont multiples de 3.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Saisissez un ensemble de nombres (séparés par des espaces) : 10 15 20 25 30 35
+                       <br> Nombres multiples de 3 : [15, 30]</div>
+                       <div class="solution">SOLUTION :</div>
+
+
+                        <div class="solution1"> 
+                            # Demande à l'utilisateur de saisir un ensemble de nombres (séparés par des espaces)<br>
+                            nums_input = input("Saisissez un ensemble de nombres (séparés par des espaces) : ")<br>
+                            
+                            # Convertit la chaîne de caractères en une liste de nombres<br>
+                            nums_list = [int(num) for num in nums_input.split()]<br>
+                            
+                            # Crée une nouvelle liste contenant les nombres multiples de 3<br>
+                            multiples_of_3 = [num for num in nums_list if num % 3 == 0]<br>
+                            
+                            # Affiche la liste des nombres multiples de 3<br>
+                            print("Nombres multiples de 3 :", multiples_of_3)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons à l'utilisateur de saisir un ensemble de nombres sous forme de chaîne de caractères. Ensuite, nous utilisons la méthode split() pour diviser cette chaîne en une liste de nombres individuels. Ensuite, nous utilisons une compréhension de liste pour filtrer les nombres qui sont multiples de 3 en utilisant l'opérateur de modulo %. Enfin, nous affichons la liste des nombres multiples de 3.
+                        
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.”
+
+            ― Pelé, 
+            </div>
+    </div>
+</body>

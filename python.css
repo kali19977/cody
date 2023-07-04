@@ -1,0 +1,160 @@
+.centered1{
+    color:black;
+    height:18000px;
+    padding:180px 70px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 1250px;
+}
+.quotes{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    
+}
+.quotes i{
+    margin-right: 21px;
+    font-size: 90px;
+    color:rgb(5, 104, 104);
+
+}
+.titreg{
+    display:flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 35px 0px;
+    color:beige;
+    font-size: 41px;
+    width:290px;
+    border-radius: 15px;
+    margin-left:320px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.titre1{
+    color:rgb(165, 42, 69);
+    text-decoration: underline;
+}
+.enonce{
+    font-size: 40px;
+    margin-left: 19px;
+    width: 83%;
+}
+.solution ,.explication{
+    color:rgb(19, 121, 36);
+    font-size:32px;
+    margin-top: 10px;
+    margin-bottom:10px;
+
+}
+.solution1{
+    background-color: aquamarine;
+    margin-left: 25px;
+    font-size: 25px;
+    padding:15px 15px;
+    line-height: 45px;
+    margin-bottom: 15px;
+    width: 80.5%;
+}
+.explication1{
+    font-size: 25px;
+    line-height: 45px;
+    width:84%;
+}
+.er{
+    color:blueviolet;
+    display:inline-flex;
+}
+.spider{
+    height:19px;
+}
+.exercice img{
+    width: 60%;
+    height:60%;
+}
+.spiderr{
+    height: 80px;
+}
+.quotess{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color:rgb(218, 18, 141);
+
+
+}
+.iconis i{
+    font-size: 180px;
+    color:aqua;
+    margin-left: 550px;
+    margin-bottom: 28px;
+}
+.quotess {
+    margin-left: 320px;
+}
+.if{
+    margin-left: 30px;
+}
+.if1{
+    margin-top:50px;
+    color:rgb(85, 4, 71);
+    font-weight: 700;
+}
+.t123{
+    display:flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 35px 0px;
+    color:beige;
+    font-size: 41px;
+    width:350px;
+    border-radius: 15px;
+    margin-left:320px;
+    font-family: 'Dancing Script', cursive;
+}
+.centered12 {
+    background-image: url(foods.PNG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    color:beige;
+    padding: 230px 63px;
+}
+.intro{
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(253, 85, 19);
+    margin-bottom: 35px;
+}
+.para1 , .exer{
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin-left: 80px;
+    color:rgb(255, 255, 255);
+    
+}
+.exer{
+    margin-top: 20px;
+    color: aqua;
+    font-size: 36px;
+
+}
+.exer a{
+    color:rgb(226, 43, 128);
+    font-weight: 700;
+}
+.exer a:hover{
+    color:rgb(226, 241, 7);
+    transition: 0.2s;
+}
+.exemple{
+    background-color: rgb(165, 153, 42);
+    padding: 10px 10px;
+    font-size: 30px;
+    margin-top: 10px;
+    width: 85%;
+}

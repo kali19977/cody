@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+           
+           
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Dictionnaire</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrire un programme qui crée un dictionnaire vide et y ajoute des clés et des valeurs à partir des entrées de l'utilisateur. Le programme devrait demander à l'utilisateur de saisir une clé et une valeur, puis ajouter cette paire clé-valeur au dictionnaire. L'utilisateur peut continuer à ajouter des paires clé-valeur tant qu'il le souhaite.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez une clé (ou 'q' pour quitter) : nom<br>
+                        Saisissez une valeur : John<br>
+                        Saisissez une clé (ou 'q' pour quitter) : âge<br>
+                        Saisissez une valeur : 30<br>
+                        Saisissez une clé (ou 'q' pour quitter) : q<br>
+                        Dictionnaire final : {'nom': 'John', 'âge': '30'}</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Création d'un dictionnaire vide<br>
+dictionnaire = {}<br>
+
+while True:<br>
+   <div class="if"> # Demande à l'utilisateur de saisir une clé</div>
+   <div class="if">cle = input("Saisissez une clé (ou 'q' pour quitter) : ")</div>
+    
+   <div class="if"># Vérifie si l'utilisateur souhaite quitter</div>
+   <div class="if">if cle == 'q':<div class="if">break</div></div>
+        
+    
+   <div class="if"># Demande à l'utilisateur de saisir une valeur</div>
+    <div class="if">valeur = input("Saisissez une valeur : ")</div>
+    
+    <div class="if"># Ajoute la paire clé-valeur au dictionnaire</div>
+    <div class="if">dictionnaire[cle] = valeur</div>
+
+# Affiche le dictionnaire final<br>
+print("Dictionnaire final :", dictionnaire)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme crée un dictionnaire vide et entre dans une boucle while qui continue tant que l'utilisateur ne saisit pas 'q' comme clé. À chaque itération, l'utilisateur est invité à saisir une clé et une valeur. La paire clé-valeur est ensuite ajoutée au dictionnaire à l'aide de l'opérateur d'indexation. Une fois que l'utilisateur quitte la boucle, le dictionnaire final est affiché.
+
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire contenant des noms d'étudiants et leurs notes, et qui calcule la note moyenne de la classe.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">La note moyenne de la classe est : 85.0
+                    </div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Dictionnaire des noms et des notes des étudiants<br>
+dictionnaire_notes = {<div class="if">
+    <div class="if"> 'Alice': 80,</div>
+        <div class="if"> 'Bob': 75,</div>
+            <div class="if"> 'Charlie': 90,</div>
+                <div class="if"> 'David': 85,</div>
+                    <div class="if"> 'Eve': 95</div>
+}<br>
+
+# Calcul de la note moyenne<br>
+somme_notes = sum(dictionnaire_notes.values())<br>
+nombre_etudiants = len(dictionnaire_notes)<br>
+moyenne_classe = somme_notes / nombre_etudiants<br>
+
+# Affichage de la note moyenne<br>
+print("La note moyenne de la classe est :", moyenne_classe)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction sum() pour calculer la somme des notes en utilisant les valeurs du dictionnaire (dictionnaire_notes.values()). Ensuite, nous obtenons le nombre d'étudiants en utilisant la fonction len() sur le dictionnaire.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>Ensuite, nous effectuons le calcul de la moyenne en divisant la somme des notes par le nombre d'étudiants. Le résultat est stocké dans la variable moyenne_classe.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous affichons la note moyenne de la classe en utilisant la fonction print().
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire contenant des mots et leurs fréquences, et qui trouve le mot le plus fréquent dans le dictionnaire.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Combien de mots voulez-vous ajouter au dictionnaire ? 4<br>
+                        Saisissez un mot : chat<br>
+                        Saisissez la fréquence du mot : 10<br>
+                        Saisissez un mot : chien<br>
+                        Saisissez la fréquence du mot : 15<br>
+                        Saisissez un mot : oiseau<br>
+                        Saisissez la fréquence du mot : 5<br>
+                        Saisissez un mot : poisson<br>
+                        Saisissez la fréquence du mot : 12<br>
+                        Le mot le plus fréquent est : chien</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Saisie du dictionnaire des mots et de leurs fréquences par l'utilisateur<br>
+dictionnaire_frequences = {}<br>
+n = int(input("Combien de mots voulez-vous ajouter au dictionnaire ? "))<br>
+
+for i in range(n):<br>
+    <div class="if">mot = input("Saisissez un mot : ")</div>
+    <div class="if">frequence = int(input("Saisissez la fréquence du mot : "))</div>
+    <div class="if">dictionnaire_frequences[mot] = frequence</div>
+
+# Recherche du mot le plus fréquent<br>
+mot_plus_frequent = ''<br>
+frequence_max = 0<br>
+
+for mot, frequence in dictionnaire_frequences.items():<br>
+<div class="if">if frequence > frequence_max:
+    <div class="if">mot_plus_frequent = mot</div>
+        <div class="if"> frequence_max = frequence</div></div>
+
+# Affichage du mot le plus fréquent<br>
+print("Le mot le plus fréquent est :", mot_plus_frequent)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons d'abord à l'utilisateur de saisir le nombre de mots qu'il souhaite ajouter au dictionnaire. Ensuite, à l'aide d'une boucle, nous demandons à l'utilisateur de saisir chaque mot et sa fréquence, et nous ajoutons ces paires clé-valeur dans le dictionnaire dictionnaire_frequences.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Ensuite, nous itérons à travers les paires clé-valeur du dictionnaire pour trouver le mot le plus fréquent, de la même manière que dans l'exemple précédent. Enfin, nous affichons le mot le plus fréquent à l'aide de la fonction print().
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> l'utilisateur peut créer son propre dictionnaire en saisissant les mots et les fréquences, puis trouver le mot le plus fréquent dans ce dictionnaire.    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée deux dictionnaires et les fusionne en un seul dictionnaire. <br>Si une clé existe dans les deux dictionnaires, la valeur correspondante dans le dictionnaire final devrait être la concaténation des valeurs des deux dictionnaires.
+
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Combien de clés voulez-vous ajouter au premier dictionnaire ? 3<br>
+                        Saisissez une clé : nom<br>
+                        Saisissez une valeur : Alice<br>
+                        Saisissez une clé : âge<br>
+                        Saisissez une valeur : 25<br>
+                        Saisissez une clé : pays<br>
+                        Saisissez une valeur : France
+                        
+                        Combien de clés voulez-vous ajouter au deuxième dictionnaire ? 2
+                        Saisissez une clé : ville
+                        Saisissez une valeur : Paris
+                        Saisissez une clé : profession
+                        Saisissez une valeur : Ingénieur
+                        
+                        Dictionnaire fusionné : {'nom': 'Alice', 'âge': '25', 'pays': 'France', 'ville': 'Paris', 'profession': 'Ingénieur'}</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Saisie du premier dictionnaire par l'utilisateur<br>
+dict1 = {}<br>
+n1 = int(input("Combien de clés voulez-vous ajouter au premier dictionnaire ? "))<br>
+
+for i in range(n1):<br>
+    <div class="if">cle = input("Saisissez une clé : ")</div>
+        <div class="if">valeur = input("Saisissez une valeur : ")</div>
+            <div class="if">dict1[cle] = valeur</div>
+
+# Saisie du deuxième dictionnaire par l'utilisateur<br>
+dict2 = {}<br>
+n2 = int(input("Combien de clés voulez-vous ajouter au deuxième dictionnaire ? "))
+
+for i in range(n2):<br>
+<div class="if">cle = input("Saisissez une clé : ")</div>
+    <div class="if"> valeur = input("Saisissez une valeur : ")</div>
+        <div class="if"> dict2[cle] = valeur</div>
+
+# Fusion des deux dictionnaires<br>
+dict_fusionne = dict1.copy()<br>
+
+for cle, valeur in dict2.items():<br>
+<div class="if"> if cle in dict_fusionne:<div class="if">
+        dict_fusionne[cle] += valeur</div></div>
+        <div class="if">else:<div class="if">
+        dict_fusionne[cle] = valeur</div></div>
+
+# Affichage du dictionnaire fusionné<br>
+print("Dictionnaire fusionné :", dict_fusionne)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous demandons d'abord à l'utilisateur de saisir le premier dictionnaire en indiquant le nombre de clés qu'il souhaite ajouter. Ensuite, à l'aide d'une boucle, nous demandons à l'utilisateur de saisir chaque clé et sa valeur, et nous ajoutons ces paires clé-valeur dans le dictionnaire dict1.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Nous répétons ensuite le même processus pour le deuxième dictionnaire, en demandant à l'utilisateur de saisir les clés et les valeurs et en les ajoutant dans le dictionnaire dict2.
+
+                        <br> nous créons un nouveau dictionnaire dict_fusionne en copiant le premier dictionnaire dict1 à l'aide de la méthode copy(). Ensuite, nous itérons à travers les paires clé-valeur du deuxième dictionnaire dict2. Si une clé existe déjà dans le dictionnaire fusionné, nous concaténons la valeur existante avec la nouvelle valeur. Sinon, nous ajoutons simplement la clé et la valeur dans le dictionnaire fusionné.
+                        
+                              <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous affichons le dictionnaire fusionné à l'aide de la fonction print().
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrire un programme qui compte le nombre d'occurrences de chaque lettre dans une chaîne de caractères et stocke les résultats dans un dictionnaire.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez une chaîne de caractères : Hello World!<br>
+
+                        Occurrences des lettres dans la chaîne :<br>
+                        h : 1<br>
+                        e : 1<br>
+                        l : 3<br>
+                        o : 2<br>
+                        w : 1<br>
+                        r : 1<br>
+                        d : 1</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Saisie de la chaîne de caractères par l'utilisateur<br>
+chaine = input("Saisissez une chaîne de caractères : ")<br>
+
+# Création d'un dictionnaire vide pour stocker les résultats<br>
+occurrences = {}<br>
+
+# Parcours de chaque caractère de la chaîne<br>
+for caractere in chaine:<div class="if">
+    # Vérification si le caractère est une lettre</div>
+    <div class="if"> if caractere.isalpha():
+        <div class="if"># Conversion en minuscule pour normaliser les lettres</div>
+        <div class="if">caractere = caractere.lower()</div>
+        <div class="if"># Incrémentation du compteur pour le caractère correspondant</div>
+        <div class="if">occurrences[caractere] = occurrences.get(caractere, 0) + 1</div></div>
+
+# Affichage des résultats<br>
+print("Occurrences des lettres dans la chaîne :")<br>
+for lettre, count in occurrences.items():<br>
+<div class="if">print(lettre, ":", count)</div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons à l'utilisateur de saisir une chaîne de caractères à l'aide de la fonction input(). Ensuite, nous créons un dictionnaire vide occurrences pour stocker les résultats.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Nous parcourons ensuite chaque caractère de la chaîne à l'aide d'une boucle for. À chaque itération, nous vérifions si le caractère est une lettre en utilisant la méthode isalpha(). Si c'est le cas, nous convertissons le caractère en minuscule pour normaliser les lettres, afin de considérer les lettres majuscules et minuscules comme identiques.
+
+                        <br>Ensuite, nous utilisons la méthode get() pour récupérer la valeur actuelle du compteur pour le caractère correspondant dans le dictionnaire occurrences. Si le caractère n'existe pas encore dans le dictionnaire, la méthode get() renvoie la valeur par défaut 0. Nous incrémentons ensuite le compteur pour le caractère en ajoutant 1 à la valeur récupérée ou 0 si le caractère n'existait pas encore dans le dictionnaire.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous affichons les résultats en parcourant les paires clé-valeur du dictionnaire occurrences à l'aide d'une boucle for, et nous affichons chaque lettre et son nombre d'occurrences.
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire de mots et leurs définitions, et qui permet à l'utilisateur de rechercher une définition en saisissant un mot. Le programme devrait afficher la définition correspondante si elle existe, sinon afficher un message d'erreur.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez un mot (ou 'q' pour quitter) : apple<br>
+                        Saisissez la définition du mot : A fruit that grows on trees.<br>
+                        Saisissez un mot (ou 'q' pour quitter) : banana<br>
+                        Saisissez la définition du mot : A long curved fruit with a yellow peel.<br>
+                        Saisissez un mot (ou 'q' pour quitter) : orange<br>
+                        Saisissez la définition du mot : A round citrus fruit with a tough orange skin.<br>
+                        Saisissez un mot (ou 'q' pour quitter) : q<br>
+                        Saisissez le mot que vous souhaitez rechercher : banana<br>
+                        Définition : A long curved fruit with a yellow peel.</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Création d'un dictionnaire vide<br>
+dictionnaire = {}<br>
+
+# Saisie des mots et de leurs définitions par l'utilisateur<br>
+while True:
+    <div class="if">mot = input("Saisissez un mot (ou 'q' pour quitter) : ")</div>
+        <div class="if">if mot == 'q':<div class="if">
+        break</div></div>
+        <div class="if">definition = input("Saisissez la définition du mot : ")</div>
+            <div class="if">dictionnaire[mot] = definition</div>
+
+# Recherche d'une définition<br>
+mot_recherche = input("Saisissez le mot que vous souhaitez rechercher : ")<br>
+if mot_recherche in dictionnaire:<br>
+<div class="if">definition = dictionnaire[mot_recherche]</div>
+    <div class="if"> print("Définition :", definition)</div>
+else:<div class="if">
+    print("Aucune définition trouvée pour ce mot.")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous commençons par créer un dictionnaire vide dictionnaire où nous stockerons les mots et leurs définitions.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Ensuite, nous utilisons une boucle while True pour permettre à l'utilisateur de saisir les mots et leurs définitions. À chaque itération de la boucle, nous demandons à l'utilisateur de saisir un mot. S'il saisit 'q', la boucle se termine et nous passons à l'étape suivante. Sinon, nous lui demandons de saisir la définition du mot, puis nous ajoutons cette paire clé-valeur au dictionnaire.
+
+                        <br>Après avoir terminé la saisie des mots et des définitions, nous demandons à l'utilisateur de saisir un mot à rechercher dans le dictionnaire.
+                        
+                        <br>Nous utilisons ensuite une condition if pour vérifier si le mot recherché est présent dans le dictionnaire en utilisant l'opérateur in. Si c'est le cas, nous accédons à la valeur correspondante à l'aide de la clé mot_recherche et l'affichons comme définition. Sinon, nous affichons un message d'erreur indiquant qu'aucune définition n'a été trouvée pour le mot saisi.      <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  ce programme permet à l'utilisateur de saisir un dictionnaire de mots et de leurs définitions, puis de rechercher une définition en saisissant un mot.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire contenant des noms de pays et leurs populations, et qui trouve le pays avec la population la plus élevée.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez le nom d'un pays (ou 'q' pour quitter) : France<br>
+                        Saisissez la population du pays : 67000000<br>
+                        Saisissez le nom d'un pays (ou 'q' pour quitter) : Chine<br>
+                        Saisissez la population du pays : 1400000000<br>
+                        Saisissez le nom d'un pays (ou 'q' pour quitter) : États-Unis<br>
+                        Saisissez la population du pays : 330000000<br>
+                        Saisissez le nom d'un pays (ou 'q' pour quitter) : q<br>
+                        Le pays avec la population la plus élevée est Chine<br>
+                        Population : 1400000000</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        # Saisie du dictionnaire de pays et de populations par l'utilisateur<br>
+pays_populations = {}<br>
+while True:<div class="if">
+    pays = input("Saisissez le nom d'un pays (ou 'q' pour quitter) : ")</div>
+    <div class="if">if pays == 'q':<div class="if">break</div>
+    <div class="if">population = int(input("Saisissez la population du pays : "))</div>
+    <div class="if">pays_populations[pays] = population</div>
+
+# Recherche du pays avec la population la plus élevée<br>
+pays_plus_peuple = None<br>
+population_max = 0<br>
+for pays, population in pays_populations.items():
+<div class="if">if population > population_max:<div class="if">
+        population_max = population</div>
+        <div class="if">pays_plus_peuple = pays</div>
+
+# Affichage du pays avec la population la plus élevée<br>
+if pays_plus_peuple is not None:
+<div class="if">print("Le pays avec la population la plus élevée est", pays_plus_peuple)</div>
+    <div class="if">print("Population :", population_max)</div>
+else:
+<div class="if">print("Aucun pays saisi.")</div>
+                    </div></div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous commençons par créer un dictionnaire vide pays_populations où nous stockerons les noms de pays et leurs populations.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme calcule la puissance en utilisant l'opérateur **. L'expression base ** exposant élève la base à la puissance de l'exposant. Par exemple, si la base est 2 et l'exposant est 3, le résultat sera 2^3, soit 8. La valeur calculée est ensuite stockée dans la variable puissance.
+<br>Après avoir terminé la saisie des pays et des populations, nous initialisons les variables pays_plus_peuple et population_max à None et 0 respectivement. Ces variables seront utilisées pour stocker le nom du pays avec la population la plus élevée et sa population correspondante.
+
+<br>Ensuite, nous utilisons une boucle for pour parcourir tous les éléments du dictionnaire pays_populations. Pour chaque pays et population, nous comparons la population avec la valeur de population_max. Si la population est supérieure à population_max, nous mettons à jour les valeurs de population_max et pays_plus_peuple avec les nouvelles valeurs.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous vérifions si pays_plus_peuple est différent de None. Si c'est le cas, cela signifie qu'au moins un pays a été saisi, et nous affichons le pays avec la population la plus élevée ainsi que sa population. Sinon, nous affichons un message indiquant qu'aucun pays n'a été saisi.
+
+                        Ainsi, ce programme permet à l'utilisateur de saisir un dictionnaire de pays et de populations, puis trouve le pays avec la population la plus élevée et l'affiche à l'écran.
+                        
+                                                
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée une liste de mots et qui compte combien de fois chaque mot apparaît. Le programme devrait stocker les résultats dans un dictionnaire où les clés sont les mots et les valeurs sont les fréquences.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez une liste de mots (séparés par des espaces) : apple banana apple orange banana apple
+                        <br>apple : 3
+                        <br>banana : 2
+                        <br>orange : 1</div>
+
+                    <div class="solution">SOLUTION :</div>
+                    
+                    <div class="solution1"> 
+                        # Saisie de la liste de mots par l'utilisateur<br>
+                    mots = input("Saisissez une liste de mots (séparés par des espaces) : ").split()<br>
+                    
+                    # Création d'un dictionnaire pour stocker les fréquences<br>
+                    frequence_mots = {}<br>
+                    
+                    # Comptage des occurrences des mots<br>
+                    for mot in mots:<div class="if">
+                        if mot in frequence_mots:<div class="if">
+                            frequence_mots[mot] += 1</div></div>
+                            <div class="if">else:<div class="if">
+                            frequence_mots[mot] = 1</div></div>
+                    
+                    # Affichage des résultats<br>
+                    for mot, frequence in frequence_mots.items():<div class="if">
+                        print(mot, ":", frequence)</div>
+
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous commençons par demander à l'utilisateur de saisir une liste de mots, en utilisant la fonction input(). Les mots saisis sont ensuite stockés dans la variable mots sous forme d'une liste, en utilisant la méthode split() pour séparer les mots par des espaces.
+
+
+
+                         <div class="spider"></div>nous créons un dictionnaire vide frequence_mots qui sera utilisé pour stocker les fréquences des mots.<br>Nous utilisons ensuite une boucle for pour parcourir chaque mot dans la liste mots. Pour chaque mot, nous vérifions s'il existe déjà dans le dictionnaire frequence_mots. Si c'est le cas, nous incrémentons sa valeur de 1. Sinon, nous ajoutons une nouvelle entrée dans le dictionnaire avec le mot comme clé et la valeur initiale de 1.<br>Une fois que nous avons compté les occurrences de chaque mot, nous affichons les résultats en utilisant une autre boucle for pour parcourir les paires clé-valeur du dictionnaire frequence_mots. Nous affichons chaque mot suivi de sa fréquence correspondante.    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>ce programme permet à l'utilisateur de saisir une liste de mots, compte combien de fois chaque mot apparaît, et affiche les résultats dans un dictionnaire où les clés sont les mots et les valeurs sont les fréquences. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire contenant des prénoms et leurs âges, et qui affiche les prénoms des personnes dont l'âge est supérieur à une valeur donnée par l'utilisateur.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez un prénom (ou appuyez sur Entrée pour terminer) : Alice<br>
+                        Saisissez l'âge correspondant : 25<br>
+                        Saisissez un prénom (ou appuyez sur Entrée pour terminer) : Bob<br>
+                        Saisissez l'âge correspondant : 30<br>
+                        Saisissez un prénom (ou appuyez sur Entrée pour terminer) : Charlie<br>
+                        Saisissez l'âge correspondant : 20<br>
+                        Saisissez un prénom (ou appuyez sur Entrée pour terminer) : <br>
+                        Saisissez une valeur de comparaison : 22<br>
+                        Prénoms dont l'âge est supérieur à 22 :<br>
+                        Alice<br>
+                        Bob</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Saisie du dictionnaire par l'utilisateur<br>
+dictionnaire = {}<br>
+while True:<br>
+<div class="if">prenom = input("Saisissez un prénom (ou appuyez sur Entrée pour terminer) : ")</div>
+    <div class="if">if prenom == "":<div class="if">
+        break</div></div>
+        <div class="if">age = int(input("Saisissez l'âge correspondant : "))</div>
+            <div class="if">dictionnaire[prenom] = age</div>
+
+# Saisie de la valeur de comparaison par l'utilisateur<br>
+valeur = int(input("Saisissez une valeur de comparaison : "))<br>
+
+# Recherche des prénoms dont l'âge est supérieur à la valeur donnée<br>
+resultats = []<br>
+for prenom, age in dictionnaire.items():<div class="if">
+    if age > valeur:<div class="if">
+        resultats.append(prenom)</div></div>
+
+# Affichage des résultats<br>
+print("Prénoms dont l'âge est supérieur à", valeur, ":")<br>
+for prenom in resultats:<div class="if">
+    print(prenom)</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons à l'utilisateur de saisir un dictionnaire contenant des prénoms et leurs âges. L'utilisateur peut saisir les paires prénom-âge jusqu'à ce qu'il appuie sur Entrée sans saisir de prénom.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>    nous demandons à l'utilisateur de saisir une valeur de comparaison, qui représente l'âge à partir duquel nous souhaitons afficher les prénoms.<br>Nous parcourons ensuite chaque paire clé-valeur du dictionnaire à l'aide d'une boucle for. Si l'âge associé à un prénom est supérieur à la valeur de comparaison, nous ajoutons ce prénom à la liste resultats.         <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous affichons les prénoms contenus dans la liste resultats, qui correspondent aux personnes dont l'âge est supérieur à la valeur donnée.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrire un programme qui prend en entrée un dictionnaire contenant des noms de fruits et leurs quantités, et qui vérifie si la quantité de chaque fruit est supérieure à un seuil donné par l'utilisateur. Le programme devrait afficher les noms des fruits dont la quantité est supérieure au seuil.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Saisissez le nom d'un fruit (ou appuyez sur Entrée pour terminer) : Pomme<br>
+                        Saisissez la quantité correspondante : 10<br>
+                        Saisissez le nom d'un fruit (ou appuyez sur Entrée pour terminer) : Banane<br>
+                        Saisissez la quantité correspondante : 5<br>
+                        Saisissez le nom d'un fruit (ou appuyez sur Entrée pour terminer) : Orange<br>
+                        Saisissez la quantité correspondante : 8<br>
+                        Saisissez le nom d'un fruit (ou appuyez sur Entrée pour terminer) : <br>
+                        Saisissez un seuil : 7<br>
+                        Fruits dont la quantité est supérieure à 7 :<br>
+                        Pomme<br>
+                        Orange</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        # Saisie du dictionnaire par l'utilisateur<br>
+dictionnaire = {}<br>
+while True:<div class="if">
+    fruit = input("Saisissez le nom d'un fruit (ou appuyez sur Entrée pour terminer) : ")</div>
+    <div class="if">if fruit == "":<div class="if">
+        break</div></div>
+        <div class="if">quantite = int(input("Saisissez la quantité correspondante : "))</div>
+            <div class="if">dictionnaire[fruit] = quantite</div>
+
+# Saisie du seuil par l'utilisateur<br>
+seuil = int(input("Saisissez un seuil : "))<br>
+
+# Recherche des fruits dont la quantité est supérieure au seuil donné<br>
+resultats = []<br>
+for fruit, quantite in dictionnaire.items():<div class="if">
+    if quantite > seuil:<div class="if">
+        resultats.append(fruit)</div></div>
+
+# Affichage des résultats<br>
+print("Fruits dont la quantité est supérieure à", seuil, ":")<br>
+for fruit in resultats:<div class="if">
+    print(fruit)</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons à l'utilisateur de saisir un dictionnaire contenant des noms de fruits et leurs quantités. L'utilisateur peut saisir les paires fruit-quantité jusqu'à ce qu'il appuie sur Entrée sans saisir de fruit.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> nous demandons à l'utilisateur de saisir un seuil, qui représente la quantité à partir de laquelle nous souhaitons afficher les noms des fruits.<br>Nous parcourons ensuite chaque paire clé-valeur du dictionnaire à l'aide d'une boucle for. Si la quantité associée à un fruit est supérieure au seuil, nous ajoutons ce fruit à la liste resultats.<div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous affichons les noms des fruits contenus dans la liste resultats, qui correspondent aux fruits dont la quantité est supérieure au seuil donné.
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Striving for success without hard work is like trying to harvest where you haven’t planted.”
+ ― David Bly</div>
+    </div>
+</body>

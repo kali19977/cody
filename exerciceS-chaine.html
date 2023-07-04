@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_chaine</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="t123">Chaine de caractères</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche le nombre de caractères présents dans cette chaîne.
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : Bonjour<br>
+                        Le nombre de caractères dans la chaîne est : 7
+                    </div>
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        nombre_caracteres = len(chaine)<br>
+
+                        print("Le nombre de caractères dans la chaîne est :", nombre_caracteres)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+
+
+                        <div class="spider"></div>
+                        <div class="er">Ensuite,</div> La fonction len() est utilisée pour obtenir la longueur de la chaîne, c'est-à-dire le nombre de caractères qu'elle contient. La valeur retournée par len(chaine) est ensuite assignée à la variable nombre_caracteres.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> le programme affiche le nombre de caractères dans la chaîne à l'aide de la fonction print().
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche cette chaîne inversée.
+                        .</div>
+                        <div class="exemple">Saisissez une chaîne de caractères : Hello<br>
+                            La chaîne inversée est : olleH
+                        </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        chaine_inverse = chaine[::-1]<br>
+                        print("La chaîne inversée est :", chaine_inverse)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+   
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div>L'opérateur de découpage de chaîne [::-1] est utilisé pour inverser la chaîne. Cet opérateur crée une nouvelle chaîne qui contient tous les caractères de la chaîne d'origine, mais dans l'ordre inverse.
+                        <br>La chaîne inversée est assignée à la variable chaine_inverse.<br><br>
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>le programme affiche la chaîne inversée à l'aide de la fonction print().
+
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis compte le nombre de voyelles présentes dans cette chaîne.
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : OpenAI GPT-3<br>
+                        Le nombre de voyelles dans la chaîne est : 4</div>
+                    
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        voyelles = "aeiouAEIOU"<br>
+                        compteur_voyelles = 0<br>
+                        for caractere in chaine:<br>
+                        <div class="if">if caractere in voyelles:<div class="if"> compteur_voyelles += 1</div></div>
+
+                        print("Le nombre de voyelles dans la chaîne est :", compteur_voyelles)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+       
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div> La variable voyelles est définie comme une chaîne contenant toutes les voyelles en minuscules et en majuscules.<br>La variable compteur_voyelles est initialisée à 0. Cette variable sera utilisée pour compter le nombre de voyelles présentes dans la chaîne.<br>Le programme utilise une boucle for pour parcourir chaque caractère dans la chaîne 'chaine'.<br>À chaque itération de la boucle, le programme vérifie si le caractère actuel est une voyelle en utilisant l'opérateur in pour vérifier si le caractère est présent dans la variable voyelles. Si c'est le cas, le compteur de voyelles compteur_voyelles est incrémenté de 1.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  après la boucle, le programme affiche le nombre de voyelles dans la chaîne à l'aide de la fonction print().
+
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis vérifie si cette chaîne est un palindrome (elle se lit de la même manière de gauche à droite et de droite à gauche).
+                    </div>
+                        <div class="exemple">Saisissez une chaîne de caractères : radar<br>
+                            La chaîne est un palindrome</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        if chaine == chaine[::-1]:<div class="if">print("La chaîne est un palindrome")</div>
+                        else:<div class="if">print("La chaîne n'est pas un palindrome")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>L'opérateur de découpage de chaîne [::-1] est utilisé pour créer une nouvelle chaîne qui contient tous les caractères de la chaîne d'origine, mais dans l'ordre inverse.<br>Le programme compare la chaîne d'origine chaine avec sa version inversée chaine[::-1] en utilisant l'opérateur de comparaison ==. Si les deux chaînes sont identiques, cela signifie que la chaîne est un palindrome.               
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Si la chaîne est un palindrome, le programme affiche "La chaîne est un palindrome". Sinon, il affiche "La chaîne n'est pas un palindrome".
+
+          
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis remplace toutes les occurrences d'un caractère spécifié par un autre caractère spécifié dans cette chaîne.
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : Hello World<br>
+                        Saisissez le caractère à remplacer : o<br>
+                        Saisissez le nouveau caractère : 0<br>
+                        La chaîne modifiée est : Hell0 W0rld</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        caractere_a_remplacer = input("Saisissez le caractère à remplacer : ")<br>
+                        nouveau_caractere = input("Saisissez le nouveau caractère : ")<br>
+                        chaine_modifiee = chaine.replace(caractere_a_remplacer, nouveau_caractere)<br>
+
+                        print("La chaîne modifiée est :", chaine_modifiee)
+                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>L'utilisateur est également invité à saisir le caractère à remplacer et le nouveau caractère à utiliser à l'aide de deux autres appels à input(). Ces caractères sont respectivement stockés dans les variables caractere_a_remplacer et nouveau_caractere.<br>Le programme utilise la méthode replace() sur la chaîne chaine pour remplacer toutes les occurrences du caractère spécifié caractere_a_remplacer par le nouveau caractère spécifié nouveau_caractere. La chaîne modifiée est assignée à la variable chaine_modifiee.   
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>   le programme affiche la chaîne modifiée à l'aide de la fonction print(). </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche chaque caractère de la chaîne sur une nouvelle ligne.
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : Bonjour<br>
+                        B<br>
+                        o<br>
+                        n<br>
+                        j<br>
+                        o<br>
+                        u<br>
+                        r</div>
+ 
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        for caractere in chaine:<div class="if">print(caractere)</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Le programme utilise une boucle for pour parcourir chaque caractère dans la chaîne chaine.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> à chaque itération de la boucle, le caractère actuel est affiché à l'aide de la fonction print(). En utilisant print(caractere), chaque caractère sera affiché sur une nouvelle ligne.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis vérifie si cette chaîne est un palindrome en ignorant la casse (majuscules/minuscules).
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : kayak<br>
+                        La chaîne est un palindrome</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        chaine = chaine.lower()<br>
+                        if chaine == chaine[::-1]:<br>
+                            <div class="if">print("La chaîne est un palindrome")</div>
+                        else:
+                        <div class="if">print("La chaîne n'est pas un palindrome")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une chaîne de caractères à l'aide de la fonction input(). La chaîne saisie est ensuite stockée dans la variable chaine.
+
+
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> La méthode lower() est utilisée pour convertir la chaîne en minuscules. Cela permet d'ignorer la casse lors de la vérification du palindrome.<br>L'opérateur de découpage de chaîne [::-1] est utilisé pour créer une nouvelle chaîne qui contient tous les caractères de la chaîne d'origine, mais dans l'ordre inverse.<br>Le programme compare la chaîne d'origine chaine avec sa version inversée chaine[::-1] en utilisant l'opérateur de comparaison ==. Si les deux chaînes sont identiques, cela signifie que la chaîne est un palindrome.             <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Si la chaîne est un palindrome, le programme affiche "La chaîne est un palindrome". Sinon, il affiche "La chaîne n'est pas un palindrome".
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une phrase, puis affiche les mots de cette phrase dans l'ordre inverse.</div>
+                    </div>
+                    <div class="exemple">Saisissez une phrase : Je suis en train de programmer<br>
+                        Résultat : programmer de train en suis Je</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        phrase = input("Saisissez une phrase : ")<br>
+                        mots = phrase.split()<br>
+                        mots_inverse = mots[::-1]<br>
+                        phrase_inverse = " ".join(mots_inverse)<br>
+
+                        print("Résultat :", phrase_inverse)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir une phrase à l'aide de la fonction input(). La phrase saisie est ensuite stockée dans la variable phrase.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> La méthode split() est utilisée pour diviser la phrase en mots. Par défaut, split() utilise l'espace comme séparateur.<br>L'opérateur de découpage de liste [::-1] est utilisé pour inverser l'ordre des mots dans la liste mots.<br>La méthode join() est utilisée pour reconstituer les mots inversés en une seule chaîne de caractères en utilisant l'espace comme séparateur.                     <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> le résultat, c'est-à-dire la phrase inversée, est affiché à l'aide de la fonction print().
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche la même chaîne en inversant la casse des lettres (majuscules en minuscules et vice versa). 
+                    </div>
+
+                    <div class="exemple">Saisissez une chaîne de caractères : ExAmPle<br>
+                        Nouvelle chaîne : eXaMpLE</div>
+                        <div class="solution">SOLUTION :</div>
+                        <div class="solution1"> 
+                        
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        nouvelle_chaine = ""<br>
+                        for caractere in chaine:
+                        if caractere.islower():<div class="if">nouvelle_chaine += caractere.upper()</div>
+                            
+                        else:
+                            <div class="if">nouvelle_chaine += caractere.lower()</div>
+
+                        print("Nouvelle chaîne :", nouvelle_chaine)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Le programme demande à l'utilisateur de saisir une chaîne de caractères. Ensuite, une boucle for est utilisée pour parcourir chaque caractère de la chaîne. Pour chaque caractère, la méthode islower() est utilisée pour vérifier s'il est en minuscule. Si c'est le cas, la méthode upper() est utilisée pour le convertir en majuscule, sinon la méthode lower() est utilisée pour le convertir en minuscule. Le caractère converti est ensuite ajouté à la variable nouvelle_chaine. En fin de compte, la nouvelle chaîne avec la casse inversée est affichée à l'aide de la fonction print().
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche le nombre de mots présents dans cette chaîne.      
+                    </div>
+                    <div class="exemple">Saisissez une chaîne de caractères : Bonjour tout le monde<br>
+                        Nombre de mots : 4</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        mots = chaine.split()<br>
+                        nombre_mots = len(mots)<br>
+                        print("Nombre de mots :", nombre_mots)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme demande à l'utilisateur de saisir une chaîne de caractères. Ensuite, la méthode split() est utilisée pour diviser la chaîne en mots en utilisant l'espace comme séparateur par défaut. Ensuite, la fonction len() est utilisée pour obtenir le nombre de mots dans la liste résultante, et ce nombre est affiché à l'aide de la fonction print().
+                        </div>
+                </div>
+            </div>
+    
+        <div class="spiderr"></div>
+         <div class="motivations">
+                <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+                <div class="quotess">“I find that the harder I work, the more luck I seem to have.” Thomas Jefferson</div>
+    </div>
+
+</body>

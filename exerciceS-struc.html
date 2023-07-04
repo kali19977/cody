@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_struct</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+       
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Structures</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce"> Définir une structure appelée "Personne" contenant les champs suivants : nom, prénom, âge et adresse. Ensuite, créez une variable de type "Personne" et initialisez-la avec des valeurs. Enfin, affichez les informations de la personne.</div>
+                </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Personne<br>
+                            struct Personne {
+                                <div class="if">char nom[50];</div>
+                                <div class="if">char prenom[50];</div>
+                                <div class="if">int age;</div>
+                                <div class="if">char adresse[100];</div>
+                            };<br>
+                            
+                            int main() {
+                                <div class="if">// Création d'une variable de type Personne et initialisation</div>
+                                    <div class="if">struct Personne personne1 = {"Doe", "John", 30, "Rue de la Paix, Paris"};</div>
+                            
+                                        <div class="if">// Affichage des informations de la personne</div>
+                                            <div class="if">printf("Nom: %s\n", personne1.nom);</div>
+                                                <div class="if">printf("Prénom: %s\n", personne1.prenom);</div>
+                                                    <div class="if"> printf("Âge: %d\n", personne1.age);</div>
+                                                        <div class="if"> printf("Adresse: %s\n", personne1.adresse);</div>
+                            
+                                                            <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Dans cet exercice, nous avons défini une structure appelée "Personne" avec les champs nom, prénom, âge et adresse. Ensuite, nous avons créé une variable de type "Personne" appelée "personne1" et initialisé ses valeurs. Enfin, nous avons affiché les informations de la personne à l'aide de la variable "personne1".   </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Énoncé : Définissez une structure appelée "Point" contenant les champs x et y (coordonnées). Ensuite, créez une fonction appelée "distance" qui prend deux points en argument et renvoie la distance entre ces deux points.
+
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include &ltmath.h&gt<br>
+                            
+                            // Définition de la structure Point<br>
+                            struct Point {
+                                <div class="if">double x;</div>
+                                <div class="if">double y;</div>
+                            };<br>
+                            
+                            // Fonction pour calculer la distance entre deux points<br>
+                            double distance(struct Point p1, struct Point p2) {
+                                <div class="if">return sqrt(pow(p2.x - p1.x, 2) + pow(p2.y - p1.y, 2));</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Point point1 = {0.0, 0.0};</div>
+                                <div class="if">struct Point point2 = {3.0, 4.0};</div>
+                            
+                                <div class="if">double dist = distance(point1, point2);</div>
+                                <div class="if">printf("Distance entre les points : %.2f\n", dist);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }   
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans cet exercice, nous avons défini une structure "Point" contenant les champs x et y pour représenter les coordonnées d'un point. Ensuite, nous avons créé une fonction "distance" qui prend deux points en argument et utilise la formule de la distance entre deux points dans un plan cartésien pour calculer et renvoyer la distance entre ces deux points.
+                         </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">EDéfinissez une structure appelée "Rectangle" contenant les champs longueur et largeur. Ensuite, créez une fonction appelée "surface" qui prend un rectangle en argument et renvoie sa surface.
+                    </div>
+                        
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Rectangle<br>
+                            struct Rectangle {
+                                <div class="if">double longueur;</div>
+                                <div class="if">double largeur;</div>
+                            };<br>
+                            
+                            // Fonction pour calculer la surface d'un rectangle<br>
+                            double surface(struct Rectangle rect) {
+                                <div class="if">return rect.longueur * rect.largeur;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Rectangle rectangle = {4.5, 3.2};</div>
+                            
+                                <div class="if">double s = surface(rectangle);</div>
+                                <div class="if">printf("Surface du rectangle : %.2f\n", s);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cet exercice, nous avons défini une structure "Rectangle" avec les champs longueur et largeur pour représenter les dimensions d'un rectangle. Ensuite, nous avons créé une fonction "surface" qui prend un rectangle en argument et utilise la formule de la surface d'un rectangle (longueur * largeur) pour calculer et renvoyer sa surface.
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Définissez une structure appelée "Date" contenant les champs jour, mois et année. Ensuite, créez une fonction appelée "afficherDate" qui prend une date en argument et l'affiche au format "jour/mois/année".
+                    </div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Date<br>
+                            struct Date {
+                                <div class="if">int jour;</div>
+                                <div class="if">int mois;</div>
+                                <div class="if">int annee;</div>
+                            };<br>
+                            
+                            // Fonction pour afficher une date<br>
+                            void afficherDate(struct Date date) {
+                                <div class="if">printf("%02d/%02d/%d\n", date.jour, date.mois, date.annee);</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if"> struct Date date = {5, 9, 2022};</div>
+                            
+                                    <div class="if"> afficherDate(date);</div>
+                            
+                                        <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans cet exercice, nous avons défini une structure "Date" avec les champs jour, mois et année pour représenter une date. Ensuite, nous avons créé une fonction "afficherDate" qui prend une date en argument et l'affiche en utilisant le format "jour/mois/année". La fonction utilise le spécificateur de format "%02d" pour afficher le jour et le mois avec deux chiffres, en ajoutant un zéro devant si nécessaire.   </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Définir une structure appelée "Etudiant" contenant les champs nom, prénom et note. Ensuite, créez un tableau d'étudiants et affichez leurs informations.  
+                    </div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Etudiant<br>
+                            struct Etudiant {
+                                <div class="if">char nom[50];</div>
+                                <div class="if">char prenom[50];</div>
+                                <div class="if">float note;</div>
+                            };<br>
+                            
+                            int main() {
+                                struct Etudiant etudiants[3] = {
+                                    <div class="if">{"Dupont", "Jean", 14.5},</div>
+                                        <div class="if">{"Martin", "Sophie", 16.2},</div>
+                                            <div class="if">{"Dubois", "Pierre", 12.8}</div>
+                                            <div class="if">};</div>
+                            
+                                <div class="if">for (int i = 0; i < 3; i++) {
+                                    <div class="if">printf("Etudiant %d:\n", i + 1);</div>
+                                    <div class="if">printf("Nom: %s\n", etudiants[i].nom);</div>
+                                    <div class="if">printf("Prénom: %s\n", etudiants[i].prenom);</div>
+                                    <div class="if">printf("Note: %.1f\n", etudiants[i].note);</div>
+                                    <div class="if">printf("\n");
+                                }</div>
+                            
+                                <div class="if">return 0;</div>
+                            }     </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cet exercice, nous avons défini une structure "Etudiant" avec les champs nom, prénom et note pour représenter les informations d'un étudiant. Ensuite, nous avons créé un tableau d'étudiants contenant 3 étudiants, chacun avec leurs informations respectives. Nous avons utilisé une boucle pour parcourir le tableau et afficher les informations de chaque étudiant.  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Définissez une structure appelée "Point3D" contenant les champs x, y et z. Ensuite, créez une fonction appelée "afficherPoint3D" qui prend un point 3D en argument et l'affiche.
+                    </div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Point3D<br>
+                            struct Point3D {
+                                <div class="if">float x;</div>
+                                <div class="if">float y;</div>
+                                <div class="if">float z;</div>
+                            };<br>
+                            
+                            // Fonction pour afficher un point 3D<br>
+                            void afficherPoint3D(struct Point3D point) {
+                                <div class="if">printf("(%.2f, %.2f, %.2f)\n", point.x, point.y, point.z);</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Point3D point = {1.5, -2.0, 3.7};</div>
+                            
+                                <div class="if">afficherPoint3D(point);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> dans cet exercice, nous avons défini une structure "Point3D" avec les champs x, y et z pour représenter les coordonnées d'un point en 3D. Ensuite, nous avons créé une fonction "afficherPoint3D" qui prend un point 3D en argument et l'affiche en utilisant le format "(x, y, z)".
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Définissir une structure appelée "Employe" contenant les champs nom, salaire et anciennete (en années). Ensuite, créez une fonction appelée "augmenterSalaire" qui prend un employé en argument et augmente son salaire de 10%. Affichez ensuite les informations de l'employé après l'augmentation.
+                    </div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Employe<br>
+                            struct Employe {
+                                <div class="if">char nom[50];</div>
+                                <div class="if">float salaire;</div>
+                                <div class="if">
+                                int anciennete;</div>
+                            };<br>
+                            
+                            // Fonction pour augmenter le salaire d'un employé<br>
+                            void augmenterSalaire(struct Employe *employe) {
+                                <div class="if">employe->salaire *= 1.1;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Employe employe1 = {"Durand", 2500.0, 5};</div>
+                            
+                                <div class="if">augmenterSalaire(&employe1);</div>
+                            
+                                <div class="if">printf("Nom: %s\n", employe1.nom);</div>
+                                <div class="if">printf("Salaire après augmentation: %.2f\n", employe1.salaire);</div>
+                                <div class="if">printf("Ancienneté: %d ans\n", employe1.anciennete);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cet exercice, nous avons défini une structure "Employe" avec les champs nom, salaire et anciennete pour représenter les informations d'un employé. Ensuite, nous avons créé une fonction "augmenterSalaire" qui prend un pointeur vers un employé en argument et augmente son salaire de 10% en utilisant l'opérateur "->" pour accéder au champ salaire de la structure. Nous avons ensuite appelé cette fonction avec l'adresse de la variable employe1. Enfin, nous avons affiché les informations de l'employé après l'augmentation.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Définir une structure appelée "Produit" contenant les champs nom, prix et quantite. Ensuite, créez une fonction appelée "calculerTotal" qui prend un produit en argument et renvoie le total à payer en multipliant le prix par la quantité.
+                    </div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Produit<br>
+                            struct Produit {
+                                <div class="if">char nom[50];</div>
+                                <div class="if">float prix;</div>
+                                <div class="if">int quantite;</div>
+                            };<br>
+                            
+                            // Fonction pour calculer le total à payer pour un produit<br>
+                            float calculerTotal(struct Produit produit) {
+                                <div class="if">return produit.prix * produit.quantite;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Produit produit1 = {"T-shirt", 19.99, 3};</div>
+                            
+                                <div class="if">float total = calculerTotal(produit1);</div>
+                            
+                                <div class="if">printf("Nom: %s\n", produit1.nom);</div>
+                                <div class="if">printf("Prix: %.2f\n", produit1.prix);</div>
+                                <div class="if">printf("Quantité: %d\n", produit1.quantite);</div>
+                                <div class="if">printf("Total à payer: %.2f\n", total);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans cet exercice, nous avons défini une structure "Produit" avec les champs nom, prix et quantite pour représenter un produit. Ensuite, nous avons créé une fonction "calculerTotal" qui prend un produit en argument et renvoie le total à payer en multipliant le prix par la quantité. Nous avons ensuite appelé cette fonction avec le produit produit1 et affiché les informations du produit ainsi que le total à payer.   </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Définir une structure appelée "Vecteur" contenant les champs x, y et z. Ensuite, créez une fonction appelée "produitScalaire" qui prend deux vecteurs en argument et renvoie leur produit scalaire. 
+                    </div>
+
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure Vecteur<br>
+                            struct Vecteur {
+                                <div class="if">float x;</div>
+                                    <div class="if">float y;</div>
+                                        <div class="if">float z;</div>
+                            };<br>
+                            
+                            // Fonction pour calculer le produit scalaire de deux vecteurs<br>
+                            float produitScalaire(struct Vecteur v1, struct Vecteur v2) {
+                                <div class="if">return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct Vecteur vecteur1 = {2.0, -1.5, 3.7};</div>
+                                <div class="if">struct Vecteur vecteur2 = {1.5, 4.2, -2.3};</div>
+                            
+                                <div class="if">float produit = produitScalaire(vecteur1, vecteur2);</div>
+                            
+                                <div class="if">printf("Produit scalaire : %.2f\n", produit);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cet exercice, nous avons défini une structure "Vecteur" avec les champs x, y et z pour représenter les coordonnées d'un vecteur. Ensuite, nous avons créé une fonction "produitScalaire" qui prend deux vecteurs en argument et renvoie leur produit scalaire en utilisant la formule mathématique du produit scalaire. Nous avons ensuite appelé cette fonction avec les vecteurs vecteur1 et vecteur2 et affiché le résultat du produit scalaire.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Définir une structure appelée "PointeurVersFonction" contenant un pointeur vers une fonction qui prend deux entiers en argument et renvoie leur somme. Ensuite, créez une fonction appelée "addition" qui prend deux entiers en argument et renvoie leur somme. Créez une variable de type "PointeurVersFonction" et assignez-lui le pointeur vers la fonction "addition". Utilisez ensuite le pointeur pour appeler la fonction et afficher le résultat.
+                    </div>
+                    
+
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            // Définition de la structure PointeurVersFonction<br>
+                            struct PointeurVersFonction {
+                                <div class="if">int (*fonction)(int, int);</div>
+                            };<br>
+                            
+                            // Fonction addition<br>
+                            int addition(int a, int b) {
+                                <div class="if">return a + b;</div>
+                            }<br>
+                            
+                            int main() {
+                                <div class="if">struct PointeurVersFonction pointeur;</div>
+                            
+                                <div class="if">// Assignation du pointeur vers la fonction addition</div>
+                                <div class="if">pointeur.fonction = addition;</div>
+                                
+                                <div class="if">int resultat = pointeur.fonction(5, 3);</div>
+                            
+                                <div class="if">printf("Résultat : %d\n", resultat);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>cDans cet exercice, nous avons défini une structure "PointeurVersFonction" avec un champ "fonction" qui est un pointeur vers une fonction prenant deux entiers en argument et renvoyant un entier. Ensuite, nous avons créé une fonction "addition" qui prend deux entiers en argument et renvoie leur somme. Nous avons créé une variable de type "PointeurVersFonction" et assigné le pointeur vers la fonction "addition" à son champ "fonction". En utilisant le pointeur, nous avons appelé la fonction et affiché le résultat.
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Real difficulties can be overcome; it is only the imaginary ones that are unconquerable.” – Theodore N. Vail
+        </div>
+    </div>
+    </div>
+</body>

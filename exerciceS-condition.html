@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CONDITION</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+            
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Condition</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire un programme python qui permet de determiner si un entier donné est pair ou impair.
+
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 7<br>
+                        7 est un nombre impair.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        entier = int(input("Entrez un entier : "))<br>
+
+                        if entier % 2 == 0:<br>
+                            <div class="if">print(entier, "est un nombre pair.")</div>
+                        else:<br>
+                            <div class="if">print(entier, "est un nombre impair.")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> entier = int(input("Entrez un entier : ")) : Cette ligne demande à l'utilisateur d'entrer un entier en affichant le message "Entrez un entier : ". L'entrée de l'utilisateur est capturée à l'aide de la fonction input(), puis elle est convertie en entier à l'aide de la fonction int() et assignée à la variable entier.
+
+                        <div class="spider"></div>
+                        <div class="er">Ensuite,</div> if entier % 2 == 0: : Cette ligne vérifie si l'entier est divisible par 2 sans reste, c'est-à-dire s'il est pair. L'opérateur % calcule le reste de la division de entier par 2. Si le reste est égal à 0, cela signifie que l'entier est pair.<br>print(entier, "est un nombre pair.") : Si l'entier est pair, cette ligne affiche le message "est un nombre pair." en concaténant la valeur de entier avec le texte à l'aide de la fonction print().<br>else: : Si l'entier n'est pas pair, cette ligne est exécutée.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> print(entier, "est un nombre impair.") : Cette ligne affiche le message "est un nombre impair." si l'entier est impair.
+
+                    </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Ecrivez un programme python pour trouver un maximum entre trois nombres .
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre : 2.5<br>
+                        Entrez le deuxième nombre : 2.5<br>
+                        Entrez le troisième nombre : 2.5<br>
+                        Le maximum est : 2.5</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        a = float(input("Entrez le premier nombre : "))<br>
+                        b = float(input("Entrez le deuxième nombre : "))<br>
+                        c = float(input("Entrez le troisième nombre : "))<br>
+
+                        if a >= b and a >= c:<br>
+                        <div class="if">maximum = a</div>
+                        elif b >= a and b >= c:<br>
+                        <div class="if">  maximum = b</div>
+                        else:
+                        <div class="if">  maximum = c</div>
+
+                        print("Le maximum est :", maximum)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Les variables a, b et c sont utilisées pour stocker les trois nombres saisis par l'utilisateur à l'aide de la fonction input(). Les nombres sont convertis en nombres à virgule flottante (float) à l'aide de float().
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div> En utilisant des conditions if et des opérateurs de comparaison (>=), nous comparons les nombres a, b et c pour déterminer le maximum entre eux.
+                        <br>Si a est supérieur ou égal à b et a est supérieur ou égal à c, alors a est le maximum. Sinon, si b est supérieur ou égal à a et b est supérieur ou égal à c, alors b est le maximum. Sinon, c est le maximum.<br>Le maximum est stocké dans la variable maximum.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Le résultat est ensuite affiché à l'aide de la fonction print(), avec le message "Le maximum est : " suivi du maximum calculé.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce"> Ecrire un programme Python qui lit les notes de deux contrôles d’une matière donnée, puis calcule et affiche la moyenne obtenue. si la moyenne est supérieure ou égale à 10, il affichera davantage le message de congratulation suivant : Félicitations ! Vous avez validé cette matière.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez la note du premier contrôle : 9.8<br>
+                        Entrez la note du deuxième contrôle : 11.3<br>
+                        La moyenne obtenue est : 10.55<br>
+                        Félicitations ! Vous avez validé cette matière.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        note1 = float(input("Entrez la note du premier contrôle : "))<br>
+                        note2 = float(input("Entrez la note du deuxième contrôle : "))<br>
+
+                        moyenne = (note1 + note2) / 2<br>
+
+                        print("La moyenne obtenue est :", moyenne)<br>
+
+                        if moyenne >= 10:<br>
+                            <div class="if">print("Félicitations ! Vous avez validé cette matière.")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Les variables note1 et note2 sont utilisées pour stocker les notes des deux contrôles saisies par l'utilisateur à l'aide de la fonction input(). Les notes sont converties en nombres à virgule flottante (float) à l'aide de float().
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  La moyenne est calculée en additionnant les deux notes (note1 + note2) et en les divisant par 2.<br>Le résultat est ensuite affiché à l'aide de la fonction print(), avec le message "La moyenne obtenue est :" suivi de la moyenne calculée.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  En utilisant une condition if, on vérifie si la moyenne est supérieure ou égale à 10. Si c'est le cas, le message "Félicitations ! Vous avez validé cette matière." est affiché.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrivez un programme pour entrer le numéro du jour de la semaine (1-7) et affichez le nom du jour de la semaine correspondant en utilisant if-else.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le numéro du jour de la semaine (1-7) : 3<br>
+                        Le jour correspondant au numéro 3 est : Mercredi</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        numero_jour = int(input("Entrez le numéro du jour de la semaine (1-7) : "))<br>
+
+                        if numero_jour == 1:
+                            <div class="if">nom_jour = "Lundi"</div>
+                        elif numero_jour == 2:
+                           <div class="if">nom_jour = "Mardi"</div>
+                        elif numero_jour == 3:
+                            <div class="if">nom_jour = "Mercredi"</div>
+                        elif numero_jour == 4:
+                            <div class="if">nom_jour = "Jeudi"</div>
+                        elif numero_jour == 5:
+                            <div class="if">nom_jour = "Vendredi"</div> 
+                        elif numero_jour == 6:
+                            <div class="if">nom_jour = "Samedi"</div>
+                        elif numero_jour == 7:
+                            <div class="if">nom_jour = "Dimanche"</div> 
+                        else:
+                            <div class="if">nom_jour = "Numéro de jour invalide"</div> 
+                        
+                        print("Le jour correspondant au numéro", numero_jour, "est :", nom_jour)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La variable numero_jour est utilisée pour stocker le numéro du jour de la semaine saisi par l'utilisateur à l'aide de la fonction input(). Le numéro du jour est converti en entier à l'aide de int().
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> En utilisant des conditions if-elif-else, nous vérifions la valeur de numero_jour pour déterminer le nom du jour correspondant.<br>Si numero_jour est égal à 1, le nom du jour est "Lundi". Si numero_jour est égal à 2, le nom du jour est "Mardi", et ainsi de suite jusqu'à 7 pour "Dimanche".<br>Si numero_jour ne correspond à aucun des cas précédents, c'est-à-dire s'il est en dehors de la plage 1-7, le nom du jour est défini comme "Numéro de jour invalide". <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Le résultat est ensuite affiché à l'aide de la fonction print(), avec le message "Le jour correspondant au numéro x est :" suivi du nom du jour calculé.
+
+        
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Ecrivez un programme qui demande à l'utilisateur de saisir le prix de fabrication et le prix de vente d'un produit. Ensuite, le programme vérifie s'il y a un profit ou une perte en comparant les deux prix.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Entrez le prix de fabrication du produit : 80<br>
+                            Entrez le prix de vente du produit : 60<br>
+                            Il y a une perte de 20.0 euros.</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        prix_fabrication = float(input("Entrez le prix de fabrication du produit : "))<br>
+                        prix_vente = float(input("Entrez le prix de vente du produit : "))<br>
+
+                        if prix_fabrication > prix_vente:<br>
+                            <div class="if">print("Il y a une perte de", prix_fabrication - prix_vente, "euros.")</div>
+                        else:<br>
+                            <div class="if">print("Il y a un profit de", prix_vente - prix_fabrication, "euros.")</div> 
+                        </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Tout d'abord, le programme demande à l'utilisateur de saisir le prix de fabrication du produit en utilisant la fonction input() et stocke cette valeur dans la variable prix_fabrication. La fonction float() est utilisée pour convertir la valeur saisie en un nombre flottant.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   Ensuite, le programme demande à l'utilisateur de saisir le prix de vente du produit de la même manière et le stocke dans la variable prix_vente.<br>La structure conditionnelle if est utilisée pour vérifier si le prix de fabrication est supérieur au prix de vente. Si c'est le cas, cela signifie qu'il y a une perte. Le programme affiche alors le message "Il y a une perte de" suivi de la différence entre le prix de fabrication et le prix de vente (prix_fabrication - prix_vente) et le mot "euros".<br>
+                        Si la condition précédente n'est pas satisfaite, cela signifie que le prix de vente est soit supérieur, soit égal au prix de fabrication. Dans ce cas, le programme exécute le bloc else et affiche le message "Il y a un profit de" suivi de la différence entre le prix de vente et le prix de fabrication (prix_vente - prix_fabrication) et le mot "euros".   
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Une fois que l'exécution de la structure conditionnelle est terminée, le programme se termine.
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> le programme qui demande à l'utilisateur d'entrer un score numérique entre 0 et 100, puis qui classe la note en fonction des conditions suivantes :<ul><li>Si le score est égal ou supérieur à 90, affichez "A".
+                    </li><li>Si le score est entre 80 et 89 (inclus), affichez "B".
+                    </li><li>Si le score est entre 70 et 79 (inclus), affichez "C".
+                    </li><li>Si le score est entre 60 et 69 (inclus), affichez "D".
+                    </li><li>Si le score est inférieur à 60, le programme affiche "F".
+                    
+                    </li></ul>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le score : 72.5<br>
+                        C</div>
+                    
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        score = float(input("Entrez le score : "))<br>
+
+                        if score >= 90:<br>
+                            <div class="if">print("A")</div>
+                        elif 80 <= score <= 89:
+                        <div class="if">print("B")</div>
+                        elif 70 <= score <= 79:
+                        <div class="if">print("C")</div>
+                         elif 60 <= score <= 69:
+                         <div class="if">print("D")</div>
+                        else:
+                        <div class="if">print("F")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Le programme utilise la fonction input() pour demander à l'utilisateur d'entrer un score numérique. La valeur saisie est ensuite convertie en nombre flottant à l'aide de float() et stockée dans la variable score.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  le programme utilise une structure conditionnelle if-elif-else pour classer la note en fonction du score.<br>La première condition if score >= 90 vérifie si le score est égal ou supérieur à 90. Si c'est le cas, le programme affiche "A".<br>Si la première condition n'est pas satisfaite, le programme passe à la condition suivante elif 80 <= score <= 89. Cette condition vérifie si le score est compris entre 80 et 89 inclus. Si c'est le cas, le programme affiche "B".<br>Si la deuxième condition n'est pas satisfaite, le programme passe à la condition suivante elif 70 <= score <= 79. Cette condition vérifie si le score est compris entre 70 et 79 inclus. Si c'est le cas, le programme affiche "C".<br>Si la troisième condition n'est pas satisfaite, le programme passe à la condition suivante elif 60 <= score <= 69. Cette condition vérifie si le score est compris entre 60 et 69 inclus. Si c'est le cas, le programme affiche "D".<br>Si aucune des conditions précédentes n'est satisfaite, le programme exécute le bloc else et affiche "F", ce qui signifie que le score est inférieur à 60.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Une fois que le programme a déterminé la note en fonction du score et affiché le résultat, il se termine.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrivez un programme pour inventer une calculatrice qui exécute des opérations arithmétiques de base(additionn, soustration, multiplication ou division) en utilisant if else. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre : 8<br>
+                        Entrez le deuxième nombre : 2<br>
+                        Choisissez une opération (+, -, *, /) <br>
+                        Le résultat de la division est : 4.0</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        num1 = float(input("Entrez le premier nombre : "))<br>
+                        num2 = float(input("Entrez le deuxième nombre : "))<br>
+                        operation = input("Choisissez une opération (+, -, *, /) : ")<br>
+                        if operation == "+":<br>
+                            <div class="if">result = num1 + num2<br>
+                                print("Le résultat de l'addition est :", result)</div>
+                        elif operation == "-":<br>
+                            <div class="if">result = num1 - num2<br>print("Le résultat de la soustraction est :", result)</div>                        elif operation == "*":
+                        elif operation == "*":<br>
+                            <div class="if">result = num1 * num2<br>print("Le résultat de la soustraction est :", result)</div>                        elif operation == "*":
+                            
+                        elif operation == "/":<br>
+                            <div class="if">if num2 != 0:<br><div class="if">result = num1 / num2<br>print("Le résultat de la division est :", result)
+                            </div></div>
+                            <div class="if">else:<div class="if">                                print("Erreur : division par zéro")                            </div></div>
+            
+                        else:<br>
+
+                            <div class="if">print("Opération non valide")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Nous demandons à l'utilisateur de saisir deux nombres en utilisant la fonction input(). Les nombres sont ensuite convertis en type float à l'aide de float(input()) pour permettre les calculs décimaux.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  nous demandons à l'utilisateur de choisir l'opération qu'il souhaite effectuer. L'opération est saisie en utilisant à nouveau la fonction input() et est stockée dans la variable operation.<br>Nous utilisons une série d'instructions conditionnelles if, elif et else pour déterminer quelle opération doit être effectuée en fonction de la valeur de la variable operation.<br>Si l'opération est une addition (+), nous ajoutons les deux nombres num1 et num2 en utilisant l'opérateur + et stockons le résultat dans la variable result. Ensuite, nous affichons le résultat en utilisant print().
+
+                        <br>Si l'opération est une soustraction (-), nous soustrayons num2 de num1 en utilisant l'opérateur - et stockons le résultat dans la variable result. Ensuite, nous affichons le résultat.
+                        <br>Si l'opération est une multiplication (*), nous multiplions les deux nombres num1 et num2 en utilisant l'opérateur * et stockons le résultat dans la variable result. Ensuite, nous affichons le résultat.<br>Si l'opération est une division (/), nous vérifions d'abord si num2 est différent de zéro pour éviter une division par zéro. Si c'est le cas, nous divisons num1 par num2 en utilisant l'opérateur / et stockons le résultat dans la variable result. Ensuite, nous affichons le résultat. Si num2 est égal à zéro, nous affichons un message d'erreur indiquant la division par zéro.<br>Si l'opération ne correspond à aucune des opérations valides (+, -, *, /), nous affichons un message indiquant que l'opération n'est pas valide.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Le programme se termine après l'affichage du résultat ou du message d'erreur, en fonction de l'opération effectuée.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrire un programme python qui lit trois entiers puis les afficher ensuite dans un ordre croissant.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez le premier entier : 5<br>
+                            Entrez le deuxième entier : 2<br>
+                            Entrez le troisième entier : 7<br>
+                            Les entiers dans l'ordre croissant sont : 2 5 7</div>
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        num1 = int(input("Entrez le premier entier : "))<br>
+                        num2 = int(input("Entrez le deuxième entier : "))<br>
+                        num3 = int(input("Entrez le troisième entier : "))<br>
+                        if num1 <= num2 and num1 <= num3:<br>
+                            <div class="if">min_num = num1<br>if num2 <= num3:<div class="if">mid_num = num2<br>max_num = num3</div></div>
+                            <div class="if">else:<div class="if">mid_num = num3<br>max_num = num2</div></div>
+                        elif num2 <= num1 and num2 <= num3:<br>
+                        <div class="if">min_num = num2 <br>if num1 <= num3:<div class="if">mid_num = num1<br>max_num = num3</div>else:<br>
+                        <div class="if">mid_num = num3 <br>max_num = num1</div></div>
+                            
+                        else:<br>
+                            <div class="if">min_num = num3<br>if num1 <= num2:<div class="if">mid_num = num1<br>max_num = num2</div>else:<div class="if">mid_num = num2<br>max_num = num1</div>
+                        print("Les entiers dans l'ordre croissant sont :", min_num, mid_num, max_num)
+                    </div>
+            </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Nous utilisons la fonction input() pour demander à l'utilisateur d'entrer trois entiers. Chaque entier est ensuite converti en type int à l'aide de int(input()) pour nous assurer que nous travaillons avec des nombres entiers.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Nous utilisons ensuite des instructions conditionnelles if, elif et else pour comparer les trois entiers et déterminer leur ordre croissant.<br>Dans la première condition, nous comparons num1 avec num2 et num3 à l'aide de l'opérateur de comparaison <=. Si num1 est inférieur ou égal à la fois à num2 et num3, cela signifie que num1 est le plus petit des trois. Nous attribuons donc sa valeur à la variable min_num.<br>À l'intérieur de cette condition, nous comparons num2 et num3 pour déterminer lequel est le plus petit et lequel est le plus grand. La plus petite valeur est attribuée à la variable mid_num et la plus grande valeur à la variable max_num.<br>Nous utilisons des conditions similaires dans les autres blocs elif pour comparer num2 avec num1 et num3, ainsi que num3 avec num1 et num2. Cela nous permet de trouver les valeurs minimale, médiane et maximale dans chaque cas.<br>
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>Enfin, nous utilisons print() pour afficher les entiers dans l'ordre croissant en les séparant par des virgules. Les valeurs sont affichées en utilisant les variables min_num, mid_num et max_num dans cet ordre.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce"> Ecrire un programme python qui lit un nombre réel et détermine s’il est entier ou non entier.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez un nombre réel : 3.14<br>
+                            Le nombre 3.14 n'est pas un nombre entier.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        nombre = float(input("Entrez un nombre réel : "))<br>
+                        if nombre == int(nombre):<br>
+                        <div class="if">print("Le nombre", nombre, "est un nombre entier.")</div>
+                        else:<br>
+                            <div class="if">print("Le nombre", nombre, "n'est pas un nombre entier.")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Nous utilisons la fonction input() pour demander à l'utilisateur d'entrer un nombre réel. Le nombre est ensuite converti en type float à l'aide de float(input()) pour permettre les décimales.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  En utilisant une instruction conditionnelle if, nous comparons le nombre saisi avec sa valeur convertie en entier à l'aide de int(nombre). Si ces deux valeurs sont égales, cela signifie que le nombre est un entier.<br>Si le nombre est un entier, le programme affiche un message indiquant que le nombre est un nombre entier.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Sinon, si le nombre n'est pas un entier, le programme affiche un message indiquant que le nombre n'est pas un nombre entier.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrivez un programme qui détermine si une année donnée est bissextile ou non.<br> Une année est bissextile si elle est divisible par 4, sauf si elle est également divisible par 100. Toutefois, les années qui sont divisibles par 400 sont considérées comme bissextiles.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                     <div class="exemple">Entrez une année : 2021<br>
+                        2021 n'est pas une année bissextile.</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        annee = int(input("Entrez une année : "))<br>                        
+                        if annee % 4 == 0:<br>
+                        <div class="if">if annee % 100 == 0:<div class="if">if annee % 400 == 0:<div class="if">print(annee, "est une année bissextile.")</div></div><div class="if">else:<div class="if">print(annee, "n'est pas une année bissextile.")</div></div></div>
+                        <div class="if">else:<div class="if">print(annee, "est une année bissextile.")</div></div>  
+    
+                else:
+                    <div class="if">print(annee, "n'est pas une année bissextile.")</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Nous utilisons la fonction input() pour demander à l'utilisateur d'entrer une année. L'année est ensuite convertie en type int à l'aide de int(input()) pour permettre les opérations arithmétiques.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> En utilisant des instructions conditionnelles if, nous vérifions si l'année est divisible par 4 en utilisant l'opérateur % pour vérifier si le reste de la division par 4 est égal à 0.<br>Si l'année est divisible par 4, nous vérifions ensuite si elle est divisible par 100. Si c'est le cas, nous vérifions si elle est également divisible par 400. Si elle l'est, alors c'est une année bissextile. Sinon, ce n'est pas une année bissextile.<br>Si l'année est divisible par 4 mais pas par 100, alors c'est une année bissextile.<br>Si l'année n'est pas divisible par 4, alors ce n'est pas une année bissextile.              <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> En utilisant print(), nous affichons le résultat de la détermination de l'année bissextile ou non.
+
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Education is the most powerful weapon you can use to change the world.” —B.B. King</div>
+    </div>
+</body>

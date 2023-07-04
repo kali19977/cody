@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE C</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+        
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Notion de base</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui demande à l'utilisateur de saisir deux nombres, puis calcule et affiche leur somme.</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre : 4.5<br>
+                        Entrez le deuxième nombre : 2.3<br>
+                        La somme des deux nombres est : 6.80</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {<br>
+                                <div class="if">float nombre1, nombre2, somme;</div>
+                                
+                                <div class="if">// Demander à l'utilisateur de saisir les deux nombres</div>
+                                <div class="if">printf("Entrez le premier nombre : ");</div>
+                                <div class="if"> scanf("%f", &nombre1);</div>
+                                    <div class="if">printf("Entrez le deuxième nombre : ");</div>
+                                        <div class="if">scanf("%f", &nombre2);</div>
+                                
+                                            <div class="if">// Calculer la somme des deux nombres</div>
+                                                <div class="if"> somme = nombre1 + nombre2;</div>
+                                
+                                                    <div class="if"> // Afficher la somme</div>
+                                <div class="if">  printf("La somme des deux nombres est : %.2f\n", somme);</div>
+                                
+                                    <div class="if">  return 0;</div>
+                                        <div class="if"> }</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1">Ce programme utilise la bibliothèque standard stdio.h pour l'entrée/sortie et utilise la fonction scanf pour récupérer les nombres saisis par l'utilisateur. La somme des deux nombres est calculée en ajoutant nombre1 et nombre2, puis elle est affichée à l'aide de la fonction printf.
+
+
+
+
+                    </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui permet à l'utilisateur de saisir deux nombres réels, puis affiche leur produit .</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre réel : 2.5<br>
+                        Entrez le deuxième nombre réel : 3.2<br>
+                        Le produit des deux nombres est : 8.000000</div>
+                  <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">float nombre1, nombre2, produit;</div>
+                            
+                                <div class="if">printf("Entrez le premier nombre réel : ");</div>
+                                <div class="if">scanf("%f", &nombre1);</div>
+                            
+                                <div class="if">printf("Entrez le deuxième nombre réel : ");</div>
+                                <div class="if">scanf("%f", &nombre2);</div>
+                            
+                                <div class="if">produit = nombre1 * nombre2;</div>
+                            
+                                <div class="if">printf("Le produit des deux nombres est : %f", produit);</div>
+                            
+                                <div class="if">return 0;</div>
+                                <div class="if">}</div>
+                                  
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1">Dans ce programme, nous utilisons la fonction printf pour afficher un message demandant à l'utilisateur de saisir les deux nombres réels. Ensuite, nous utilisons la fonction scanf pour lire les nombres saisis par l'utilisateur et les stocker dans les variables nombre1 et nombre2. Le produit des deux nombres est calculé en multipliant nombre1 par nombre2 et stocké dans la variable produit. Enfin, nous utilisons la fonction printf pour afficher le resultat.
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui demande à l'utilisateur de saisir son nom et prénom, puis affiche le message "Welcome, prénom nom"</div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez votre nom : Smith<br>
+                        Entrez votre prénom : John<br>
+                        Welcome, John Smith</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char nom[50], prenom[50];</div>
+                            
+                                <div class="if">printf("Entrez votre nom : ");</div>
+                                <div class="if">scanf("%s", nom);</div>
+                            
+                                <div class="if">printf("Entrez votre prénom : ");</div>
+                                <div class="if">scanf("%s", prenom);</div>
+                            
+                                <div class="if">printf("Welcome, %s %s\n", prenom, nom);</div>
+                            
+                                <div class="if">return 0;</div>
+                                <div class="if">}</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Dans ce programme,</div> nous utilisons des tableaux de caractères (nom et prenom) pour stocker les noms saisis par l'utilisateur. La fonction scanf est utilisée pour lire les entrées de l'utilisateur et les stocker dans les tableaux correspondants. Ensuite, nous utilisons la fonction printf pour afficher le message de bienvenue en concaténant le prénom et le nom saisis.
+
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui demande a l’utilisateur les deux côtés d’un rectangle , puis calcule le périmètre de ce rectangle puis les affiche.
+                        <br>perimetre = 2 * (longueur + largeur)
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez la longueur du rectangle : 5.2<br>
+                        Entrez la largeur du rectangle : 3.8<br>
+                        Le périmètre du rectangle est : 18.00</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">float longueur, largeur, perimetre;</div>
+                            
+                                <div class="if"> printf("Entrez la longueur du rectangle : ");</div>
+                                    <div class="if"> scanf("%f", &longueur);</div>
+                            
+                                        <div class="if"> printf("Entrez la largeur du rectangle : ");</div>
+                                            <div class="if"> scanf("%f", &largeur);</div>
+                            
+                                                <div class="if"> perimetre = 2 * (longueur + largeur);</div>
+                            
+                                                    <div class="if">  printf("Le périmètre du rectangle est : %f\n", perimetre);</div>
+                            
+                                                        <div class="if">  return 0;</div>
+                                                            <div class="if">  }</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons des variables de type float pour stocker les valeurs des côtés du rectangle (longueur et largeur). La fonction scanf est utilisée pour lire les entrées de l'utilisateur et les stocker dans les variables correspondantes. <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   nous calculons le périmètre en utilisant la formule 2 * (longueur + largeur).  <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous utilisons la fonction printf pour afficher le résultat du calcul du périmètre.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C pour saisir le nombre de jours de l'utilisateur et convertissez-le en années, semaines et jours.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le nombre de jours : 1000<br>
+                        Le nombre de jours correspond à : 2 année(s), 46 semaine(s) et 6 jour(s).</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int jours, annees, semaines, joursRestants;</div>
+                            
+                                    <div class="if">printf("Entrez le nombre de jours : ");</div>
+                                        <div class="if">  scanf("%d", &jours);</div>
+                            
+                                            <div class="if">  // Calcul des années</div>
+                                                <div class="if">  annees = jours / 365;</div>
+                                                    <div class="if">  // Calcul des jours restants</div>
+                                                        <div class="if">  joursRestants = jours % 365;</div>
+                                                            <div class="if">  // Calcul des semaines</div>
+                                                                <div class="if">  semaines = joursRestants / 7;</div>
+                                                                    <div class="if"> // Calcul des jours restants</div>
+                                                                        <div class="if"> joursRestants = joursRestants % 7;</div>
+                            
+                                                                            <div class="if">  printf("Le nombre de jours correspond à : %d année(s), %d semaine(s) et %d jour(s).\n", annees, semaines, joursRestants);</div>
+                            
+                                                                                <div class="if">   return 0;</div>
+                                                                                    <div class="if"> }  </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons une variable jours de type int pour stocker le nombre de jours saisi par l'utilisateur.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>    nous effectuons les calculs nécessaires pour convertir ce nombre en années, semaines et jours. La division entière (/) est utilisée pour calculer le nombre d'années et de semaines, et l'opérateur modulo (%) est utilisé pour obtenir le nombre de jours restants après avoir calculé les années et les semaines.    
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous utilisons la fonction printf pour afficher le résultat de la conversion en années, semaines et jours. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui lit trois entiers, calcule puis affiche leur moyenne. 
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez le premier entier : 10<br>
+                            Entrez le deuxième entier : 15<br>
+                            Entrez le troisième entier : 20<br>
+                            La moyenne des trois entiers est : 15.00</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int entier1, entier2, entier3;</div>
+                                    <div class="if">float moyenne;</div>
+                            
+                                        <div class="if"> printf("Entrez le premier entier : ");</div>
+                                            <div class="if"> scanf("%d", &entier1);</div>
+                            
+                                                <div class="if"> printf("Entrez le deuxième entier : ");</div>
+                                                    <div class="if"> scanf("%d", &entier2);</div>
+                            
+                                                        <div class="if">printf("Entrez le troisième entier : ");</div>
+                                                            <div class="if">scanf("%d", &entier3);</div>
+                            
+                                                                <div class="if"> moyenne = (entier1 + entier2 + entier3) / 3.0;</div>
+                            
+                                                                    <div class="if">  printf("La moyenne des trois entiers est : %.2f\n", moyenne);</div>
+                            
+                                                                        <div class="if">  return 0;</div>
+                                                                            <div class="if"> }</div></div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons trois variables entier1, entier2 et entier3 de type int pour stocker les entiers saisis par l'utilisateur.   <div class="spider"></div>
+                        <div class="er">Ensuite,</div> nous utilisons la formule (entier1 + entier2 + entier3) / 3.0 pour calculer la moyenne des trois entiers. La division par 3.0 est utilisée pour obtenir un résultat décimal (de type float) au lieu d'une division entière.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous utilisons la fonction printf avec le format %.2f pour afficher la moyenne avec deux chiffres après la virgule.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui lit deux nombres en entrée à partir de l'utilisateur, puis calcule et affiche leur puissance 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre : 2.5<br>
+                        Entrez le deuxième nombre : 3.0<br>
+                        La puissance de 2.50 élevé à la 3.00 est : 15.63</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &lt;stdio.h&gt<br>
+                            #include &lt;math.h&gt<br>
+                            
+                            int main() {
+                                <div class="if">double nombre1, nombre2, puissance;</div>
+                            
+                                    <div class="if">printf("Entrez le premier nombre : ");</div>
+                                        <div class="if"> scanf("%lf", &nombre1);</div>
+                            
+                                            <div class="if"> printf("Entrez le deuxième nombre : ");</div>
+                                                <div class="if"> scanf("%lf", &nombre2);</div>
+                            
+                                                    <div class="if">  puissance = pow(nombre1, nombre2);</div>
+                            
+                                                        <div class="if">   printf("La puissance de %.2lf élevé à la %.2lf est : %.2lf\n", nombre1, nombre2, puissance);</div>
+                            
+                                                            <div class="if">    return 0;</div>
+                                                                <div class="if">}</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction printf pour afficher les messages demandant à l'utilisateur de saisir les deux nombres. Les nombres sont ensuite saisis à l'aide de la fonction scanf et stockés dans les variables nombre1 et nombre2.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  nous utilisons la fonction pow de la bibliothèque mathématique (math.h) pour calculer la puissance du premier nombre élevé à la deuxième nombre. Le résultat est stocké dans la variable puissance.<div class="spider"></div>
+
+                        <div class="er">Enfin,</div> nous utilisons à nouveau la fonction printf pour afficher le résultat de la puissance avec deux décimales grâce au formatage %.2lf.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour saisir un nombre et calculer sa racine carrée.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre : 25.0<br>
+                        La racine carrée de 25.00 est 5.00</div>
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+#include &ltstdio.h&gt<br>
+#include &ltmath.h&gt<br>
+
+int main() {
+    <div class="if">double nombre, racine_carree;</div>
+    
+        <div class="if">// Saisie du nombre</div>
+            <div class="if">printf("Entrez un nombre : ");</div>
+                <div class="if">scanf("%lf", &nombre);</div>
+    
+                    <div class="if">   // Calcul de la racine carrée</div>
+                    <div class="if">racine_carree = sqrt(nombre);</div>
+    
+                    <div class="if"> // Affichage du résultat</div>
+                    <div class="if">printf("La racine carrée de %.2lf est %.2lf\n", nombre, racine_carree);</div>
+    
+                    <div class="if">  return 0;</div>
+                    <div class="if">}</div>
+
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction sqrt() de la bibliothèque mathématique &ltmath.h&gt pour calculer la racine carrée d'un nombre. Nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer un nombre, puis nous stockons cette valeur dans la variable nombre . le programme utilise la fonction input() pour demander à l'utilisateur de saisir un nombre. L'entrée de l'utilisateur est stockée dans la variable nombre. Pour permettre les calculs avec des valeurs décimales, la valeur saisie est convertie en nombre réel (flottant) à l'aide de float().
+
+                        Le programme utilise la fonction math.sqrt() pour calculer la racine carrée du nombre saisi. La fonction sqrt() prend le nombre en argument et renvoie sa racine carrée. Le résultat est stocké dans la variable racine_carree.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>nous utilisons sqrt() pour calculer la racine carrée, et enfin, nous affichons le résultat à l'aide de printf().<br><br>Notez que %lf est utilisé dans scanf() pour lire un nombre à virgule flottante (double), et %.2lf est utilisé dans printf() pour afficher le résultat avec deux décimales après la virgule.
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrivez un programme pour saisir deux angles de l'utilisateur et trouver le troisième angle du triangle.<br>a+b+c=180
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier angle : 30.0<br>
+                        Entrez le deuxième angle : 60.0<br>
+                        Le troisième angle du triangle est : 90.00 degrés</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {<div class="if">
+                                float angle1, angle2, angle3;</div>
+                            
+                                <div class="if">// Saisie des deux angles connus</div>
+                                    <div class="if">printf("Entrez le premier angle : ");</div>
+                                        <div class="if">scanf("%f", &angle1);</div>
+                            
+                                            <div class="if">printf("Entrez le deuxième angle : ");</div>
+                                                <div class="if">scanf("%f", &angle2);</div>
+                            
+                                                    <div class="if">// Calcul du troisième angle</div>
+                                                        <div class="if">angle3 = 180 - (angle1 + angle2);</div>
+                            
+                                                            <div class="if"> // Affichage du résultat</div>
+                                                                <div class="if"> printf("Le troisième angle du triangle est : %.2f degrés\n", angle3);</div>
+                            
+                                                                    <div class="if">  return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer les deux angles connus du triangle, puis nous les stockons dans les variables angle1 et angle2. Ensuite, nous calculons le troisième angle en soustrayant la somme des deux angles connus de 180 (puisque la somme des angles d'un triangle est toujours égale à 180 degrés). Enfin, nous affichons le résultat à l'aide de la fonction printf().
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour saisir le côté d'un triangle équilatéral et trouvez la surface du triangle donné.
+                    <div class="images"><img src="sur.PNG" alt=""></div>
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez la longueur du cote du triangle : 5.0<br>
+                        La surface du triangle est : 10.83</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include &ltmath.h&gt<br>
+                            
+                            int main() {
+                                <div class="if">float cote, surface;</div>
+                            
+                                    <div class="if"> // Saisie de la longueur du côté du triangle</div>
+                                        <div class="if"> printf("Entrez la longueur du cote du triangle : ");</div>
+                                            <div class="if"> scanf("%f", &cote);</div>
+                            
+                                                <div class="if">  // Calcul de la surface du triangle</div>
+                                                    <div class="if">  surface = (sqrt(3) / 4) * pow(cote, 2);</div>
+                            
+                                                        <div class="if">    // Affichage du résultat</div>
+                                                            <div class="if">    printf("La surface du triangle est : %.2f\n", surface);</div>
+                            
+                                                                <div class="if">    return 0;</div>
+                                <div class="if"> }</div>
+                           
+                            
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer la longueur du côté du triangle équilatéral, puis nous la stockons dans la variable cote. Ensuite, nous calculons la surface du triangle en utilisant la formule (sqrt(3) / 4) * cote^2, où sqrt(3) représente la racine carrée de 3 et pow(cote, 2) calcule le carré de la longueur du côté. Enfin, nous affichons le résultat à l'aide de la fonction printf().
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Live as if you were to die tomorrow. Learn as if you were to live forever.” – Mahatma Gandhi</div>
+    </div>
+</body>

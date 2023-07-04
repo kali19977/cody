@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_tuple</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+            
+            
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Tuple</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux entiers, puis crée un tuple contenant ces deux entiers.     
+                    </div>
+                    <div class="exemple">Saisissez le premier entier : 10<br>
+                        Saisissez le deuxième entier : 20<br>
+                        Le tuple contient : (10, 20)</div>
+                     <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        entier1 = int(input("Saisissez le premier entier : "))<br>
+                        entier2 = int(input("Saisissez le deuxième entier : "))<br>
+                        mon_tuple = (entier1, entier2)<br>
+                        print("Le tuple contient :", mon_tuple)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Ce programme demande à l'utilisateur de saisir deux entiers, puis crée un tuple avec ces deux entiers. Ensuite, il affiche le contenu du tuple.</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une liste de nombres, puis convertit cette liste en un tuple.</div>
+                    <div class="exemple">Saisissez une liste de nombres, séparés par des espaces : 10 20 30 40<br>
+                        Le tuple obtenu : ('10', '20', '30', '40')</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        nombres = input("Saisissez une liste de nombres, séparés par des espaces : ").split()
+                        <br>mon_tuple = tuple(nombres)<br>
+                        print("Le tuple obtenu :", mon_tuple)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme demande à l'utilisateur de saisir une liste de nombres, en les séparant par des espaces. Ensuite, il convertit cette liste en un tuple à l'aide de la fonction tuple(). Enfin, il affiche le tuple obtenu.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis crée un tuple contenant chaque caractère de la chaîne.  
+                        <div class="exemple">Saisissez une chaîne de caractères : Hello<br>
+                            Le tuple obtenu : ('H', 'e', 'l', 'l', 'o')</div>
+                        <div class="solution">SOLUTION :</div>
+                    </div>
+                    <div class="solution1"> 
+                        chaine = input("Saisissez une chaîne de caractères : ")<br>
+                        mon_tuple = tuple(ch for ch in chaine)<br>
+                        print("Le tuple obtenu :", mon_tuple)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> ce programme demande à l'utilisateur de saisir une chaîne de caractères. Ensuite, il utilise une expression de compréhension pour parcourir chaque caractère de la chaîne et les ajouter à un tuple. Enfin, il affiche le tuple obtenu.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tuple d'entiers, puis affiche la somme de tous les éléments du tuple.
+                    </div>
+                    <div class="exemple">Saisissez un tuple d'entiers (séparés par des espaces) : 1 2 3 4 5<br>
+                        La somme des éléments du tuple : 15</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        tup = tuple(int(x) for x in input("Saisissez un tuple d'entiers (séparés par des espaces) : ").split())
+                        <br>somme = sum(tup)<br>
+                        print("La somme des éléments du tuple :", somme)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, on utilise la fonction input pour demander à l'utilisateur de saisir un tuple d'entiers. Les entiers saisis sont ensuite convertis en un tuple à l'aide de la fonction tuple. Ensuite, la fonction sum est utilisée pour calculer la somme de tous les éléments du tuple. Enfin, la somme est affichée à l'écran.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tuple de nombres, puis affiche le nombre le plus élevé du tuple.</div>
+                    <div class="exemple">Saisissez un tuple de nombres (séparés par des espaces) : 3.14 2.5 1.8 4.6 2.9
+                       <br> Le nombre le plus élevé du tuple : 4.6</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        tup = tuple(float(x) for x in input("Saisissez un tuple de nombres (séparés par des espaces) : ").split())
+                      <br>  max_num = max(tup)<br>
+                      print("Le nombre le plus élevé du tuple :", max_num)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, on utilise la fonction input pour demander à l'utilisateur de saisir un tuple de nombres. Les nombres saisis sont ensuite convertis en un tuple de nombres à l'aide de la fonction tuple. Ensuite, la fonction max est utilisée pour trouver le nombre le plus élevé dans le tuple. Enfin, le nombre le plus élevé est affiché à l'écran.
+
+                </div>
+            </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tuple de mots, puis affiche le mot le plus long du tuple.
+
+                    </div>              
+                    <div class="exemple">Saisissez un tuple de mots (séparés par des espaces) : Bonjour monde Python
+                     <br>   Le mot le plus long dans le tuple : Bonjour</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        tup = tuple(input("Saisissez un tuple de mots (séparés par des espaces) : ").split())
+                        <br>longest_word = max(tup, key=len)
+                        <br>print("Le mot le plus long dans le tuple :", longest_word)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, on utilise la fonction input pour demander à l'utilisateur de saisir un tuple de mots. Les mots saisis sont ensuite convertis en un tuple de mots à l'aide de la fonction tuple. Ensuite, la fonction max est utilisée avec le paramètre key=len pour trouver le mot le plus long dans le tuple en se basant sur la longueur de chaque mot. Enfin, le mot le plus long est affiché à l'écran.
+
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tuple de nombres, puis affiche une nouvelle liste contenant uniquement les nombres pairs du tuple d'origine.
+                    </div>
+                    <div class="exemple">Saisissez un tuple de nombres (séparés par des espaces) : 5 10 15 20 25
+                      <br>  Liste des nombres pairs : [10, 20]</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+tup_str = input("Saisissez un tuple de nombres (séparés par des espaces) : ")<br>
+tup = tuple(int(num) for num in tup_str.split())<br>
+even_numbers = [num for num in tup if num % 2 == 0]<br>
+print("Liste des nombres pairs :", even_numbers)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cette version, on demande à l'utilisateur de saisir un tuple de nombres sous forme de chaîne de caractères. La chaîne de caractères est ensuite divisée en une liste de nombres individuels à l'aide de split(). Chaque élément de la liste est converti en entier à l'aide de la compréhension de liste int(num). Ensuite, le processus est similaire à la version précédente, où une nouvelle liste est créée avec les nombres pairs du tuple d'origine, puis affichée à l'écran.
+
+                </div>
+            </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir un tuple de mots, puis affiche une nouvelle liste contenant les mots du tuple d'origine triés par ordre alphabétique.
+                    </div>
+                    <div class="exemple">Saisissez un tuple de mots (séparés par des espaces) : orange pomme banane kiwi
+                        Les mots du tuple triés par ordre alphabétique : ['banane', 'kiwi', 'orange', 'pomme']</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        tup = tuple(input("Saisissez un tuple de mots (séparés par des espaces) : ").split())
+                        <br>mots_tries = sorted(tup)
+                        <br>print("Les mots du tuple triés par ordre alphabétique :", mots_tries)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, on utilise la fonction input pour demander à l'utilisateur de saisir un tuple de mots. Les mots saisis sont ensuite convertis en un tuple de mots à l'aide de la fonction tuple. Ensuite, la fonction sorted est utilisée pour trier les mots du tuple d'origine par ordre alphabétique. Enfin, la nouvelle liste contenant les mots triés est affichée à l'écran.
+
+                         
+                </div>
+            </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir un tuple de nombres, puis affiche la médiane du tuple (le nombre au milieu lorsque les éléments sont triés dans l'ordre croissant).</div> 
+                    <div class="exemple">Saisissez un tuple de nombres (séparés par des espaces) : 4.5 2.1 6.7 3.2 9.8
+                     <br>   La médiane du tuple : 4.5</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        tup = tuple(float(x) for x in input("Saisissez un tuple de nombres (séparés par des espaces) : ").split())
+                        <br>tup_trie = sorted(tup)<br>
+                        indice_mediane = len(tup_trie) // 2<br>
+                        mediane = tup_trie[indice_mediane]<br>
+                        print("La médiane du tuple :", mediane)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, on utilise la fonction input pour demander à l'utilisateur de saisir un tuple de nombres. Les nombres saisis sont ensuite convertis en un tuple de nombres à l'aide de la compréhension de liste float(x). Ensuite, la fonction sorted est utilisée pour trier les nombres du tuple d'origine par ordre croissant. On calcule l'indice de la médiane en divisant la longueur du tuple trié par 2 (utilisation de // pour la division entière). Enfin, la médiane du tuple est récupérée à l'aide de l'indice médian et affichée à l'écran.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir deux tuples de même longueur, puis affiche une nouvelle liste contenant la somme des éléments correspondants des deux tuples.</div>
+                    
+                    
+                    <div class="exemple">Saisissez le premier tuple (séparé par des espaces) : 1 2 3
+                        <br>Saisissez le deuxième tuple (séparé par des espaces) : 4 5 6
+                        <br>La somme des éléments correspondants des deux tuples : (5, 7, 9)</div>
+                    <div class="solution">SOLUTION :</div>
+
+                    <div class="solution1"> 
+                            tup1 = tuple(int(x) for x in input("Saisissez le premier tuple (séparé par des espaces) : ").split())
+                           <br> tup2 = tuple(int(x) for x in input("Saisissez le deuxième tuple (séparé par des espaces) : ").split())
+                            <br>
+                            if len(tup1) != len(tup2):<br><div class ="if">
+                                print("Les deux tuples n'ont pas la même longueur.")</div>
+                            else:<div class="if">
+                                somme = tuple(tup1[i] + tup2[i] for i in range(len(tup1)))</div>
+                            <div class="if">
+                                print("La somme des éléments correspondants des deux tuples :", somme)</div>
+                         </div>
+                </div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cette version, on utilise une boucle for avec l'indice i pour parcourir les éléments des tuples tup1 et tup2. On ajoute les éléments correspondants des deux tuples à l'aide de la formule tup1[i] + tup2[i]. Ensuite, on crée une nouvelle liste contenant la somme des éléments correspondants à l'aide d'une compréhension de tuple. Enfin, on affiche la nouvelle liste contenant la somme des éléments correspondants des deux tuples.
+                        </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Work gives you meaning and purpose and life is empty without it.” – Stephen Hawking</div>
+    </div>
+</body>

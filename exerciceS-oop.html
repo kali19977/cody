@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE PYTHON_oop</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+         
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">OOP</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Créer une classe appelée "Rectangle" avec les attributs longueur et largeur, et inclut des méthodes pour calculer l'aire et le périmètre du rectangle
+                    </div>
+                    <div class="exemple">Entrez la longueur du rectangle : 5<br>
+                        Entrez la largeur du rectangle : 3<br>
+                        Surface du rectangle 15.0<br>
+                        Périmètre du rectangle : 16.0</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        class Rectangle:<div class="if">
+    def __init__(self, longueur , largueur):<div class="if">
+        self.longueur  = longueur </div>
+        <div class="if">self.largueur = largueur</div></div>
+
+        <div class="if">def calculate_area(self):<div class="if">
+        return self.longueur  * self.largueur</div></div>
+
+        <div class="if">def calculate_perimeter(self):
+            <div class="if"> return 2 * (self.longueur  + self.largueur)</div></div>
+
+# User input<br>
+longueur  = float(input("Entrez la longueur du rectangle : "))<br>
+largueur = float(input("Entrez le largueur du rectangle : "))<br>
+
+# Create a Rectangle object<br>
+rectangle = Rectangle(longueur , largueur)<br>
+
+# Calculate area and perimeter<br>
+area = rectangle.calculate_area()<br>
+perimeter = rectangle.calculate_perimeter()<br>
+
+# Print the results<br>
+print("Surface du rectangle", area)<br>
+print("Périmètre du rectangle :", perimeter)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>Dans ce code, l'utilisateur est invité à saisir la longueur et la largeur du rectangle. Ces valeurs sont ensuite utilisées pour créer une instance de la classe Rectangle.
+
+                    </li><li>Les méthodes calculer_surface() et calculer_perimetre() sont utilisées pour calculer respectivement la surface et le périmètre du rectangle.
+                    </li><li>.
+                    
+                    Enfin, la surface et le périmètre calculés sont affichés à l'écran.
+                    </li></ul>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Créer une classe appelée "Cercle" avec l'attribut rayon et inclut des méthodes pour calculer l'aire et la circonférence du cercle .
+                    </div>
+                    <div class="exemple">Entrez le rayon du cercle : 4<br>
+                        L'aire du cercle est : 50.26548245743669<br>
+                        La circonférence du cercle est : 25.132741228718345</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        import math<br>
+
+class Cercle:<div class="if">
+    def __init__(self, rayon):<div class="if">
+        self.rayon = rayon</div></div>
+
+        <div class="if">def calculer_aire(self):<div class="if">
+        return math.pi * self.rayon**2</div></div>
+
+        <div class="if">def calculer_circonference(self):<div class="if">
+        return 2 * math.pi * self.rayon</div></div>
+
+# Demande à l'utilisateur de saisir le rayon du cercle<br>
+rayon = float(input("Entrez le rayon du cercle : "))<br>
+
+# Création d'un objet Cercle<br>
+cercle = Cercle(rayon)<br>
+
+# Calcul de l'aire et de la circonférence<br>
+aire = cercle.calculer_aire()<br>
+circonference = cercle.calculer_circonference()<br>
+
+# Affichage des résultats<br>
+print("L'aire du cercle est :", aire)<br>
+print("La circonférence du cercle est :", circonference)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce code, l'utilisateur est invité à saisir le rayon du cercle. Cette valeur est ensuite utilisée pour créer une instance de la classe Cercle.<div class="spider"></div>
+                        <div class="er">Ensuite,</div>Les méthodes calculer_aire() et calculer_circonference() sont utilisées pour calculer respectivement l'aire et la circonférence du cercle. La valeur de pi est obtenue à partir du module math.
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>l'aire et la circonférence calculées sont affichées à l'écran.
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">créer une classe appelée "Etudiant" avec les attributs nom, âge et note, et inclut des méthodes pour afficher les informations de l'étudiant et calculer la moyenne des notes d'un groupe d'étudiants:<ul><li>nom:"Alice",age: 20,note: 15</li><li>nom:"Bob",age:19,note: 17</li><li>nom:"Claire",age: 21,note: 14</li></ul> 
+                    </div>
+                    <div class="exemple">Nom de l'étudiant : Alice<br>
+                        Âge de l'étudiant : 20<br>
+                        Note de l'étudiant : 15<br>
+                        Nom de l'étudiant : Bob<br>
+                        Âge de l'étudiant : 19<br>
+                        Note de l'étudiant : 17<br>
+                        Nom de l'étudiant : Claire<br>
+                        Âge de l'étudiant : 21<br>
+                        Note de l'étudiant : 14<br>
+                        Moyenne des notes du groupe : 15.333333333333334</div>    
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        class Etudiant:<div class="if">
+    def __init__(self, nom, age, note):<div class="if">
+        <div class="if">self.nom = nom</div>
+        <div class="if">self.age = age</div>
+        <div class="if">self.note = note</div></div></div>
+
+        <div class="if">def afficher_informations(self):<div class="if">
+        print("Nom de l'étudiant :", self.nom)</div>
+        <div class="if">print("Âge de l'étudiant :", self.age)</div>
+        <div class="if">print("Note de l'étudiant :", self.note)</div></div>
+
+class GroupeEtudiants:
+    <div class="if">def __init__(self, etudiants):<div class="if">
+        self.etudiants = etudiants</div></div>
+
+        <div class="if">def calculer_moyenne_notes(self):<div class="if">
+        total = 0</div>
+        <div class="if">for etudiant in self.etudiants:<div class="if">
+            total += etudiant.note</div></div>
+            <div class="if">moyenne = total / len(self.etudiants)</div>
+                <div class="if">return moyenne</div></div>
+
+# Création d'objets Etudiant<br>
+etudiant1 = Etudiant("Alice", 20, 15)<br>
+etudiant2 = Etudiant("Bob", 19, 17)<br>
+etudiant3 = Etudiant("Claire", 21, 14)<br>
+
+# Création d'un objet GroupeEtudiants avec les étudiants créés<br>
+groupe = GroupeEtudiants([etudiant1, etudiant2, etudiant3])<br>
+
+# Affichage des informations des étudiants<br>
+etudiant1.afficher_informations()<br>
+etudiant2.afficher_informations()<br>
+etudiant3.afficher_informations()<br>
+
+# Calcul de la moyenne des notes du groupe d'étudiants<br>
+moyenne_notes = groupe.calculer_moyenne_notes()<br>
+
+# Affichage de la moyenne des notes<br>
+print("Moyenne des notes du groupe :", moyenne_notes)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce code, la classe Etudiant est créée avec les attributs nom, âge et note. La méthode afficher_informations() permet d'afficher les informations de l'étudiant.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  la classe GroupeEtudiants est créée avec un attribut etudiants qui représente une liste d'objets de la classe Etudiant. La méthode calculer_moyenne_notes() parcourt la liste des étudiants et calcule la moyenne des notes.<br>Des objets Etudiant sont créés avec différentes informations. Un objet GroupeEtudiants est également créé en utilisant les étudiants créés précédemment.      <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> Les informations des étudiants sont affichées à l'écran en utilisant la méthode afficher_informations(). Enfin, la moyenne des notes du groupe d'étudiants est calculée et affichée.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce"> Créer une classe appelée "Voiture" avec les attributs "marque", "modèle" et "année", et inclut des méthodes pour démarrer la voiture, arrêter la voiture et afficher les informations de la voiture.
+                    </div>
+                    <div class="exemple">Entrez la marque de la voiture : Audi<br>
+                        Entrez le modèle de la voiture : A4<br>
+                        Entrez l'année de la voiture : 2020<br>
+                        La voiture démarre.<br>
+                        La voiture s'arrête.<br>
+                        Informations sur la voiture :<br>
+                        Marque : Audi<br>
+                        Modèle : A4<br>
+                        Année : 2020</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        class Voiture:<div class="if">
+    def __init__(self):<div class="if">
+        self.marque = input("Entrez la marque de la voiture : ")</div>
+        <div class="if">self.modele = input("Entrez le modèle de la voiture : ")</div>
+        <div class="if">self.annee = input("Entrez l'année de la voiture : ")</div></div>
+
+        <div class="if">def demarrer(self):<div class="if">
+        print("La voiture démarre.")</div></div>
+
+        <div class="if">def arreter(self):<div class="if">
+        print("La voiture s'arrête.")</div></div>
+
+        <div class="if">def afficher_informations(self):<div class="if">
+        print("Informations sur la voiture :")</div>
+        <div class="if">print("Marque :", self.marque)</div>
+        <div class="if">print("Modèle :", self.modele)</div>
+        <div class="if"> print("Année :", self.annee)</div></div>
+
+# Création d'un objet Voiture<br>
+voiture = Voiture()<br>
+
+# Démarrage de la voiture<br>
+voiture.demarrer()<br>
+
+# Arrêt de la voiture<br>
+voiture.arreter()<br>
+
+# Affichage des informations de la voiture<br>
+voiture.afficher_informations()<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><ul><li>Dans ce code, la classe Voiture est créée avec un constructeur __init__ qui demande à l'utilisateur d'entrer la marque, le modèle et l'année de la voiture.
+
+                    </li><li>La méthode demarrer() affiche un message indiquant que la voiture démarre.
+                    
+                    </li><li>La méthode arreter() affiche un message indiquant que la voiture s'arrête.
+                    
+                    </li><li>La méthode afficher_informations() affiche les informations complètes de la voiture, y compris la marque, le modèle et l'année.
+                    
+                    </li><li>Un objet Voiture est créé où l'utilisateur est invité à entrer la marque, le modèle et l'année de la voiture. Ensuite, l'utilisateur peut effectuer des opérations telles que démarrer la voiture, l'arrêter et afficher ses informations complètes.</li></ul>
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Créez une classe appelée 'Produit' avec les attributs nom, prix et quantité. Incluez des méthodes pour calculer le coût total du produit et afficher les informations du produit. 
+                    <div class="exemple">Entrez le nom du produit : Stylo<br>
+                        Entrez le prix unitaire du produit : 1.5<br>
+                        Entrez la quantité du produit : 10<br>
+                        Nom du produit :  Stylo<br>
+                        Prix unitaire :  1.5<br>
+                        Quantité :  10<br>
+                        Coût total :  15.0</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        class Produit:<div class="if">
+    def __init__(self, nom, prix, quantite):<div class="if">
+        self.nom = nom</div>
+        <div class="if">self.prix = prix</div>
+        <div class="if">self.quantite = quantite</div></div>
+    
+        <div class="if">def calculer_cout_total(self):
+            <div class="if">cout_total = self.prix * self.quantite
+                <div class="if">return cout_total</div></div></div>
+    
+                <div class="if">def afficher_informations(self):
+                    <div class="if">cout_total = self.calculer_cout_total()</div>
+                    <div class="if">print("Nom du produit : ", self.nom)</div>
+                    <div class="if">print("Prix unitaire : ", self.prix)</div>
+                    <div class="if">print("Quantité : ", self.quantite)</div>
+                    <div class="if">print("Coût total : ", cout_total)</div></div>
+
+# Exemple d'utilisation de la classe Produit<br>
+nom_produit = input("Entrez le nom du produit : ")<br>
+prix_unitaire = float(input("Entrez le prix unitaire du produit : "))<br>
+quantite = int(input("Entrez la quantité du produit : "))<br>
+
+produit = Produit(nom_produit, prix_unitaire, quantite)<br>
+produit.afficher_informations()   </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Lors de l'exécution du programme, l'utilisateur sera invité à entrer le nom du produit, son prix unitaire et sa quantité. Ensuite, un objet de la classe "Produit" sera créé avec les valeurs saisies et les informations du produit seront affichées, y compris le nom, le prix unitaire, la quantité et le coût total calculé.
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Créez une classe appelée "Employé" avec les attributs nom, salaire et département. Incluez des méthodes pour accorder une augmentation de salaire et afficher les informations de l'employé.
+
+                        <br>Le programme devrait :
+                        <ul><li>Demander à l'utilisateur d'entrer le nom de l'employé.
+                        </li><li>Demander à l'utilisateur d'entrer le salaire de l'employé.
+                        </li><li>Demander à l'utilisateur d'entrer le département de l'employé.
+                        </li><li>Créer un objet de la classe "Employé" avec les valeurs saisies.
+                        </li><li>Afficher les informations de l'employé, y compris le nom, le salaire et le département.
+                        </li><li>Demander à l'utilisateur d'entrer le montant de l'augmentation de salaire.
+                        </li><li>Utiliser une méthode pour accorder une augmentation de salaire à l'employé selon le montant spécifié.
+                        </li><li>Afficher à nouveau les informations de l'employé, y compris le nouveau salaire.
+                        </li></ul> 
+                    </div>
+                    <div class="exemple">Entrez le nom de l'employé : John Doe<br>
+                        Entrez le salaire de l'employé : 5000.0<br>
+                        Entrez le département de l'employé : IT<br>
+                        Nom de l'employé :  John Doe<br>
+                        Salaire :  5000.0<br>
+                        Département :  IT<br>
+                        Entrez le montant de l'augmentation de salaire : 1000.0<br>
+                        Nom de l'employé :  John Doe<br>
+                        Salaire :  6000.0<br>
+                        Département :  IT</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        class Employee:<div class="if">
+                            def __init__(self, name, salary, department):
+                            <div class="if">self.name = name</div>
+                            <div class="if">self.salary = salary</div>
+                            <div class="if">self.department = department</div></div>
+                            
+                            <div class="if">def give_salary_raise(self, raise_amount):<div class="if">
+                                self.salary += raise_amount</div></div>
+                            
+                                <div class="if">def display_information(self):
+                                    <div class="if"> print("Nom de l'employé : ", self.name)</div>
+                                        <div class="if"> print("Salaire : ", self.salary)</div>
+                                            <div class="if"> print("Département : ", self.department)</div></div>
+                        
+                        # Exemple d'utilisation de la classe Employee<br>
+                        nom_employe = input("Entrez le nom de l'employé : ")<br>
+                        salaire = float(input("Entrez le salaire de l'employé : "))<br>
+                        departement = input("Entrez le département de l'employé : ")<br>
+                        
+                        employe = Employee(nom_employe, salaire, departement)<br>
+                        employe.display_information()<br>
+                        
+                        montant_augmentation = float(input("Entrez le montant de l'augmentation de salaire : "))<br>
+                        employe.give_salary_raise(montant_augmentation)<br>
+                        employe.display_information()<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Lors de l'exécution du programme, l'utilisateur sera invité à entrer le nom de l'employé, son salaire et son département. Ensuite, un objet de la classe "Employee" sera créé avec les valeurs saisies et les informations de l'employé seront affichées, y compris le nom, le salaire et le département.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>Ensuite, l'utilisateur sera invité à entrer le montant de l'augmentation de salaire. La méthode give_salary_raise() sera utilisée pour augmenter le salaire de l'employé selon le montant spécifié. Enfin, les informations mises à jour de l'employé seront affichées à nouveau.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Créez une classe appelée "Livre" avec les attributs titre, auteur et année. Incluez des méthodes pour obtenir le titre du livre, l'auteur et l'année de publication.  
+                    </div>
+                    <div class="exemple">Entrez le titre du livre : Le Petit Prince<br>
+                        Entrez le nom de l'auteur : Antoine de Saint-Exupéry<br>
+                        Entrez l'année de publication : 1943<br>
+                        Titre du livre : Le Petit Prince<br>
+                        Auteur du livre : Antoine de Saint-Exupéry<br>
+                        Année de publication : 1943</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        class Livre:
+    <div class="if">def __init__(self):
+        <div class="if">self.titre = input("Entrez le titre du livre : ")</div>
+        <div class="if">self.auteur = input("Entrez le nom de l'auteur : ")</div>
+        <div class="if">self.annee = input("Entrez l'année de publication : ")</div></div>
+
+        <div class="if">def obtenir_titre(self):<div class="if">
+        return self.titre</div></div>
+
+        <div class="if">def obtenir_auteur(self):<div class="if">
+        return self.auteur</div></div>
+
+        <div class="if"> def obtenir_annee(self):<div class="if">
+        return self.annee</div></div>
+
+# Exemple d'utilisation de la classe Livre<br>
+livre = Livre()<br>
+print("Titre du livre :", livre.obtenir_titre())<br>
+print("Auteur du livre :", livre.obtenir_auteur())<br>
+print("Année de publication :", livre.obtenir_annee())<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La classe "Livre" est créée avec trois attributs : titre, auteur et année. Ces attributs sont initialisés lors de la création d'une instance de la classe à l'aide de la méthode spéciale __init__().
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  La méthode __init__() demande à l'utilisateur d'entrer le titre du livre, le nom de l'auteur et l'année de publication, et assigne ces valeurs aux attributs correspondants de l'instance.<br>Ensuite, la classe comprend trois méthodes supplémentaires : obtenir_titre(), obtenir_auteur() et obtenir_annee(). Ces méthodes retournent respectivement le titre du livre, l'auteur et l'année de publication.
+                        <br>Dans l'exemple d'utilisation de la classe, une instance de la classe "Livre" est créée en demandant à l'utilisateur d'entrer les informations requises.    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>   les méthodes obtenir_titre(), obtenir_auteur() et obtenir_annee() sont appelées pour obtenir les informations et les afficher à l'écran.<br>
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Créez une classe appelée 'Shape' avec une méthode pour calculer la surface. Créez les sous-classes 'Triangle', 'Rectangle' et 'Circle' qui héritent de la classe 'Shape' et redéfinissent la méthode de calcul de la surface.
+
+                    </div>
+                    <div class="exemple">Entrez la base du triangle : 5<br>
+                        Entrez la hauteur du triangle : 4<br>
+                        La surface du triangle est : 10.0<br>
+                        Entrez la longueur du rectangle : 8<br>
+                        Entrez la largeur du rectangle : 6<br>
+                        La surface du rectangle est : 48.0<br>
+                        Entrez le rayon du cercle : 3<br>
+                        La surface du cercle est : 28.274333882308138</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        import math<br>
+
+                        class Shape:<div class="if">
+                            def calculer_surface(self):<div class="if">
+                                pass</div></div>
+                        
+                        class Triangle(Shape):<div class="if">
+                            def __init__(self, base, hauteur):<div class="if">
+                                self.base = base</div>
+                                <div class="if">self.hauteur = hauteur</div></div>
+                        
+                                <div class="if">def calculer_surface(self):<div class="if">
+                                return 0.5 * self.base * self.hauteur</div></div>
+                        
+                        class Rectangle(Shape):
+                        <div class="if">def __init__(self, longueur, largeur):<div class="if">
+                                self.longueur = longueur</div>
+                                <div class="if">self.largeur = largeur</div></div>
+                        
+                                <div class="if">def calculer_surface(self):<div class="if">
+                                return self.longueur * self.largeur</div></div>
+                        
+                        class Circle(Shape):
+                        <div class="if">def __init__(self, rayon):<div class="if">
+                                self.rayon = rayon</div></div>
+                        
+                                <div class="if">def calculer_surface(self):
+                                    <div class="if">return math.pi * self.rayon**2</div></div>
+                        
+                        # Demande à l'utilisateur les dimensions pour chaque forme<br>
+                        base_triangle = float(input("Entrez la base du triangle : "))<br>
+                        hauteur_triangle = float(input("Entrez la hauteur du triangle : "))<br>
+                        triangle = Triangle(base_triangle, hauteur_triangle)<br>
+                        surface_triangle = triangle.calculer_surface()<br>
+                        print("La surface du triangle est :", surface_triangle)<br>
+                        
+                        longueur_rectangle = float(input("Entrez la longueur du rectangle : "))<br>
+                        largeur_rectangle = float(input("Entrez la largeur du rectangle : "))<br>
+                        rectangle = Rectangle(longueur_rectangle, largeur_rectangle)<br>
+                        surface_rectangle = rectangle.calculer_surface()<br>
+                        print("La surface du rectangle est :", surface_rectangle)<br>
+                        
+                        rayon_cercle = float(input("Entrez le rayon du cercle : "))<br>
+                        cercle = Circle(rayon_cercle)<br>
+                        surface_cercle = cercle.calculer_surface()<br>
+                        print("La surface du cercle est :", surface_cercle)<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>La classe de base "Shape" est créée avec une méthode pour calculer la surface. Cette méthode peut être générique et ne nécessite pas de valeurs spécifiques pour chaque forme.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  les sous-classes "Triangle", "Rectangle" et "Circle" sont créées. Elles héritent de la classe "Shape" et redéfinissent la méthode de calcul de la surface en fonction des caractéristiques propres à chaque forme.<br>Lorsque l'utilisateur exécute le programme, il lui est demandé d'entrer les dimensions nécessaires pour chaque forme. Par exemple, pour un triangle, il peut être demandé de fournir la base et la hauteur. Pour un rectangle, il peut être demandé de fournir la longueur et la largeur. Et pour un cercle, il peut être demandé de fournir le rayon.<br><br>En utilisant les valeurs fournies par l'utilisateur, les instances correspondantes des classes "Triangle", "Rectangle" et "Circle" sont créées. Ensuite, la méthode de calcul de surface spécifique à chaque forme est appelée pour chaque instance, ce qui permet de calculer la surface respective.   <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> les surfaces calculées sont affichées à l'écran pour chaque forme. </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Créez une classe appelée "Banque" avec les attributs nom et succursales. Incluez des méthodes pour ajouter une succursale, supprimer une succursale et afficher les informations de la banque.<br><br>
+
+                        Voici les détails de chaque méthode :<ul><li>La méthode ajouter_succursale(succursale) permet d'ajouter une succursale à la liste des succursales de la banque.
+                        </li><li>La méthode supprimer_succursale(succursale) permet de supprimer une succursale de la liste des succursales de la banque.
+                        </li><li>La méthode afficher_informations() affiche le nom de la banque et la liste des succursales.
+                        </li><li>Assurez-vous que toutes les entrées nécessaires, telles que le nom de la banque et les noms des succursales, sont demandées à l'utilisateur.</li>   
+                        
+                        </ul>
+                    </div>
+                    <div class="exemple">Entrez le nom de la banque : Ma Banque<br>
+                        Entrez le nombre de succursales à ajouter : 3<br>
+                        Entrez le nom de la succursale 1 : Succursale A<br>
+                        Entrez le nom de la succursale 2 : Succursale B<br>
+                        Entrez le nom de la succursale 3 : Succursale C<br>
+                        Banque : Ma Banque<br>
+                        Succursales : Succursale A, Succursale B, Succursale C</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        class Banque:
+    <div class="if">def __init__(self, nom):<div class="if">
+        self.nom = nom</div>
+        <div class="if">self.succursales = []</div></div>
+    
+        <div class="if">def ajouter_succursale(self, succursale):<div class="if">
+        self.succursales.append(succursale)</div></div>
+    
+        <div class="if">def supprimer_succursale(self, succursale):<div class="if">
+        self.succursales.remove(succursale)</div></div>
+    
+        <div class="if">def afficher_informations(self):<div class="if">
+        print("Banque :", self.nom)</div>
+        <div class="if">print("Succursales :", ", ".join(self.succursales))</div></div>
+
+
+# Demander le nom de la banque à l'utilisateur<br>
+
+nom_banque = input("Entrez le nom de la banque : ")<br>
+
+# Créer une instance de la classe Banque avec le nom donné<br>
+banque = Banque(nom_banque)<br>
+
+# Demander le nombre de succursales à ajouter<br>
+nombre_succursales = int(input("Entrez le nombre de succursales à ajouter : "))<br>
+
+# Demander le nom de chaque succursale et l'ajouter à la banque<br>
+for i in range(nombre_succursales):<div class="if">
+    nom_succursale = input("Entrez le nom de la succursale {} : ".format(i+1))</div>
+    <div class="if">banque.ajouter_succursale(nom_succursale)</div>
+
+# Afficher les informations de la banque<br>
+banque.afficher_informations()
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>nous avons créé une classe appelée "Banque" avec deux attributs : "nom" et "succursales". L'attribut "nom" stocke le nom de la banque, et l'attribut "succursales" est une liste vide qui va contenir les noms des succursales de la banque.  <div class="spider"></div>
+                        <div class="er">Ensuite,</div>La méthode ajouter_succursale(self, succursale) permet d'ajouter une succursale à la liste des succursales de la banque. Elle prend en paramètre le nom de la succursale à ajouter et utilise la méthode append() pour l'ajouter à la liste.<br><br>La méthode supprimer_succursale(self, succursale) permet de supprimer une succursale de la liste des succursales de la banque. Elle prend en paramètre le nom de la succursale à supprimer et utilise la méthode remove() pour la retirer de la liste.<br><br>La méthode afficher_informations(self) affiche le nom de la banque et la liste des succursales. Elle utilise la fonction print() pour afficher ces informations. La méthode join() est utilisée pour concaténer les noms des succursales avec une virgule comme séparateur.
+                        <br><br>Ensuite, dans le programme principal, nous demandons à l'utilisateur de saisir le nom de la banque et le nombre de succursales à ajouter. À l'aide d'une boucle, nous demandons à l'utilisateur de saisir le nom de chaque succursale et l'ajoutons à la banque à l'aide de la méthode ajouter_succursale().     <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous utilisons la méthode afficher_informations() pour afficher les informations de la banque à l'écran, comprenant le nom de la banque et la liste des succursales.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Créez une classe appelée "Personne" avec les attributs nom, age et adresse. Incluez des méthodes pour afficher les informations de la personne et mettre à jour son adresse.<br><br>
+
+                        Voici les détails de chaque méthode :<br><br>
+                        
+                        La méthode afficher_informations() affiche le nom, l'âge et l'adresse de la personne.<br><br>
+                        
+                        La méthode modifier_adresse(nouvelle_adresse) permet de mettre à jour l'adresse de la personne en utilisant le paramètre nouvelle_adresse.<br><br>
+                        
+                        Vous pouvez demander à l'utilisateur d'entrer le nom, l'âge et l'adresse de la personne, puis créer une instance de la classe "Personne" avec ces informations. Ensuite, vous pouvez utiliser les méthodes de la classe pour afficher les informations de la personne et mettre à jour son adresse.
+                    </div>
+                    <div class="exemple">Entrez le nom de la personne : John Doe<br>
+                        Entrez l'âge de la personne : 30<br>
+                        Entrez l'adresse de la personne : 123 Main Street<br>
+                        
+                        Nom: John Doe<br>
+                        Âge: 30<br>
+                        Adresse: 123 Main Street<br>
+                        
+                        Entrez la nouvelle adresse de la personne : 456 Elm Street<br>
+                        
+                        Nom: John Doe<br>
+                        Âge: 30<br>
+                        Adresse: 456 Elm Street</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        class Personne:
+    <div class="if">def __init__(self, nom, age, adresse):<div class="if">
+        self.nom = nom</div>
+        <div class="if">self.age = age</div>
+        <div class="if">self.adresse = adresse</div></div>
+
+        <div class="if">def afficher_informations(self):
+            <div class="if">print("Nom:", self.nom)</div>
+                <div class="if">print("Âge:", self.age)</div>
+                    <div class="if">print("Adresse:", self.adresse)</div></div>
+
+                    <div class="if">def modifier_adresse(self, nouvelle_adresse):
+                        <div class="if">self.adresse = nouvelle_adresse</div></div>
+
+# Demande à l'utilisateur d'entrer les informations de la personne<br>
+nom = input("Entrez le nom de la personne : ")<br>
+age = input("Entrez l'âge de la personne : ")<br>
+adresse = input("Entrez l'adresse de la personne : ")<br><br>
+
+# Crée une instance de la classe Personne avec les informations fournies<br>
+personne = Personne(nom, age, adresse)<br><br>
+
+# Affiche les informations de la personne<br>
+personne.afficher_informations()<br><br>
+
+# Demande à l'utilisateur d'entrer la nouvelle adresse de la personne<br>
+nouvelle_adresse = input("Entrez la nouvelle adresse de la personne : ")<br><br>
+
+# Met à jour l'adresse de la personne<br>
+personne.modifier_adresse(nouvelle_adresse)<br><br>
+
+# Affiche les informations mises à jour de la personne<br>
+personne.afficher_informations()<br>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans cet exercice, nous créons une classe appelée "Personne". Cette classe a trois attributs : "nom", "age" et "adresse".
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>La méthode __init__ est un constructeur qui est appelé lorsqu'une nouvelle instance de la classe est créée. Elle prend en paramètres le nom, l'âge et l'adresse de la personne et les assigne aux attributs correspondants de l'objet.<br><br>La méthode afficher_informations affiche les informations de la personne, notamment son nom, son âge et son adresse. Elle utilise les attributs de l'objet en utilisant la syntaxe self.attribut.<br><br>La méthode modifier_adresse permet de mettre à jour l'adresse de la personne. Elle prend en paramètre la nouvelle adresse et l'assigne à l'attribut adresse de l'objet.<br><br>Ensuite, nous demandons à l'utilisateur d'entrer le nom, l'âge et l'adresse de la personne. Ces valeurs sont utilisées pour créer une nouvelle instance de la classe Personne en utilisant le constructeur.<br><br>Nous utilisons ensuite les méthodes de la classe pour afficher les informations de la personne et demander à l'utilisateur de fournir une nouvelle adresse. La méthode modifier_adresse est ensuite appelée pour mettre à jour l'adresse de la personne.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>nous utilisons à nouveau la méthode afficher_informations pour afficher les informations mises à jour de la personne.
+
+                        L'utilisation de classes permet d'organiser et de regrouper des données et des comportements liés dans des objets. Cela facilite la manipulation et la gestion des données.
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">"Success is not final; failure is not fatal: It is the courage to continue that counts." — Winston S. Churchill</div>
+    </div>
+</body>

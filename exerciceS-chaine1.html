@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE chaine</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="t123">Chaine de caractères</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche le nombre de caractères présents dans cette chaîne.
+
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                <div class="if">int nombre_caracteres = 0;</div>
+                            
+                                <div class="if">printf("Saisissez une chaîne de caractères : ");</div>
+                                <div class="if"> scanf("%s", chaine);</div>
+                            
+                                    <div class="if"> // Calcul du nombre de caractères</div>
+                                    <div class="if">for (int i = 0; chaine[i] != '\0'; i++) {
+                                        <div class="if">nombre_caracteres++;</div>
+                                }</div>
+                            
+                                <div class="if">printf("Le nombre de caractères dans la chaîne est : %d\n", nombre_caracteres);
+                            
+                                </div><div class="if">return 0;</div>
+                            }
+                            
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Dans ce programme, nous utilisons la fonction scanf avec le format %s pour permettre à l'utilisateur de saisir une chaîne de caractères. Ensuite, nous utilisons une boucle for pour parcourir chaque caractère de la chaîne jusqu'à ce que nous atteignons le caractère de fin de chaîne '\0'. À chaque itération, nous incrémentons la variable nombre_caracteres pour compter le nombre de caractères. Enfin, nous affichons le résultat à l'utilisateur.
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche cette chaîne inversée.
+                        .</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include <string.h><br>
+                            
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                    <div class="if">int longueur;</div>
+                            
+                                        <div class="if">printf("Saisissez une chaîne de caractères : ");</div>
+                                            <div class="if"> scanf("%s", chaine);</div>
+                            
+                                                <div class="if">  longueur = strlen(chaine);</div>
+                            
+                                                    <div class="if">    printf("La chaîne inversée est : ");</div>
+                                                        <div class="if">    for (int i = longueur - 1; i >= 0; i--) {<div class="if">
+                                    printf("%c", chaine[i]);</div>
+                                }</div>
+                                <div class="if">printf("\n");</div>
+                            
+                                <div class="if"> return 0;</div>
+                            }
+                                                      
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons scanf pour permettre à l'utilisateur de saisir une chaîne de caractères. Nous utilisons ensuite strlen pour obtenir la longueur de la chaîne saisie. Ensuite, nous utilisons une boucle for pour parcourir la chaîne de caractères de la fin vers le début, puis nous affichons chaque caractère. Ainsi, la chaîne sera affichée inversée.
+
+             <br><br>       Veuillez noter que cette approche n'est pas recommandée car scanf peut provoquer des dépassements de tampon si la chaîne saisie dépasse la taille déclarée du tableau chaine. L'utilisation de fgets est préférable pour éviter ce problème.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis compte le nombre de voyelles présentes dans cette chaîne.
+
+                    </div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                       
+                            #include &ltstdio.h&gt<br>
+                            #include &ltctype.h&gt<br>
+                            
+                            int main() {
+                               <div class="if"> char chaine[100];</div>
+                               <div class="if">int voyelles = 0;</div>
+                            
+                               <div class="if">printf("Saisissez une chaîne de caractères : ");</div>
+                                <div class="if"> scanf("%s", chaine);</div>
+                            
+                                    <div class="if"> for (int i = 0; chaine[i] != '\0'; i++) {
+                                        <div class="if">    char caractere = tolower(chaine[i]);</div>
+                                            <div class="if">    if (caractere == 'a' || caractere == 'e' || caractere == 'i' || caractere == 'o' || caractere == 'u') {
+                                                <div class="if">voyelles++;</div>}</div>}</div>
+                                    
+                            
+                                                <div class="if">printf("Le nombre de voyelles dans la chaîne est : %d\n", voyelles);</div>
+                            
+                                                    <div class="if">return 0;</div>
+                            }
+                    </div>
+                         
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons scanf pour permettre à l'utilisateur de saisir une chaîne de caractères. Ensuite, nous utilisons une boucle for pour parcourir chaque caractère de la chaîne. À l'intérieur de la boucle, nous utilisons la fonction tolower de la bibliothèque ctype.h pour convertir le caractère en minuscule. Ensuite, nous vérifions si le caractère est une voyelle (a, e, i, o, u) et si c'est le cas, nous incrémentons le compteur de voyelles.
+
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis vérifie si cette chaîne est un palindrome (elle se lit de la même manière de gauche à droite et de droite à gauche).
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include <stdbool.h><br>
+                            
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                <div class="if">int debut = 0;</div>
+                                <div class="if">int fin = 0;</div>
+                                <div class="if">bool estPalindrome = true;</div>
+                            
+                                <div class="if"> printf("Saisissez une chaîne de caractères : ");</div>
+                                    <div class="if"> scanf("%s", chaine);</div>
+                            
+                                        <div class="if"> // Calculer la longueur de la chaîne</div>
+                                        <div class="if">while (chaine[fin] != '\0') {
+                                            <div class="if">fin++;</div>
+                                }</div>
+                                <div class="if">fin--;</div>
+                            
+                                <div class="if">// Vérifier si la chaîne est un palindrome</div>
+                                <div class="if">while (debut < fin) {
+                                    <div class="if">if (chaine[debut] != chaine[fin]) {
+                                        <div class="if">estPalindrome = false;</div>
+                                            <div class="if">break;</div>}</div>
+                                   
+                                            <div class="if">debut++;</div>
+                                                <div class="if">fin--;</div>
+                                                <div class="if">}</div></div>
+                            
+                                                <div class="if">if (estPalindrome) {<div class="if">
+                                    printf("La chaîne est un palindrome.\n");</div>
+                                                } </div><div class="if">else {<div class="if">
+                                    printf("La chaîne n'est pas un palindrome.\n");</div>
+                                    <div class="if">}</div></div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons un tableau de caractères chaine pour stocker la chaîne saisie par l'utilisateur. Nous utilisons scanf pour lire la chaîne de caractères sans espaces.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div nous calculons la longueur de la chaîne en parcourant les caractères jusqu'à atteindre le caractère nul ('\0').<br><br>Ensuite, nous utilisons deux indices, debut et fin, pour comparer les caractères de la chaîne de manière symétrique, de part et d'autre du centre. Si à un moment donné les caractères diffèrent, nous indiquons que la chaîne n'est pas un palindrome en mettant la variable estPalindrome à false et en sortant de la boucle.
+
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous affichons le résultat en fonction de la valeur de estPalindrome.
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis remplace toutes les occurrences d'un caractère spécifié par un autre caractère spécifié dans cette chaîne.
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                    <div class="if">char caractereRemplacer;</div>
+                                        <div class="if">char caractereRemplacement;</div>
+                            
+                                            <div class="if">  printf("Saisissez une chaîne de caractères : ");</div>
+                                                <div class="if">  scanf("%s", chaine);</div>
+                            
+                                                    <div class="if">  printf("Saisissez le caractère à remplacer : ");</div>
+                                                        <div class="if">   scanf(" %c", &caractereRemplacer);</div>
+                            
+                                                            <div class="if">    printf("Saisissez le caractère de remplacement : ");</div>
+                                                                <div class="if">   scanf(" %c", &caractereRemplacement);</div>
+                            
+                                                                    <div class="if">    // Parcourir la chaîne et remplacer les occurrences du caractère spécifié</div>
+                                                                        <div class="if">   int i = 0;</div>
+                                                                        <div class="if">while (chaine[i] != '\0') {
+                                                                            <div class="if">if (chaine[i] == caractereRemplacer) {
+                                                                                <div class="if">chaine[i] = caractereRemplacement;</div>
+                                                                                    <div class="if">}</div></div></div>
+                                                                                        <div class="if">i++;</div>
+                                    <div class="if">}</div>
+                            
+                                <div class="if"> printf("Chaîne après remplacement : %s\n", chaine);</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons un tableau de caractères chaine pour stocker la chaîne saisie par l'utilisateur. Nous utilisons scanf pour lire la chaîne de caractères sans espaces.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>nous demandons à l'utilisateur de saisir le caractère à remplacer (caractereRemplacer) et le caractère de remplacement (caractereRemplacement).<br><br>alors, nous demandons à l'utilisateur de saisir le caractère à remplacer (caractereRemplacer) et le caractère de remplacement (caractereRemplacement).<br><br>puis, nous parcourons la chaîne et remplaçons toutes les occurrences du caractère spécifié (caractereRemplacer) par le caractère de remplacement (caractereRemplacement).    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  nous affichons la chaîne après le remplacement.      </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche chaque caractère de la chaîne sur une nouvelle ligne.
+
+ 
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                <div class="if">int i = 0;</div>
+                            
+                                <div class="if">printf("Saisissez une chaîne de caractères : ");</div>
+                                    <div class="if">scanf("%s", chaine);</div>
+                            
+                                        <div class="if">printf("Caractères de la chaîne sur des lignes séparées :\n");</div>
+                                        <div class="if">while (chaine[i] != '\0') {
+                                            <div class="if">printf("%c\n", chaine[i]);</div>
+                                                <div class="if">i++;</div>
+                                                <div class="if">}</div>
+                            
+                                                <div class="if">return 0;</div>
+                            }
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons scanf pour lire la chaîne de caractères saisie par l'utilisateur. La fonction scanf avec le format %s permet de lire une chaîne de caractères sans prendre en compte les espaces.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>nous utilisons une boucle while pour parcourir la chaîne caractère par caractère. À chaque itération, nous affichons le caractère courant de la chaîne sur une nouvelle ligne à l'aide de printf.
+                        <div class="spider"></div>
+
+                        <div class="er">Notez que,</div> la boucle se termine lorsque nous atteignons le caractère nul ('\0'), qui marque la fin de la chaîne.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui demande à l'utilisateur de saisir une chaîne de caractères, puis vérifie si cette chaîne est un palindrome en ignorant la casse (majuscules/minuscules).
+
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+                            #include &ltstdbool.h&gt<br>
+                            
+                            #define MAX_LENGTH 100<br>
+                            
+                            int main() {
+                                <div class="if">char chaine[MAX_LENGTH];</div>
+                                    <div class="if">int index = 0;</div>
+                                        <div class="if"> char caractere;</div>
+                            
+                                            <div class="if">   printf("Saisissez une chaîne de caractères : ");</div>
+                            
+                  <div class="if">// Lire un caractère à la fois jusqu'à atteindre la fin de la ligne ou la taille maximale
+                  </div>           <div class="if">while ((caractere = getchar()) != '\n' && index < MAX_LENGTH) {
+                    <div class="if">chaine[index] = caractere;</div>
+                        <div class="if">index++;</div>
+                        <div class="if">}</div></div>
+                        <div class="if">chaine[index] = '\0';</div>
+                            
+                        <div class="if"> // Vérifier si la chaîne est un palindrome en ignorant la casse</div>
+                        <div class="if"> bool estPalindrome = true;</div>
+                            <div class="if">  int debut = 0;</div>
+                                <div class="if">   int fin = index - 1;</div>
+                                <div class="if"> while (debut < fin) {
+                                    <div class="if"> char debutMinuscule = chaine[debut];</div>
+                                        <div class="if"> char finMinuscule = chaine[fin];</div>
+                            
+                                        <div class="if">// Convertir les caractères en minuscules si ce sont des lettres</div>
+                                        <div class="if">if (debutMinuscule >= 'A' && debutMinuscule <= 'Z') {<div class="if">
+                                        debutMinuscule = debutMinuscule + 32;</div>
+                                    }</div>
+                                    <div class="if">if (finMinuscule >= 'A' && finMinuscule <= 'Z') {
+                                        <div class="if">finMinuscule = finMinuscule + 32;</div>
+                                        <div class="if">}</div></div>
+                            
+                                        <div class="if">// Vérifier si les caractères correspondants sont différents</div>
+                                        <div class="if">if (debutMinuscule != finMinuscule) {
+                                            <div class="if">estPalindrome = false;</div>
+                                                <div class="if"> break;</div>
+                                                    <div class="if">}</div></div>
+                            
+                                                    <div class="if"> debut++;</div>
+                                                        <div class="if"> fin--;</div>
+                                                        <div class="if">}</div></div>
+                            
+                                                        <div class="if">if (estPalindrome) {
+                                                            <div class="if">printf("La chaîne est un palindrome.\n");</div>
+                                                                <div class="if">} </div></div>
+                                                                <div class="if">else {<div class="if">
+                                    printf("La chaîne n'est pas un palindrome.\n");</div>
+                                    <div class="if"> }</div></div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+                    </div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons une boucle while pour lire un caractère à la fois jusqu'à atteindre la fin de la ligne ou la taille maximale définie par MAX_LENGTH. Nous stockons chaque caractère dans le tableau chaine. Lorsque nous atteignons la fin de la ligne ('\n'), nous ajoutons le caractère nul '\0' pour terminer la chaîne.
+
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>nous utilisons une boucle while pour vérifier si la chaîne est un palindrome en ignorant la casse. Nous utilisons deux indices debut et fin pour parcourir la chaîne à partir des extrémités. À chaque itération, nous comparons les caractères correspondants en les convertissant en minuscules si ce sont des lettres. Si les caractères sont différents, nous changeons la variable estPalindrome à false et sortons de la boucle.
+                        <div class="er">Enfin,</div> nous affichons le résultat en fonction de la valeur de la variable estPalindrome.<br><br>Notez que dans cet exemple, nous ne vérifions pas explicitement si la chaîne dépasse la taille maximale MAX_LENGTH. Si la chaîne dépasse cette taille, des problèmes de dépassement de tampon peuvent se produire. Pour une utilisation plus sûre, il est recommandé de vérifier et de gérer les dépassements de tampon de manière appropriée.
+                    </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Écrivez un programme qui demande à l'utilisateur de saisir une phrase, puis affiche les mots de cette phrase dans l'ordre inverse.
+<br>EXEMPLE:Saisissez une phrase : Hello world, how are you?<br>Résultat : you? are how world, Hello
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt
+
+                            #define MAX_LENGTH 100<br>
+                            
+                            int main() {
+                                <div class="if">char phrase[MAX_LENGTH];</div>
+                                <div class="if">int index = 0;</div>
+                                <div class="if">char caractere;</div>
+                            
+                                <div class="if">printf("Saisissez une phrase : ");</div>
+                            
+                                <div class="if">// Lire un caractère à la fois jusqu'à atteindre la fin de la ligne ou la taille maximale
+                                </div><div class="if">   while ((caractere = getchar()) != '\n' && index < MAX_LENGTH) {
+                                    <div class="if">phrase[index] = caractere;</div>
+                                        <div class="if">index++;</div></div>
+                                        <div class="if">}</div>
+                                        <div class="if"> phrase[index] = '\0';</div>
+                            
+                                            <div class="if"> // Afficher les mots de la phrase dans l'ordre inverse</div>
+                                                <div class="if"> int debut = index - 1;</div>
+                                                    <div class="if"> int fin = index - 1;</div>
+                                                    <div class="if">while (debut >= 0) {
+                                                        <div class="if">// Trouver le début du mot</div>
+                                                        <div class="if">while (debut >= 0 && phrase[debut] != ' ') {
+                                                            <div class="if"> debut--;</div>
+                                                            <div class="if">}</div></div>
+                            
+                                                            <div class="if">// Afficher le mot</div>
+                                                            <div class="if"> for (int i = debut + 1; i <= fin; i++) {
+                                                                <div class="if">printf("%c", phrase[i]);</div>
+                                                                <div class="if">}</div></div>
+                            
+                                                                <div class="if">// Passer à l'espace précédent pour le prochain mot
+                                                                </div> <div class="if">fin = debut - 1;</div>
+                                                                <div class="if">  debut--;</div>
+                                    
+                                                                <div class="if">  // Si ce n'est pas le premier mot, ajouter un espace
+                                                                </div><div class="if"> if (debut >= 0) {
+                                                                    <div class="if"> printf(" ");</div>
+                                                                    <div class="if">}</div></div>
+                    </div> <div class="if">  }</div>
+                            
+                                                                    <div class="if">  printf("\n");</div>
+                            
+                                                                        <div class="if">  return 0;</div>
+                            }
+                    </div></div></div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons une boucle while pour lire un caractère à la fois jusqu'à atteindre la fin de la ligne ou la taille maximale définie par MAX_LENGTH. Nous stockons chaque caractère dans le tableau phrase. Lorsque nous atteignons la fin de la ligne ('\n'), nous ajoutons le caractère nul '\0' pour terminer la phrase.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> nous utilisons une boucle while pour afficher les mots de la phrase dans l'ordre inverse. Nous utilisons deux indices debut et fin pour délimiter chaque mot. Nous commençons par debut et fin égaux à l'indice de fin de la phrase. Puis, nous déplaçons debut vers la gauche jusqu'à trouver un espace, ce qui indique le début d'un mot. Nous affichons ensuite les caractères entre debut + 1 et fin, ce qui correspond au mot actuel. Ensuite, nous mettons à jour fin et debut pour passer au mot précédent. Nous répétons ce processus jusqu'à ce que debut atteigne le début de la phrase.
+                           <div class="er">Enfin,</div> nous affichons un saut de ligne pour terminer la sortie.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche la même chaîne en inversant la casse des lettres (majuscules en minuscules et vice versa).   <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                <div class="if">printf("Saisissez une chaine de caracteres : ");</div>
+                                <div class="if">scanf("%s", chaine);</div>
+                                
+                                <div class="if"> int i = 0;</div>
+                                <div class="if">while (chaine[i] != '\0') {<div class="if">
+                                    if (chaine[i] >= 'a' && chaine[i] <= 'z') {
+                                        <div class="if">chaine[i] = chaine[i] - 32; // Convertir en majuscule</div>
+                                        <div class="if">}</div></div>
+                                        <div class="if">else if (chaine[i] >= 'A' && chaine[i] <= 'Z') {
+                                            <div class="if">chaine[i] = chaine[i] + 32; // Convertir en minuscule</div>
+                                            <div class="if">  }</div></div>
+                                            <div class="if"> i++;</div></div>
+                                            <div class="if">}</div>
+                                
+                                            <div class="if">printf("La chaine avec la casse inverse : %s\n", chaine);</div>
+                                
+                                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Ce programme utilise la fonction scanf pour lire la chaîne de caractères saisie par l'utilisateur. Ensuite, il parcourt chaque caractère de la chaîne à l'aide d'une boucle while. Si le caractère est une lettre minuscule, il est converti en majuscule en soustrayant la valeur 32 à son code ASCII. Si le caractère est une lettre majuscule, il est converti en minuscule en ajoutant la valeur 32 à son code ASCII. Les autres caractères (chiffres, espaces, symboles, etc.) restent inchangés.
+                        
+                        <div class="er">Ainsi, </div> la chaîne résultante affichée sera la même que la chaîne saisie par l'utilisateur, mais avec la casse des lettres inversée. Par exemple, si l'utilisateur saisit "Hello World", le programme affichera "hELLO wORLD". </div>
+                
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une chaîne de caractères, puis affiche le nombre de mots présents dans cette chaîne.       <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">char chaine[100];</div>
+                                <div class="if">int mots = 0;</div>
+                                <div class="if">int i;</div>
+                            
+                                <div class="if">printf("Saisissez une chaine de caracteres : ");</div>
+                                <div class="if">scanf("%[^\n]", chaine);</div>
+                            
+                                <div class="if"> // Parcours de chaque caractere de la chaine</div>
+                                <div class="if">for (i = 0; chaine[i] != '\0'; i++) {
+                                    <div class="if">// Si un caractere est un espace, c'est la fin d'un mot</div>
+                                    <div class="if">if (chaine[i] == ' ') {
+                                        <div class="if">mots++;</div></div>
+                                        <div class="if">}</div></div>
+                                        <div class="if">}</div>
+                            
+                                        <div class="if">// Ajout du dernier mot (si la chaine n'est pas vide)</div>
+                                        <div class="if">if (i > 0) {
+                                            <div class="if"> mots++;</div></div>
+                                            <div class="if">}</div>
+                            
+                                            <div class="if">printf("Le nombre de mots dans la chaine : %d\n", mots);
+                            
+                                            </div> <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme utilise scanf avec le format %[^\n] pour permettre à l'utilisateur de saisir une chaîne de caractères avec des espaces. Ensuite, il parcourt chaque caractère de la chaîne à l'aide d'une boucle for. Si un caractère est un espace, cela indique la fin d'un mot et on incrémente le compteur de mots. Le dernier mot est également comptabilisé en vérifiant si la variable i est supérieure à 0 (c'est-à-dire que la chaine n'est pas vide). 
+                <br><br>Enfin, le programme affiche le nombre de mots dans la chaîne saisie par l'utilisateur.
+            </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“One of the most common causes of failure is quitting when one is overtaken by temporary defeat.” – Napoleon Hill
+        </div>
+    </div>
+</body>

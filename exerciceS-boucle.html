@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES DE C_boucle</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+            
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Boucles</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrivez un programme en python pour afficher tous les nombres naturels de 1 à n en utilisant la boucle for .
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 5<br>
+                        1<br>
+                        2<br>
+                        3<br>
+                        4<br>
+                        5</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        n = int(input("Entrez un nombre entier positif : "))<br>
+                        for i in range(1, n+1):<br>
+                            <div class="if">print(i)</div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Nous utilisons la fonction input() pour demander à l'utilisateur d'entrer un nombre entier positif. Le nombre est ensuite converti en type int à l'aide de int(input()) pour permettre l'itération de la boucle.
+                        <div class="spider"></div>
+                        <div class="er">Ensuite,</div> À l'aide de la boucle for et de la fonction range(start, stop), nous itérons de 1 à n+1 (la borne supérieure de la boucle est n+1 car la fonction range() s'arrête avant la borne supérieure).<br>À chaque itération de la boucle, nous utilisons print() pour afficher la valeur de la variable i, qui représente le nombre naturel en cours d'affichage.<br>La boucle se répète jusqu'à ce que tous les nombres naturels de 1 à n soient affichés
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise une boucle for pour afficher tous les nombres naturels de 1 à n selon la valeur saisie par l'utilisateur.</div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Écrivez un programme pour afficher tous les nombres pairs de 1 à n en utilisant les boucles.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 8<br>
+                        2<br>
+                        4<br>
+                        6<br>
+                        8</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        n = int(input("Entrez un nombre entier positif : "))<br>
+                        i = 1<br>
+                        while i <= n:<br><div class="if">if i % 2 == 0:<div class="if">print(i)</div><div>i += 1</div></div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Nous utilisons la fonction input() pour demander à l'utilisateur d'entrer un nombre entier positif. Le nombre est ensuite converti en type int à l'aide de int(input()) pour permettre l'itération de la boucle.
+
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Nous initialisons un compteur i à 1. Ce compteur sera utilisé pour parcourir tous les nombres de 1 à n.<br>À l'aide d'une boucle while, nous itérons tant que i est inférieur ou égal à n.<br>À l'aide d'une boucle while, nous itérons tant que i est inférieur ou égal à n.<br>À chaque itération, nous vérifions si le nombre i est pair en utilisant l'opérateur % pour vérifier si le reste de la division par 2 est égal à 0. Si c'est le cas, cela signifie que i est pair et nous l'affichons à l'aide de print().<br>Nous incrémentons le compteur i de 1 à chaque itération pour passer au nombre suivant.<br>La boucle continue jusqu'à ce que tous les nombres de 1 à n soient vérifiés et que les nombres pairs soient affichés.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> le programme utilise une boucle while pour parcourir les nombres de 1 à n et afficher uniquement les nombres pairs.
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrivez un programme pour afficher tous les nombres impairs de 1 à n en utilisant les boucles .
+
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 7<br>
+                        1<br>
+                        3<br>
+                        5<br>
+                        7</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        n = int(input("Entrez un nombre entier positif : "))<br>
+                        for i in range(1, n+1):<br>
+                        <div class="if">if i % 2 != 0:<div class="if">print(i)</div></div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à entrer un nombre entier positif à l'aide de la fonction input() et int() est utilisé pour convertir la saisie en un entier. La valeur est stockée dans la variable n.
+
+               
+                          <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Le message "Affichage des nombres impairs avec une boucle for :" est affiché pour indiquer le début de l'affichage des nombres impairs.<br>La boucle for est utilisée pour itérer sur les valeurs de i allant de 1 à n+1. À chaque itération, le code vérifie si i est impair en utilisant l'expression i % 2 != 0. Si c'est le cas, c'est-à-dire si le reste de la division de i par 2 est différent de zéro, alors i est impair .                    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le message est affiché à l'écran en utilisant la fonction print().
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Ecrivez un programme pour determiner la somme de tous les nombres naturels entre 0 et n en utilisant les boucles.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre entier positif : 5<br>
+                        La somme des nombres naturels de 0 à 5 est : 15</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        n = int(input("Entrez un nombre entier positif : "))<br>
+                        somme = 0<br>
+                        for i in range(n+1):<br><div class="if">somme += i</div>
+                        print("La somme des nombres naturels de 0 à", n, "est :", somme)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à entrer un nombre entier positif à l'aide de la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Une variable somme est initialisée à 0. Cette variable sera utilisée pour accumuler la somme des nombres naturels.<br>La boucle for est utilisée pour itérer sur les valeurs de i allant de 0 à n. La fonction range(n+1) génère une séquence d'entiers de 0 à n.<br>À chaque itération de la boucle, la valeur de i est ajoutée à la variable somme à l'aide de l'opérateur +=. Cela permet d'accumuler la somme des nombres naturels.<br>
+               
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> après la fin de la boucle, la somme totale est affichée à l'écran à l'aide de la fonction print().
+
+
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Ecrire un programme python qui lit un entier puis détermine s’il est premier ou non.<br>
+                        On rappelle qu’un entier est dit premier s’il a exactement deux diviseurs différents :  1 et lui-même.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier positif : 17<br>
+                        17 est un nombre premier.</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        n = int(input("Entrez un entier positif : "))<br>
+                        if n > 1:<div class="if">est_premier = True</div><div class="if">for i in range(2, n):<div class="if">if n % i == 0:<div class="if">est_premier = False</div><div class="if">break</div></div></div>
+                        else:
+                            <div class="if">est_premier = False</div>
+
+                        if est_premier:<div class="if">print(n, "est un nombre premier.")</div>
+                        else:
+                            <div class="if">print(n, "n'est pas un nombre premier.")</div> 
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à entrer un entier positif à l'aide de la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   Nous utilisons une approche itérative pour déterminer si n est premier. Nous commençons par vérifier si n est supérieur à 1, car les nombres premiers sont définis comme ayant exactement deux diviseurs différents (1 et eux-mêmes). Si n est inférieur ou égal à 1, il ne peut pas être premier.<br>Si n est supérieur à 1, nous initialisons une variable booléenne est_premier à True. Nous utilisons une boucle for pour itérer sur les valeurs de i allant de 2 à n-1 (exclus). Nous vérifions si n est divisible par i (c'est-à-dire si le reste de la division est égal à 0). Si c'est le cas, cela signifie que n a un diviseur autre que 1 et lui-même, donc il n'est pas premier. Dans ce cas, nous mettons à jour la variable est_premier à False et nous sortons de la boucle à l'aide de l'instruction break.<br>
+                        Après la boucle for, nous vérifions la valeur de la variable est_premier. Si elle est True, cela signifie que n n'a aucun diviseur autre que 1 et lui-même, donc il est premier. Sinon, si est_premier est False, cela signifie que n a au moins un diviseur autre que 1 et lui-même, donc il n'est pas premier.             
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  le programme utilise la fonction print() pour afficher le résultat.
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> Ecrire un programme python qui lit un entier puis affiche tous les nombres premiers qui lui sont inférieurs. 
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez un entier positif : 20<br>
+                            Nombres premiers inférieurs à 20 :<br>
+                            2<br>
+                            3<br>
+                            5<br>
+                            7<br>
+                            11<br>
+                            13<br>
+                            17<br>
+                            19</div>
+
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        n = int(input("Entrez un entier positif : "))<br>
+                        print("Nombres premiers inférieurs à", n, ":")<br>
+                        for num in range(2, n):<br>
+                            <div class="if">est_premier = True</div>
+                            <div class="if">for i in range(2, num):<div class="if">if num % i == 0:<div class="if">est_premier = False</div><div class="if">break</div></div>
+                            if est_premier:
+                               <div class="if"> print(num)</div>
+                    </div>
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à entrer un entier positif à l'aide de la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Un message est affiché pour indiquer que les nombres premiers inférieurs à n vont être affichés.<br>Nous utilisons une boucle for pour itérer sur les nombres num allant de 2 à n-1. Nous commençons à 2 car 2 est le premier nombre premier. Nous itérons jusqu'à n-1 car nous voulons trouver les nombres premiers strictement inférieurs à n.<br>Pour chaque nombre num, nous utilisons une boucle for imbriquée pour vérifier s'il est premier. Nous itérons sur les valeurs i allant de 2 à num-1 (exclus). Nous vérifions si num est divisible par i (c'est-à-dire si le reste de la division est égal à 0). Si c'est le cas, cela signifie que num a un diviseur autre que 1 et lui-même, donc il n'est pas premier. Dans ce cas, nous mettons à jour la variable est_premier à False et nous sortons de la boucle à l'aide de l'instruction break.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  Après la boucle for intérieure, nous vérifions si est_premier est True. Si c'est le cas, cela signifie que num n'a aucun diviseur autre que 1 et lui-même, donc il est premier. Dans ce cas, nous l'affichons à l'écran à l'aide de la fonction print().
+
+                        Le programme itère sur les nombres inférieurs à n et vérifie pour chaque nombre s'il est premier. Les nombres premiers sont affichés à l'écran.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrire un programme Python qui lit un entier n, puis il affiche tous les entiers de n jusqu’à 0 sur une seule ligne et séparés par des espaces. <br>par exmple,supposons que n=3 alors le programme  va afficher: 3 2 1 0 .
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier positif : 5<br>
+                        5 4 3 2 1</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        n = int(input("Entrez un entier positif : "))<br>
+                        for i in range(n, 0, -1):<br><div class="if">print(i, end=" ")</div>
+                         
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à entrer un entier positif à l'aide de la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  La boucle for est utilisée pour itérer sur les entiers i allant de n jusqu'à 1. Nous utilisons la fonction range(n, 0, -1) pour générer une séquence décroissante d'entiers de n jusqu'à 1. L'argument -1 est utilisé pour spécifier que nous voulons une décroissance d'une unité à chaque itération.
+
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> à chaque itération de la boucle, l'entier i est affiché à l'écran à l'aide de la fonction print(). L'argument end=" " est utilisé pour spécifier que nous voulons séparer les entiers par un espace au lieu d'un retour à la ligne.
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrivez un programme pour saisir un nombre de l'utilisateur et recherchez le premier et le dernier chiffre d'un nombre en utilisant une boucle.
+                </div>
+                <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre : 12345<br>
+                        Premier chiffre = 1<br>
+                        Dernier chiffre = 5</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        n = int(input("Entrez un nombre : "))<br>
+                        dernier = n % 10<br>
+                        premier = n<br>
+                        while(premier >= 10):<br>
+                        <div class="if">premier = premier // 10</div>
+ 
+                        print("Premier chiffre = ", premier)<br>
+                        print("Dernier chiffre = ", dernier)
+                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir un nombre en utilisant la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Pour trouver le dernier chiffre du nombre n, nous utilisons l'opérateur de modulo % en prenant le reste de la division de n par 10. Cela nous donne le dernier chiffre du nombre.<br>Pour trouver le premier chiffre du nombre n, nous utilisons une boucle while. Nous utilisons une variable premier initialisée à n. Nous divisons premier par 10 à chaque itération en utilisant l'opérateur // pour supprimer le dernier chiffre. La boucle s'exécute tant que premier est supérieur ou égal à 10, c'est-à-dire tant qu'il reste plus d'un chiffre. Une fois que premier devient inférieur à 10, cela signifie qu'il ne reste qu'un chiffre, qui est le premier chiffre du nombre.<br>
+
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>Les résultats, le premier chiffre et le dernier chiffre, sont affichés à l'écran à l'aide de la fonction print().
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Ecrire un programme qui saisit un nombre et calculer la somme de ses chiffres en utilisant la boucle for.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Saisir un nombre : 12345<br>
+                            La somme des chiffres = 15</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        import math<br>
+                        n = int(input("Saisir un nombre : "))<br>
+                        somme = 0<br>
+                        while (n != 0):<br>
+                        <div class="if">somme += n % 10</div>
+                        <div class="if">n = n // 10</div>
+                        print("la somme des chiffres = ", somme)
+
+                        
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir un nombre en utilisant la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Une variable somme est initialisée à 0. Cette variable sera utilisée pour accumuler la somme des chiffres du nombre.<br>Le programme utilise une boucle while pour répéter les étapes suivantes jusqu'à ce que n devienne 0 (c'est-à-dire jusqu'à ce qu'il n'y ait plus de chiffres à traiter) :<ul><li> Le dernier chiffre de n est trouvé en prenant le reste de la division de n par 10 à l'aide de l'opérateur de modulo %. Ce chiffre est ajouté à la variable somme.
+                        </li><li>Ensuite, le dernier chiffre est supprimé de n en divisant n par 10 en utilisant l'opérateur //.
+                        
+                        </li></ul><br>
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>Après la boucle while, la somme totale des chiffres est affichée à l'écran à l'aide de la fonction print().
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Ecrivez un programme pour saisir un entier et vérifiez si il est parfait ou non.<br><div class="if1">Un nombre parfait est un entier positif qui est égal à la somme de tous ses diviseurs positifs, à l'exception de lui-même. En d'autres termes, la somme de tous les diviseurs propres d'un nombre parfait est égale à ce nombre.<br>Par exemple, le nombre 6 est considéré comme un nombre parfait car la somme de ses diviseurs propres (1, 2 et 3) est égale à 6.<br>
+                        Un nombre parfait est donc un nombre pour lequel la somme de ses diviseurs propres est égale à lui-même.</div>
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 28<br>
+                        28 est un nombre parfait</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        n = int(input("Entrez un entier : "))<br>
+                        somme = 0<br>
+                        for i in range(1, n):<br>
+                        <div class="if">if (n % i == 0):<div class="if"> somme += i
+                        </div></div> 
+                        if (somme == n):<div class="if">    print(n, " est un nombre parfait")
+                        </div>
+                        else:
+                        <div class="if">print(n, " n'est pas un nombre parfait")</div> 
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>L'utilisateur est invité à saisir un nombre à l'aide de la fonction input(). La valeur saisie est convertie en un entier à l'aide de int() et est ensuite stockée dans la variable n.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Une variable somme est initialisée à 0. Cette variable sera utilisée pour calculer la somme des diviseurs stricts de n.<br>Le programme utilise une boucle for pour itérer sur les valeurs i allant de 1 à n-1. Nous utilisons n-1 car nous voulons seulement considérer les diviseurs stricts de n, c'est-à-dire tous les diviseurs positifs de n autres que n lui-même.<br>Dans chaque itération de la boucle, nous vérifions si i est un diviseur de n en utilisant l'opérateur de modulo %. Si i divise n sans laisser de reste, cela signifie que i est un diviseur de n.<br>Si i est un diviseur de n, nous l'ajoutons à la variable somme.<br>Après la boucle for, nous vérifions si la somme des diviseurs stricts est égale à n. Si c'est le cas, cela signifie que n est un nombre parfait.
+
+                       <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>Enfin, le programme affiche le résultat à l'écran en indiquant si n est un nombre parfait ou non.
+
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Never let the fear of striking out stop you from playing the game.” —Babe Ruth.</div>
+    </div>
+</body>

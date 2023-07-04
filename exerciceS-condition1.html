@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CONDITION</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                      <li><a href="exerciceS-listechai.html">Liste chainées</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+            
+           
+           
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">Condition</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui permet de determiner si un entier donné est pair ou impair.
+
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un entier : 17<br>
+                        L'entier 17 est impair.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {<div class="if">
+                                int nombre;</div>
+                            
+                                <div class="if">// Saisie de l'entier par l'utilisateur</div>
+                                <div class="if"> printf("Entrez un entier : ");</div>
+                                    <div class="if"> scanf("%d", &nombre);</div>
+                            
+                                        <div class="if"> // Vérification de la parité de l'entier</div>
+                                            <div class="if">  if (nombre % 2 == 0) {<div class="if">
+                                    printf("L'entier %d est pair.\n", nombre);</div></div><div class="if">}</div>
+                                    <div class="if">else {<div class="if">
+                                    printf("L'entier %d est impair.\n", nombre);</div></div>
+                                    <div class="if">}</div>
+                            
+                                <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer un entier, puis nous le stockons dans la variable nombre. Ensuite, nous vérifions la parité de l'entier en utilisant l'opérateur modulo %. Si le reste de la division de nombre par 2 est égal à 0, cela signifie que l'entier est pair. Sinon, il est impair. Nous affichons ensuite le résultat correspondant à l'aide de la fonction printf().
+
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour trouver un maximum entre trois nombres .
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier nombre : 25<br>
+                        Entrez le deuxième nombre : 10<br>
+                        Entrez le troisième nombre : 32<br>
+                        Le maximum entre les trois nombres est : 32</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {<div class="if">
+                                int a, b, c;</div>
+                            
+                                <div class="if">// Saisie des trois nombres par l'utilisateur</div>
+                                    <div class="if">printf("Entrez le premier nombre : ");</div>
+                                        <div class="if">scanf("%d", &a);</div>
+                            
+                                            <div class="if">printf("Entrez le deuxième nombre : ");</div>
+                                                <div class="if">    scanf("%d", &b);</div>
+                            
+                                                    <div class="if">         printf("Entrez le troisième nombre : ");</div>
+                                                        <div class="if">             scanf("%d", &c);</div>
+                            
+                                                            <div class="if">                     // Recherche du maximum entre les trois nombres</div>
+                                                                <div class="if">                     int maximum = a;  // Supposons que le premier nombre est le maximum</div>
+                            
+                                                                    <div class="if">           if (b > maximum) {
+                                                                        <div class="if"> maximum = b;  </div></div>
+                                                                        <div class="if">}</div>
+                            
+                                                                        <div class="if"> if (c > maximum) {<div class="if">
+                                    maximum = c;  </div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">// Affichage du maximum</div>
+                                    <div class="if"> printf("Le maximum entre les trois nombres est : %d\n", maximum);</div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer trois nombres, puis nous les stockons dans les variables a, b et c. Ensuite, nous comparons les trois nombres pour trouver le maximum en utilisant des instructions conditionnelles (if). La variable maximum est initialisée avec la valeur du premier nombre, puis nous la mettons à jour si un nombre plus grand est trouvé. Enfin, nous affichons le maximum à l'aide de la fonction printf().
+
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce"> Ecrire un programme en C qui lit les notes de deux contrôles d’une matière donnée, puis calcule et affiche la moyenne obtenue. si la moyenne est supérieure ou égale à 10, il affichera davantage le message de congratulation suivant : Félicitations ! Vous avez validé cette matière.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez la note du premier contrôle : 12.5<br>
+                        Entrez la note du deuxième contrôle : 14.8<br>
+                        La moyenne obtenue est : 13.65<br>
+                        Félicitations ! Vous avez validé cette matière.</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">float a, b, moyenne;</div>
+                            
+                                    <div class="if">// Saisie des notes des deux contrôles</div>
+                                        <div class="if"> printf("Entrez la note du premier contrôle : ");</div>
+                                            <div class="if"> scanf("%f", &a);</div>
+                            
+                                                <div class="if">  printf("Entrez la note du deuxième contrôle : ");</div>
+                                                    <div class="if">   scanf("%f", &b);</div>
+                            
+                                                        <div class="if">   // Calcul de la moyenne</div>
+                                                            <div class="if">    moyenne = (a + b) / 2;</div>
+                            
+                                                                <div class="if">    // Affichage de la moyenne</div>
+                                                                    <div class="if">    printf("La moyenne obtenue est : %.2f\n", moyenne);</div>
+                            
+                                                                        <div class="if">     // Vérification de la validation de la matière</div>
+                                                                            <div class="if">     if (moyenne >= 10) {
+                                                                                <div class="if">       printf("Félicitations ! Vous avez validé cette matière.\n");</div></div>
+                                                                                <div class="if">  }</div>
+                            
+                                                                                <div class="if">  return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir les notes des deux contrôles, puis nous les stockons dans les variables note1 et note2. Ensuite, nous calculons la moyenne en additionnant les deux notes et en divisant le résultat par 2. La moyenne est stockée dans la variable moyenne. Enfin, nous affichons la moyenne à l'aide de la fonction printf() avec le format "%.2f" pour afficher deux décimales, et nous affichons un message de félicitations si la moyenne est supérieure ou égale à 10.
+
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrivez un programme en C pour entrer le numéro du jour de la semaine (1-7) et affichez le nom du jour de la semaine correspondant en utilisant if-else.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le numéro du jour de la semaine (1-7) : 3<br>
+                        Mercredi</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int numeroJour;</div>
+                            
+                                <div class="if">// Saisie du numéro du jour de la semaine</div>
+                                <div class="if"> printf("Entrez le numéro du jour de la semaine (1-7) : ");</div>
+                                    <div class="if"> scanf("%d", &numeroJour);</div>
+                            
+                                        <div class="if">  // Vérification du numéro du jour et affichage du nom correspondant</div>
+                                            <div class="if">  if (numeroJour == 1) {<div class="if">
+                                    printf("Lundi\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (numeroJour == 2) {<div class="if">
+                                    printf("Mardi\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (numeroJour == 3) {<div class="if">
+                                    printf("Mercredi\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (numeroJour == 4) {
+                                        <div class="if">printf("Jeudi\n");</div></div>
+                                        <div class="if">}</div>
+                                        <div class="if"> else if (numeroJour == 5) {<div class="if">
+                                    printf("Vendredi\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (numeroJour == 6) {<div class="if">
+                                    printf("Samedi\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (numeroJour == 7) {<div class="if">
+                                    printf("Dimanche\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else {<div class="if">
+                                    printf("Numéro de jour invalide\n");</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if"> return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur d'entrer le numéro du jour de la semaine, puis nous stockons cette valeur dans la variable numeroJour. Ensuite, nous utilisons une structure de contrôle if-else pour vérifier le numéro du jour et afficher le nom correspondant à l'aide de la fonction printf(). Si le numéro du jour n'est pas compris entre 1 et 7, nous affichons un message d'erreur.
+
+
+
+
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce">Ecrivez un programme en C qui demande à l'utilisateur de saisir le prix de fabrication et le prix de vente d'un produit. Ensuite, le programme vérifie s'il y a un profit ou une perte en comparant les deux prix.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le prix de fabrication du produit : 50.00<br>
+                        Entrez le prix de vente du produit : 80.00<br>
+                        Profit : 30.00</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">float prixFabrication, prixVente;</div>
+                            
+                                <div class="if">// Saisie du prix de fabrication</div>
+                                    <div class="if">printf("Entrez le prix de fabrication du produit : ");</div>
+                                        <div class="if">  scanf("%f", &prixFabrication);</div>
+                            
+                                            <div class="if">  // Saisie du prix de vente</div>
+                                                <div class="if">  printf("Entrez le prix de vente du produit : ");</div>
+                                                    <div class="if">   scanf("%f", &prixVente);</div>
+                            
+                                                        <div class="if">    // Calcul du profit ou de la perte</div>
+                                                            <div class="if">    float difference = prixVente - prixFabrication;</div>
+                            
+                                                                <div class="if">    // Vérification et affichage du résultat</div>
+                                                                <div class="if">if (difference > 0) {<div class="if">
+                                    printf("Profit : %.2f\n", difference);</div></div>
+                                    <div class="if">}</div>
+                                    <div class="if">else if (difference < 0) {<div class="if">
+                                    printf("Perte : %.2f\n", -difference);</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else {
+                                        <div class="if">printf("Pas de profit ni de perte\n");</div></div>
+                                        <div class="if">}</div>
+                            
+                                        <div class="if">return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir le prix de fabrication et le prix de vente du produit, puis nous stockons ces valeurs dans les variables prixFabrication et prixVente. Ensuite, nous calculons la différence entre le prix de vente et le prix de fabrication à l'aide de l'opération prixVente - prixFabrication. Si cette différence est positive, cela signifie qu'il y a un profit, et nous l'affichons avec le message "Profit : " suivi du montant. Si la différence est négative, cela signifie qu'il y a une perte, et nous affichons le montant positif avec le message "Perte : ". Si la différence est nulle, cela signifie qu'il n'y a ni profit ni perte, et nous affichons le message "Pas de profit ni de perte".  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> le programme en C qui demande à l'utilisateur d'entrer un score numérique entre 0 et 100, puis qui classe la note en fonction des conditions suivantes :<ul><li>Si le score est égal ou supérieur à 90, affichez "A".
+                    </li><li>Si le score est entre 80 et 89 (inclus), affichez "B".
+                    </li><li>Si le score est entre 70 et 79 (inclus), affichez "C".
+                    </li><li>Si le score est entre 60 et 69 (inclus), affichez "D".
+                    </li><li>Si le score est inférieur à 60, le programme affiche "F".
+                    
+                    </li></ul></div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le score : 85<br>
+                        B</div>
+                    
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int score;</div>
+                            
+                                <div class="if">// Saisie du score</div>
+                                <div class="if">printf("Entrez le score : ");</div>
+                                <div class="if"> scanf("%d", &score);</div>
+                            
+                                    <div class="if">  // Classement de la note</div>
+                                        <div class="if">   if (score >= 90) {<div class="if">
+                                    printf("A\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (score >= 80 && score <= 89) {<div class="if">
+                                    printf("B\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (score >= 70 && score <= 79) {<div class="if">
+                                    printf("C\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (score >= 60 && score <= 69) {<div class="if">
+                                    printf("D\n");</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else {<div class="if">
+                                    printf("F\n");</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir le score, puis nous stockons cette valeur dans la variable score. Ensuite, nous utilisons une série d'instructions if et else if pour classer la note en fonction du score. Si le score est supérieur ou égal à 90, nous affichons "A". Si le score est entre 80 et 89, nous affichons "B". Si le score est entre 70 et 79, nous affichons "C". Si le score est entre 60 et 69, nous affichons "D". Si le score est inférieur à 60, nous affichons "F".
+
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Ecrivez un programme en C pour inventer une calculatrice qui exécute des opérations arithmétiques de base(additionn, soustration, multiplication ou division) en utilisant if else. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez l'opérateur (+, -, *, /) : *<br>
+                        Entrez le premier nombre : 5.2<br>
+                        Entrez le deuxième nombre : 3.8<br>
+                        Le résultat est : 19.76</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {<br>
+                                <div class="if">char operateur;</div>
+                                <div class="if">double nombre1, nombre2, resultat;</div>
+                            
+                                <div class="if">// Saisie de l'opération et des nombres</div>
+                                <div class="if">printf("Entrez l'opérateur (+, -, *, /) : ");</div>
+                                <div class="if">scanf(" %c", &operateur);</div>
+                            
+                                <div class="if">printf("Entrez le premier nombre : ");</div>
+                                <div class="if">scanf("%lf", &nombre1);</div>
+                            
+                                <div class="if">printf("Entrez le deuxième nombre : ");</div>
+                                <div class="if">scanf("%lf", &nombre2);</div>
+                            
+                                <div class="if">// Calcul et affichage du résultat</div>
+                                <div class="if">if (operateur == '+') {
+                                    <div class="if">resultat = nombre1 + nombre2;</div></div>
+                                    <div class="if">}</div>
+                                    <div class="if"> else if (operateur == '-') {<div class="if">
+                                    resultat = nombre1 - nombre2;</div></div>
+                                    <div class="if">}</div>
+                                    <div class="if"> else if (operateur == '*') {<div class="if">
+                                    resultat = nombre1 * nombre2;</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else if (operateur == '/') {<div class="if">
+                                    if (nombre2 != 0) {<div class="if">
+                                        resultat = nombre1 / nombre2;</div></div>
+                                    } 
+                                    <div class="if">else {<div class="if">
+                                        printf("Erreur : Division par zéro n'est pas autorisée.\n");</div>
+                                        <div class="if">return 1; // Quitter le programme avec code d'erreur 1</div>
+                                        <div class="if">}</div></div>
+                                        <div class="if">}</div> </div>
+                                        <div class="if">else {<div class="if">
+                                    printf("Opérateur invalide.\n");</div>
+                                    <div class="if">return 1; // Quitter le programme avec code d'erreur 1</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">printf("Le résultat est : %.2lf\n", resultat);</div>
+                            
+                                    <div class="if">return 0;</div>
+                            }
+
+
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous demandons à l'utilisateur de saisir l'opérateur (+, -, *, /) suivi des deux nombres sur lesquels l'opération sera effectuée. Ensuite, nous utilisons des instructions if et else if pour déterminer quelle opération doit être effectuée en fonction de l'opérateur saisi. Si l'opérateur est invalide (autre que +, -, * ou /), nous affichons un message d'erreur. Si l'opération de division est choisie et que le deuxième nombre est égal à zéro, nous affichons également un message d'erreur pour éviter la division par zéro.
+                <br><br>Notez que le programme utilise le format %lf pour la saisie de nombres réels (double) avec scanf et utilise %.2lf pour afficher le résultat avec deux décimales.
+
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce">Ecrire un programme en C qui lit trois entiers puis les afficher ensuite dans un ordre croissant.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez le premier entier : 7<br>
+                        Entrez le deuxième entier : 3<br>
+                        Entrez le troisième entier : 9<br>
+                        Les nombres dans l'ordre croissant sont : 3 7 9</div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">int nombre1, nombre2, nombre3;</div>
+                            
+                                <div class="if">printf("Entrez le premier entier : ");</div>
+                                <div class="if">scanf("%d", &nombre1);</div>
+                                <div class="if">printf("Entrez le deuxième entier : ");</div>
+                                <div class="if">scanf("%d", &nombre2);</div>
+                                <div class="if">printf("Entrez le troisième entier : ");</div>
+                                <div class="if">scanf("%d", &nombre3);</div>
+                            
+                                <div class="if"> // Vérification de l'ordre des nombres et échange si nécessaire</div>
+                                <div class="if">if (nombre1 > nombre2) {
+                                    <div class="if">int temp = nombre1;</div>
+                                    <div class="if">nombre1 = nombre2;</div>
+                                    <div class="if">nombre2 = temp;</div></div>
+                                    <div class="if">}</div>
+                                    <div class="if">if (nombre2 > nombre3) {
+                                        <div class="if">int temp = nombre2;</div>
+                                            <div class="if"> nombre2 = nombre3;</div>
+                                                <div class="if"> nombre3 = temp;</div></div>
+                                                <div class="if">}</div>
+                                                <div class="if">if (nombre1 > nombre2) {
+                                                    <div class="if">int temp = nombre1;</div>
+                                                        <div class="if">nombre1 = nombre2;</div>
+                                                            <div class="if"> nombre2 = temp;</div></div>
+                                                            <div class="if">}</div>
+                            
+                                                            <div class="if">// Affichage des nombres dans l'ordre croissant
+                                                            </div><div class="if"> printf("Les nombres dans l'ordre croissant sont : %d %d %d\n", nombre1, nombre2, nombre3);</div>
+                            
+                                                            <div class="if">return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir trois entiers. Ensuite, nous utilisons des instructions if pour comparer les nombres et les échanger si nécessaire pour les mettre dans l'ordre croissant. Enfin, nous utilisons l'instruction printf() pour afficher les nombres dans l'ordre croissant.
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce"> Ecrire un programme en C qui lit un nombre réel et détermine s’il est entier ou non entier.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez un nombre réel : 4.5<br>
+                        Le nombre 4.50 n'est pas un nombre entier.</div>
+
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                                <div class="if">double nombre;</div>
+                            
+                                <div class="if">printf("Entrez un nombre réel : ");</div>
+                                <div class="if"> scanf("%lf", &nombre);</div>
+                            
+                                <div class="if">// Vérification si le nombre est entier ou non</div>
+                                <div class="if">if (nombre == (int)nombre) {<div class="if">
+                                    printf("Le nombre %.2lf est un nombre entier.\n", nombre);</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else {<div class="if">
+                                    printf("Le nombre %.2lf n'est pas un nombre entier.\n", nombre);</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">return 0;</div>
+                                    <div class="if">    }</div>   
+                         </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir un nombre réel. Ensuite, nous utilisons une comparaison pour vérifier si le nombre est égal à sa partie entière. Si c'est le cas, alors le nombre est entier, sinon, il est considéré comme non entier. Enfin, nous utilisons l'instruction printf() pour afficher le résultat.
+
+
+
+
+                </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce">Écrivez un programme en C qui détermine si une année donnée est bissextile ou non.<br> Une année est bissextile si elle est divisible par 4, sauf si elle est également divisible par 100. Toutefois, les années qui sont divisibles par 400 sont considérées comme bissextiles.
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez une année : 2020<br>
+                            2020 est une année bissextile.</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        #include &ltstdio.h&gt<br>
+
+                            int main() {
+                               <div class="if"> int annee;</div>
+                            
+                               <div class="if">printf("Entrez une année : ");</div>
+                               <div class="if">scanf("%d", &annee);</div>
+                            
+                               <div class="if">// Vérification si l'année est bissextile ou non</div>
+                               <div class="if">if ((annee % 4 == 0 && annee % 100 != 0) || annee % 400 == 0) {<div class="if">
+                                    printf("%d est une année bissextile.\n", annee);</div></div>
+                                    <div class="if">}</div> 
+                                    <div class="if">else {<div class="if">
+                                    printf("%d n'est pas une année bissextile.\n", annee);</div></div>
+                                    <div class="if">}</div>
+                            
+                                    <div class="if">return 0;</div>
+                            }    
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Dans ce programme, nous utilisons la fonction scanf() pour demander à l'utilisateur de saisir une année. Ensuite, nous utilisons une expression conditionnelle pour vérifier si l'année est bissextile ou non. La condition est que l'année doit être divisible par 4 mais pas par 100, sauf si elle est également divisible par 400. Si la condition est vraie, alors l'année est bissextile, sinon, elle ne l'est pas. Enfin, nous utilisons l'instruction printf() pour afficher le résultat.
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“Failure is the opportunity to begin again more intelligently.” – Henry Ford
+        </div>
+    </div>
+</body>

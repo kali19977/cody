@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codequesthub.css">
+    <link rel="stylesheet" href="python.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Quicksand:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EXERCISES de liste</title>
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="left-wrapper">
+            CodeQuestHub
+        </div>
+        <div class="nav-link">
+            <div class="nav">
+                <a href="codequesthub.html"> <i class="fa-sharp fa-solid fa-house"></i>HOME</a>
+            </div>
+                 
+            <div class="nav">
+                
+                <a href="exerciceS-PYTHON.html"> <i class="fa-brands fa-python"></i>PYTHON
+                    </a>
+                <div class="submitt">
+                  <ul>
+                    <li><a href="exerciceS-notion.html">Notion de base</a></li>
+                    <li><a href="exerciceS-condition.html">Condition</a></li>
+                    <li><a href="exerciceS-boucle.html">Boucles</a></li>
+                    <li><a href="exerciceS-chaine.html">Chaine de caractere</a></li>
+                    <li><a href="exerciceS-liste.html">Liste</a></li>
+                    <li><a href="exerciceS-tuple.html">Tuple</a></li>
+                    <li><a href="exerciceS-sets.html">Ensemble</a></li>
+                    <li><a href="exerciceS-dict.html">Dictionnaire</a></li>
+                    <li><a href="exerciceS-fonction.html">Fonction</a></li>
+                    <li><a href="exerciceS-oop.html">OOP</a></li>
+                    <li><a href="exerciceS-SQL.html">SQL</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            <div class="nav">
+            
+                <a href="exerciceS-C.html"><i class="fa-solid fa-c"></i></a>
+                <div class="submitt1">
+                    <ul>
+                      <li><a href="exerciceS-notion1.html">Notion de base</a></li>
+                      <li><a href="exerciceS-condition1.html">Condition</a></li>
+                      <li><a href="exerciceS-boucle1.html">Boucles</a></li>
+                      <li><a href="exerciceS-chaine1.html">Chaine de caractere</a></li>
+                      <li><a href="exerciceS-Table.html">Tableaux</a></li>
+                      <li><a href="exerciceS-fonction1.html">Fonction</a></li>
+                      <li><a href="exerciceS-pointeur.html">Pointeurs</a></li>
+                      <li><a href="exerciceS-struc.html">Structures</a></li>
+                    </ul>
+                  </div>
+ 
+            </div>
+           
+          
+           
+        </div>
+
+    </div>
+    <div class="centered1">
+        <div class="quotes">
+            <i class="fa-brands fa-studiovinari"></i>
+            <p>Plus vous pratiquez la programmation, plus vous élargissez vos connaissances et maîtrisez votre art. Chaque ligne de code que vous écrivez est un pas en avant dans votre parcours d'apprentissage et de croissance.</p>
+
+        </div>
+        <div class="notion">
+            <div class="titreg">LISTE</div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 1 :</h1></div>
+                    <div class="enonce">Ecrire un programme qui demande à l'utilisateur de saisir une liste d'entiers, puis affiche la somme de tous les éléments de la liste.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez une liste d'entiers séparés par des espaces : 10 20 30 40 50<br>
+                            La somme des éléments de la liste est : 150<br>
+                            </div>             
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        liste = input("Entrez une liste d'entiers séparés par des espaces : ").split()<br>
+                        liste = [int(x) for x in liste]<br>
+                        somme = sum(liste)<br>
+                        print("La somme des éléments de la liste est :", somme)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div> Ce programme demande à l'utilisateur de saisir une liste d'entiers séparés par des espaces. Les éléments de la liste sont ensuite convertis en entiers à l'aide d'une compréhension de liste. Enfin, la fonction sum() est utilisée pour calculer la somme de tous les éléments de la liste, et le résultat est affiché à l'écran.<br>
+                        </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 2 :</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir une liste de nombres, puis affiche le nombre le plus élevé de la liste.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez une liste de nombres séparés par des espaces : 3.5 2.8 7.2 5.1 4.9<br>
+                            Le nombre le plus élevé de la liste est : 7.2</div>      
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        liste = input("Entrez une liste de nombres séparés par des espaces : ").split()<br>
+                        liste = [float(x) for x in liste]<br>
+                        maximum = max(liste)<br>
+                        print("Le nombre le plus élevé de la liste est :", maximum)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>Ce programme demande à l'utilisateur de saisir une liste de nombres séparés par des espaces. Les éléments de la liste sont ensuite convertis en nombres à virgule flottante à l'aide d'une compréhension de liste. Ensuite, la fonction max() est utilisée pour trouver le nombre le plus élevé de la liste, et le résultat est affiché à l'écran.
+                </div>
+            </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 3 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une liste de mots, puis affiche le mot le plus long de la liste.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                    <div class="exemple">Entrez une liste de mots séparés par des espaces : chat chien oiseau éléphant<br>
+                        Le mot le plus long de la liste est : éléphant</div>
+                    <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        liste = input("Entrez une liste de mots séparés par des espaces : ").split()<br>
+                        mot_plus_long = max(liste, key=len)<br>
+                        print("Le mot le plus long de la liste est :", mot_plus_long)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Ce programme demande à l'utilisateur de saisir une liste de mots séparés par des espaces. Les mots sont ensuite stockés dans une liste. En utilisant la fonction max() avec le paramètre key=len, nous pouvons trouver le mot le plus long en comparant la longueur de chaque mot de la liste. Le mot le plus long est ensuite affiché à l'écran.
+
+                        </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 4 :</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une liste de nombres, puis affiche la liste dans l'ordre inverse.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+
+                    <div class="exemple">liste = input("Entrez une liste de nombres séparés par des espaces : ").split()<br>
+                        liste_inverse = list(reversed(liste))<br>
+                        print("La liste dans l'ordre inverse :", liste_inverse)
+                        </div>
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        liste = input("Entrez une liste de nombres séparés par des espaces : ").split()<br>
+                        liste_inverse = list(reversed(liste))<br>
+                        print("La liste dans l'ordre inverse :", liste_inverse)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On utilise la fonction input() pour demander à l'utilisateur de saisir une liste de nombres. Les nombres sont séparés par des espaces.       <div class="spider"></div>
+                        <div class="er">Ensuite,</div> La méthode split() est utilisée pour diviser la chaîne de caractères en une liste de nombres individuels.
+                        <br>puis,on utilise la fonction reversed() pour inverser l'ordre des éléments de la liste.<br>puis,on utilise la fonction list() pour convertir l'objet retourné par reversed() en une liste.               
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  On affiche la liste dans l'ordre inverse en utilisant print().              
+                         
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 5 :</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir deux listes d'entiers de même longueur, puis affiche une nouvelle liste contenant la somme des éléments correspondants des deux listes. 
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+
+                        <div class="exemple">Entrez les éléments de la première liste séparés par des espaces : 1 2 3<br>
+                         <br>   Entrez les éléments de la deuxième liste séparés par des espaces : 4 5 6<br>
+                            La liste contenant la somme des éléments correspondants est : [5, 7, 9]<br>
+                            </div>    
+                        <div class="solution">SOLUTION :</div>
+
+                    <div class="solution1"> 
+                        liste1 = input("Entrez les éléments de la première liste séparés par des espaces : ").split()<br>
+                        liste2 = input("Entrez les éléments de la deuxième liste séparés par des espaces : ").split()<br>
+                        if len(liste1) != len(liste2):<br><div class="if">print("Les deux listes doivent avoir la même longueur.")</div>
+                        else:<div class="if"> 
+                            liste1 = [int(x) for x in liste1]</div>
+                        <div class="if">liste2 = [int(x) for x in liste2]</div>
+                        <div class="if">somme = [x + y for x, y in zip(liste1, liste2)]</div>
+                        <div class="if">print("La liste contenant la somme des éléments correspondants est :", somme)</div>
+                                            </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On utilise la fonction input() pour demander à l'utilisateur de saisir les éléments des deux listes. Les éléments sont séparés par des espaces.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   Les deux listes saisies sont ensuite converties en listes à l'aide de la méthode split().
+                        <br>On vérifie si les deux listes ont la même longueur. Si elles n'ont pas la même longueur, un message d'erreur est affiché.
+                        <br>Si les deux listes ont la même longueur, les éléments sont convertis en entiers à l'aide d'une compréhension de liste.<br>On utilise la fonction zip() pour itérer simultanément sur les éléments des deux listes.<br>On calcule la somme des éléments correspondants des deux listes à l'aide d'une compréhension de liste et de l'opérateur +.
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>   la nouvelle liste contenant la somme des éléments correspondants est affichée à l'aide de print().</div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 6:</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir une liste de mots, puis affiche les mots de la liste qui ont une longueur supérieure à 5 caractères. 
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Entrez les mots de la liste séparés par des espaces : chat chien cheval tortue oiseau lion
+                           <br> Les mots ayant une longueur supérieure à 5 caractères sont : ['cheval', 'tortue']</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        liste_mots = input("Entrez les mots de la liste séparés par des espaces : ").split()<br>
+                        mots_longueur_sup = [mot for mot in liste_mots if len(mot) > 5]<br>
+                        print("Les mots ayant une longueur supérieure à 5 caractères sont :", mots_longueur_sup)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On utilise la fonction input() pour demander à l'utilisateur de saisir les mots de la liste. Les mots sont séparés par des espaces.
+                    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Les mots saisis sont ensuite convertis en une liste à l'aide de la méthode split().
+                        <br>On utilise une compréhension de liste pour parcourir la liste de mots et filtrer les mots ayant une longueur supérieure à 5 caractères en utilisant la condition len(mot) > 5.
+                        <br>Les mots filtrés sont stockés dans la liste mots_longueur_sup.                    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  les mots ayant une longueur supérieure à 5 caractères sont affichés à l'aide de print().
+
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 7:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une liste d'entiers, puis affiche une nouvelle liste contenant uniquement les nombres pairs de la liste d'origine.   
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Entrez les entiers de la liste séparés par des espaces : 3 8 2 5 10 7<br>
+                            Liste des nombres pairs : [8, 2, 10]</div>
+                        <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                        liste_entiers = input("Entrez les entiers de la liste séparés par des espaces : ").split()
+                        <br>liste_entiers = [int(entier) for entier in liste_entiers]<br>
+                        liste_pairs = [entier for entier in liste_entiers if entier % 2 == 0]<br>
+                        print("Liste des nombres pairs :", liste_pairs)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir une liste d'entiers en utilisant la fonction input(). Les entiers sont séparés par des espaces.
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div>  Les entiers saisis sont convertis en une liste en utilisant la méthode split() pour séparer les entiers et la compréhension de liste [int(entier) for entier in liste_entiers] pour les convertir en entiers.
+                        <br>On utilise une compréhension de liste pour filtrer les nombres pairs de la liste d'origine en utilisant la condition entier % 2 == 0.
+                        <br>Les nombres pairs filtrés sont stockés dans la liste liste_pairs.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div>  la liste contenant uniquement les nombres pairs est affichée à l'aide de print().
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 8:</h1></div>
+                    <div class="enonce"> Écrire un programme qui demande à l'utilisateur de saisir une liste de mots, puis affiche une nouvelle liste contenant les mots de la liste d'origine triés par ordre alphabétique.
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Entrez les mots de la liste séparés par des espaces : orange pomme banane kiwi<br>
+                        Liste triée par ordre alphabétique : ['banane', 'kiwi', 'orange', 'pomme']</div>
+
+                    <div class="solution">SOLUTION :</div>
+                   
+
+                    <div class="solution1"> 
+                       liste_mots = input("Entrez les mots de la liste séparés par des espaces : ").split()<br>
+                        liste_triee = sorted(liste_mots)<br>
+                        print("Liste triée par ordre alphabétique :", liste_triee)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>LOn demande à l'utilisateur de saisir une liste de mots en utilisant la fonction input(). Les mots sont séparés par des espaces.
+
+
+                         <div class="spider"></div>
+                        <div class="er">Ensuite,</div> Les mots saisis sont convertis en une liste en utilisant la méthode split() pour séparer les mots.
+<br>On utilise la fonction sorted() pour trier les mots de la liste d'origine par ordre alphabétique. La liste triée est stockée dans liste_triee.
+
+                        <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> la liste triée par ordre alphabétique est affichée à l'aide de print().  </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 9:</h1></div>
+                    <div class="enonce">Écrire un programme qui demande à l'utilisateur de saisir une liste de nombres, puis affiche la médiane de la liste (le nombre au milieu lorsque les éléments sont triés dans l'ordre croissant).
+                    </div>
+                    <div class="solution">EXEMPLE D'EXECUTION :</div>
+                    <div class="exemple">Entrez les nombres de la liste séparés par des espaces : 12 45 7 23 9<br>
+                        Médiane de la liste : 12.0</div>
+       <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        liste_nombres = input("Entrez les nombres de la liste séparés par des espaces : ").split()<br>
+                        liste_nombres = [int(nombre) for nombre in liste_nombres]<br>
+                        liste_triee = sorted(liste_nombres)<br>
+                        indice_mediane = len(liste_triee) // 2<br>
+                        if len(liste_triee) % 2 == 0:<br>
+                        <div class="if">  mediane = (liste_triee[indice_mediane - 1] + liste_triee[indice_mediane]) / 2</div>
+else:
+    <div class="if">mediane = liste_triee[indice_mediane]</div>
+print("Médiane de la liste :", mediane)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir une liste de nombres en utilisant la fonction input(). Les nombres sont séparés par des espaces.
+      <div class="spider"></div>
+                        <div class="er">Ensuite,</div>   Les nombres saisis sont convertis en une liste d'entiers en utilisant une liste en compréhension.
+<br>On utilise la fonction sorted() pour trier les nombres de la liste par ordre croissant. La liste triée est stockée dans liste_triee.<br>On calcule l'indice de la médiane en utilisant la longueur de la liste triée divisée par 2.<br>On vérifie si la liste contient un nombre pair ou impair d'éléments en utilisant l'opérateur % pour vérifier la parité de la longueur de la liste.<br>Si le nombre d'éléments est pair, on calcule la médiane en prenant la moyenne des deux nombres du milieu.<br>
+Si le nombre d'éléments est impair, on prend simplement le nombre du milieu comme mediane.                    <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> la médiane de la liste est affichée à l'aide de print().
+                        </div>
+                </div>
+            </div>
+            <div class="exercices">
+                <div class="exercice">
+                    <div class="titre1"><h1>EXERCICE 10:</h1></div>
+                    <div class="enonce"> Écrire un programme Python qui lit une liste d’entiers, et supprime toutes les occurrences d’un entier entré par l’utilisateur, en utilisant la méthode pop.    
+                        <div class="solution">EXEMPLE D'EXECUTION :</div>
+                        <div class="exemple">Entrez une liste d'entiers séparés par des espaces : 12 45 7 23 9<br>
+                            Entrez l'entier à supprimer : 7<br>
+                            Liste mise à jour : [12, 45, 23, 9]</div>
+                        <div class="solution">SOLUTION :</div>
+                    <div class="solution1"> 
+                        liste_entiers = input("Entrez une liste d'entiers séparés par des espaces : ").split()<br>
+                        liste_entiers = [int(entier) for entier in liste_entiers]<br>
+                        entier_a_supprimer = int(input("Entrez l'entier à supprimer : "))<br>
+                        i = len(liste_entiers) - 1<br>
+                        while i >= 0:
+                        <div class="if">if liste_entiers[i] == entier_a_supprimer:<div class="if">liste_entiers.pop(i)</div></div> 
+                                
+                        <div class="if">i -= 1</div> 
+                        print("Liste mise à jour :", liste_entiers)
+                    </div>
+                    <div class="explication">EXPLICATION :</div>
+                    <div class="explication1"><div class="er">Tout d'abord,</div>On demande à l'utilisateur de saisir une liste d'entiers séparés par des espaces en utilisant la fonction input(). Les éléments saisis sont convertis en une liste de chaînes de caractères en utilisant la méthode split().    <div class="spider"></div>
+                        <div class="er">Ensuite,</div> On utilise ensuite une liste en compréhension pour convertir chaque élément de la liste en un entier en utilisant la fonction int().<br>On demande à l'utilisateur d'entrer l'entier qu'il souhaite supprimer de la liste en utilisant la fonction input() et en convertissant le résultat en un entier avec int().<br>
+On parcourt ensuite la liste en sens inverse en utilisant une boucle while, en commençant par l'index du dernier élément jusqu'au premier. Cela permet d'éviter les problèmes d'indices lors de la suppression.<br>Dans la boucle, on vérifie si l'élément à l'index courant est égal à l'entier à supprimer. Si c'est le cas, on utilise la méthode pop(i) pour supprimer l'élément à l'index i de la liste.<br>On décrémente ensuite i pour passer à l'index suivant dans la liste.     <div class="spider"></div>
+
+                        <div class="er">Enfin,</div> une fois la boucle terminée, on affiche la liste mise à jour à l'aide de print().
+
+
+
+
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="spiderr"></div>
+    <div class="motivations">
+        <div class="iconis"><i class="fa-solid fa-face-smile"></i></div>
+        <div class="quotess">“If you really want to do something, you will find a way. If you don’t, you will find excuses.”
+– Jim Rohn.</div>
+    </div>
+</body>
